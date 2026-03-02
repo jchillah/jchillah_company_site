@@ -1,10 +1,1 @@
-{
-  "hosting": {
-    "public": "build/web",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ]
-  }
-}
+{"hosting":{"public":"build/web","ignore":["firebase.json","**/.*","**/node_modules/**"]},"flutter":{"platforms":{"android":{"default":{"projectId":"jchillah-company-site","appId":"1:390645943136:android:d46525b8c68a2b9f002c05","fileOutput":"android/app/google-services.json"}},"ios":{"default":{"projectId":"jchillah-company-site","appId":"1:390645943136:ios:da8cd096a34a9fa6002c05","uploadDebugSymbols":false,"fileOutput":"ios/Runner/GoogleService-Info.plist"}},"macos":{"default":{"projectId":"jchillah-company-site","appId":"1:390645943136:ios:da8cd096a34a9fa6002c05","uploadDebugSymbols":false,"fileOutput":"macos/Runner/GoogleService-Info.plist"}},"dart":{"lib/firebase_options.dart":{"projectId":"jchillah-company-site","configurations":{"android":"1:390645943136:android:d46525b8c68a2b9f002c05","ios":"1:390645943136:ios:da8cd096a34a9fa6002c05","macos":"1:390645943136:ios:da8cd096a34a9fa6002c05","web":"1:390645943136:web:d43723f1fe105837002c05","windows":"1:390645943136:web:136201fabea5f4b6002c05"}}}}}}
