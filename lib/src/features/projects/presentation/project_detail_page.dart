@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:jchillah_company_site/src/core/widgets/homepage/sections/portfolio/screenshot_gallery.dart';
 import 'package:jchillah_company_site/src/core/widgets/homepage/sections/section.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ProjectDetailPage extends StatelessWidget {
   final String title;
@@ -12,6 +13,12 @@ class ProjectDetailPage extends StatelessWidget {
   final List<String> features;
   final List<String> screenshotAssets;
 
+  // 🔹 NEU: optionale Links
+  final String? pitchDeckUrl;
+  final String? appRepoUrl;
+  final String? pitchRepoUrl;
+  final String? privacyPolicyUrl;
+
   const ProjectDetailPage({
     super.key,
     required this.title,
@@ -21,11 +28,29 @@ class ProjectDetailPage extends StatelessWidget {
     required this.longDescription,
     required this.features,
     required this.screenshotAssets,
+    this.pitchDeckUrl,
+    this.appRepoUrl,
+    this.pitchRepoUrl,
+    this.privacyPolicyUrl,
   });
+
+  Future<void> _openUrl(String url) async {
+    final uri = Uri.parse(url);
+    if (!await launchUrl(uri, mode: LaunchMode.externalApplication)) {
+      // optional: SnackBar oder Debug-Ausgabe
+      debugPrint('Konnte URL nicht öffnen: $url');
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+
+    final hasLinks =
+        pitchDeckUrl != null ||
+        appRepoUrl != null ||
+        pitchRepoUrl != null ||
+        privacyPolicyUrl != null;
 
     return Scaffold(
       appBar: AppBar(title: Text(title), centerTitle: false),
@@ -109,7 +134,49 @@ class ProjectDetailPage extends StatelessWidget {
                         ],
                       ),
                     ),
+
                     const SizedBox(height: 24),
+
+                    // 🔹 NEU: Pitchdeck & Links, nur wenn vorhanden
+                    if (hasLinks)
+                      Section(
+                        title: 'Pitchdeck & Ressourcen',
+                        subtitle:
+                            'Weitere Einblicke in GameRadar, Code und rechtliche Infos.',
+                        child: Wrap(
+                          spacing: 12,
+                          runSpacing: 12,
+                          children: [
+                            if (pitchDeckUrl != null)
+                              FilledButton.icon(
+                                onPressed: () => _openUrl(pitchDeckUrl!),
+                                icon: const Icon(Icons.slideshow),
+                                label: const Text('Pitchdeck ansehen'),
+                              ),
+                            if (appRepoUrl != null)
+                              OutlinedButton.icon(
+                                onPressed: () => _openUrl(appRepoUrl!),
+                                icon: const Icon(Icons.code),
+                                label: const Text('GitHub: GameRadar App'),
+                              ),
+                            if (pitchRepoUrl != null)
+                              OutlinedButton.icon(
+                                onPressed: () => _openUrl(pitchRepoUrl!),
+                                icon: const Icon(Icons.picture_as_pdf),
+                                label: const Text('GitHub: Pitchdeck'),
+                              ),
+                            if (privacyPolicyUrl != null)
+                              OutlinedButton.icon(
+                                onPressed: () => _openUrl(privacyPolicyUrl!),
+                                icon: const Icon(Icons.privacy_tip_outlined),
+                                label: const Text('Privacy Policy'),
+                              ),
+                          ],
+                        ),
+                      ),
+
+                    const SizedBox(height: 24),
+
                     if (screenshotAssets.isNotEmpty)
                       Section(
                         title: 'Screenshots',

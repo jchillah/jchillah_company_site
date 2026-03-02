@@ -43,6 +43,13 @@ class PortfolioSection extends StatelessWidget {
             'assets/images/gameradar_2.png',
             'assets/images/gameradar_3.png',
           ],
+
+          // 🔹 NEU: Links
+          pitchDeckUrl: 'https://jchillah.github.io/gameradar-pitchdeck/',
+          appRepoUrl: 'https://github.com/jchillah/GameRadar',
+          pitchRepoUrl: 'https://github.com/jchillah/gameradar-pitchdeck',
+          privacyPolicyUrl:
+              'https://jchillah.github.io/GameRadar-Privacy-Policy/',
         ),
       ),
     );
@@ -52,7 +59,8 @@ class PortfolioSection extends StatelessWidget {
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (_) => const ProjectDetailPage(
-          title: 'WiWa System – Warenwirtschaft light (Eigenprojekt)',
+          title:
+              '(Platzhalter)WiWa System – Warenwirtschaft light (Eigenprojekt)',
           subtitle:
               'Konzept- und Lernprojekt für ein leichtgewichtiges Warenwirtschaftssystem.',
           status: 'Eigenprojekt · Konzept / Prototyp',
@@ -134,6 +142,7 @@ class PortfolioSection extends StatelessWidget {
                       'Kotlin · Jetpack Compose · MVVM/MVI · RAWG API · Room',
                   status: 'Eigenprojekt · Aktiv in Entwicklung',
                   onTap: () => _openGameRadar(context),
+                  iconAsset: 'assets/images/gameradar_app_icon.png',
                 ),
               ),
               const SizedBox(width: 16, height: 16),

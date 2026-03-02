@@ -7,6 +7,7 @@ class PortfolioCard extends StatelessWidget {
   final String techStack;
   final String status;
   final VoidCallback onTap;
+  final String? iconAsset; // NEU: optionales Icon
 
   const PortfolioCard({
     super.key,
@@ -15,6 +16,7 @@ class PortfolioCard extends StatelessWidget {
     required this.techStack,
     required this.status,
     required this.onTap,
+    this.iconAsset,
   });
 
   @override
@@ -42,12 +44,51 @@ class PortfolioCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              title,
-              style: theme.textTheme.titleMedium?.copyWith(
-                fontWeight: FontWeight.bold,
+            // Titel + optionales Icon
+            if (iconAsset != null)
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(12),
+                    child: Image.asset(
+                      iconAsset!,
+                      width: 40,
+                      height: 40,
+                      fit: BoxFit.cover,
+                      errorBuilder: (context, error, stackTrace) {
+                        return Container(
+                          width: 40,
+                          height: 40,
+                          color: Colors.black.withOpacity(0.6),
+                          alignment: Alignment.center,
+                          child: const Icon(
+                            Icons.broken_image,
+                            size: 20,
+                            color: Colors.white54,
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Text(
+                      title,
+                      style: theme.textTheme.titleMedium?.copyWith(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ],
+              )
+            else
+              Text(
+                title,
+                style: theme.textTheme.titleMedium?.copyWith(
+                  fontWeight: FontWeight.bold,
+                ),
               ),
-            ),
             const SizedBox(height: 8),
             Text(
               description,
