@@ -87,6 +87,7 @@ class PortfolioSection extends StatelessWidget {
             'assets/images/cryptotracker_4.png',
             'assets/images/cryptotracker_5.png',
             'assets/images/cryptotracker_6.png',
+            'assets/images/cryptotracker_7.jpg',
           ],
 
           // Optional: GitHub Link
