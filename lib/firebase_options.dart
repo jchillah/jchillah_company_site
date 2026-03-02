@@ -83,4 +83,5 @@ class DefaultFirebaseOptions {
     authDomain: 'jchillah-company-site.firebaseapp.com',
     storageBucket: 'jchillah-company-site.firebasestorage.app',
   );
+
 }
