@@ -147,7 +147,7 @@ class PortfolioSection extends StatelessWidget {
                       'Open Source, RAWG-API, Offline-First, Jetpack Compose.',
                   techStack:
                       'Kotlin · Jetpack Compose · MVVM/MVI · RAWG API · Room',
-                  status: 'Eigenprojekt · Aktiv in Entwicklung',
+                  status: 'Eigenprojekt · Test Release auf Play Store',
                   onTap: () => _openGameRadar(context),
                   iconAsset: 'assets/images/gameradar_app_icon.png',
                 ),
