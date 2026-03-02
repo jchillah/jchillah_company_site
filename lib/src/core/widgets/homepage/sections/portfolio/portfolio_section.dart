@@ -55,36 +55,42 @@ class PortfolioSection extends StatelessWidget {
     );
   }
 
-  void _openWiWa(BuildContext context) {
+  void _openCryptoTracker(BuildContext context) {
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (_) => const ProjectDetailPage(
-          title:
-              '(Platzhalter)WiWa System – Warenwirtschaft light (Eigenprojekt)',
+          title: 'CryptoTracker – Krypto Portfolio & Market App (Eigenprojekt)',
           subtitle:
-              'Konzept- und Lernprojekt für ein leichtgewichtiges Warenwirtschaftssystem.',
-          status: 'Eigenprojekt · Konzept / Prototyp',
-          techStack: 'Flutter · SQLite · Feature-First Architecture',
+              'Moderne Android-App zur Verfolgung von Kryptowährungen, Preisen und Portfolio-Werten in Echtzeit.',
+          status: 'Eigenprojekt · Open Source',
+          techStack: 'Kotlin · Jetpack Compose · MVVM · Retrofit · REST API',
           longDescription:
-              'WiWa System ist ein persönliches Konzept- und Prototyp-Projekt. '
-              'Die Idee dahinter: ein schlankes Warenwirtschaftssystem für kleine Betriebe, '
-              'ohne den vollen Umfang eines großen ERP-Systems. \n\n'
-              'Ich nutze WiWa, um mit lokalem Speicher (SQLite), Feature-First-Struktur und '
-              'einem klaren Domain-Zuschnitt zu arbeiten. Das Projekt ist ideal, um typische '
-              'Business-Fälle wie Artikel, Kunden, Angebote und Rechnungen technisch nachzubilden '
-              'und Best Practices in Flutter auszuprobieren.',
+              'CryptoTracker ist ein Android-Projekt zur Echtzeit-Überwachung von Kryptowährungen. '
+              'Die App nutzt eine externe REST-API, um aktuelle Preise, Marktveränderungen und '
+              'weitere Kennzahlen abzurufen und visuell darzustellen.\n\n'
+              'Das Projekt dient als technisches Showcase für API-Integration, State-Management '
+              'mit MVVM, moderne Compose-UI und saubere Trennung von Data-, Domain- und Presentation-Layer. '
+              'Besonderer Fokus lag auf klarer Architektur, performanter Datenaktualisierung und '
+              'übersichtlicher Darstellung komplexer Finanzdaten.',
           features: [
-            'Eigenes Konzept- und Lernprojekt (kein Kundenprojekt)',
-            'Artikelverwaltung mit Grunddaten, Preisen und Kategorien',
-            'Kundenverwaltung mit Basisinformationen',
-            'Angebote und Rechnungen mit Referenz auf Artikel & Kunden',
-            'Lokale Speicherung mit SQLite (offlinefähig)',
-            'Feature-First-Struktur als Übungsfeld für saubere Architektur',
+            'Echtzeit-Preisabfragen über externe Krypto-API',
+            'Moderne UI mit Jetpack Compose',
+            'MVVM-Architektur mit klarer Layer-Trennung',
+            'Detailansichten für Coins mit Preisverlauf',
+            'Saubere Netzwerk- und Fehlerbehandlung',
+            'Dark Mode & performante UI-States',
           ],
           screenshotAssets: [
-            'assets/images/wiwa_1.png',
-            'assets/images/wiwa_2.png',
+            'assets/images/cryptotracker_1.png',
+            'assets/images/cryptotracker_2.png',
+            'assets/images/cryptotracker_3.png',
+            'assets/images/cryptotracker_4.png',
+            'assets/images/cryptotracker_5.png',
+            'assets/images/cryptotracker_6.png',
           ],
+
+          // Optional: GitHub Link
+          appRepoUrl: 'https://github.com/jchillah/CryptoTracker',
         ),
       ),
     );
@@ -148,13 +154,14 @@ class PortfolioSection extends StatelessWidget {
               const SizedBox(width: 16, height: 16),
               Expanded(
                 child: PortfolioCard(
-                  title: 'WiWa System – Warenwirtschaft light',
+                  title: 'CryptoTracker – Krypto Portfolio App',
                   description:
-                      'Konzept- und Prototyp-Projekt für ein schlankes Warenwirtschaftssystem '
-                      'mit Artikeln, Kunden, Angeboten und Rechnungen.',
-                  techStack: 'Flutter · SQLite · Feature-First',
-                  status: 'Eigenprojekt · Konzept / Prototyp',
-                  onTap: () => _openWiWa(context),
+                      'Android-App zur Verfolgung von Kryptowährungen in Echtzeit. '
+                      'REST-API Integration, MVVM Architektur, modernes Compose-UI.',
+                  techStack: 'Kotlin · Jetpack Compose · MVVM · REST API',
+                  status: 'Eigenprojekt · Open Source',
+                  onTap: () => _openCryptoTracker(context),
+                  iconAsset: null, // optional später eigenes Icon
                 ),
               ),
               const SizedBox(width: 16, height: 16),

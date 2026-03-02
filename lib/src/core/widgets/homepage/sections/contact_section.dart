@@ -47,11 +47,6 @@ class ContactSection extends StatelessWidget {
                 icon: const Icon(Icons.email_outlined),
                 label: const Text('E-Mail schreiben'),
               ),
-              OutlinedButton.icon(
-                onPressed: _openGithub,
-                icon: const Icon(Icons.code),
-                label: const Text('GitHub Profil'),
-              ),
             ],
           ),
         ],
