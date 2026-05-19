@@ -94,8 +94,6 @@ class Header extends StatelessWidget {
         ),
         if (isWide) ...[
           const Spacer(),
-          TextButton(onPressed: _openMail, child: const Text('Kontakt')),
-          const SizedBox(width: 8),
           FilledButton(
             onPressed: _openMail,
             child: const Text('Projekt anfragen'),
