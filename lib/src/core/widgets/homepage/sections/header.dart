@@ -12,7 +12,7 @@ class Header extends StatelessWidget {
       scheme: 'mailto',
       path: 'jchillah@gmail.com',
       query:
-          'subject=App%20Projektanfrage%20-%20Jchillah%20Coding%20and%20Design%20Forge',
+          'subject=App%20Projektanfrage%20-%20Jchillah%27s%20Design%20%26%20Coding%20Forge',
     );
     await launchUrl(uri, mode: LaunchMode.platformDefault);
   }
@@ -32,7 +32,7 @@ class Header extends StatelessWidget {
             const Icon(Icons.terminal, size: 28),
             const SizedBox(width: 8),
             Text(
-              'Jchillah Coding & Design Forge',
+              "Jchillah's Design & Coding Forge",
               style: theme.textTheme.titleMedium?.copyWith(
                 fontWeight: FontWeight.bold,
                 letterSpacing: 0.8,
