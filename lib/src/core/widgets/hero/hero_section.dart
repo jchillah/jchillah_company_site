@@ -9,12 +9,13 @@ class HeroSection extends StatelessWidget {
   final VoidCallback? onShowServices;
 
   const HeroSection({super.key, required this.isWide, this.onShowServices});
+
   Future<void> _openMail() async {
     final uri = Uri(
       scheme: 'mailto',
       path: 'jchillah@gmail.com',
       query:
-          'subject=Unverbindliches%20Gespräch%20-%20App%20Entwicklung%20mit%20Jchillah',
+          'subject=Projektanfrage%20-%20Jchillah%27s%20Design%20%26%20Coding%20Forge',
     );
     await launchUrl(uri, mode: LaunchMode.platformDefault);
   }
@@ -23,17 +24,37 @@ class HeroSection extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
 
+    final brandBadge = Container(
+      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+      decoration: BoxDecoration(
+        color: const Color(0xFF00FF5F).withOpacity(0.1),
+        borderRadius: BorderRadius.circular(999),
+        border: Border.all(
+          color: const Color(0xFF00FF5F).withOpacity(0.34),
+        ),
+      ),
+      child: Text(
+        'Jchillah’s Design & Coding Forge',
+        style: theme.textTheme.labelLarge?.copyWith(
+          color: const Color(0xFF00FF5F),
+          fontWeight: FontWeight.w800,
+          letterSpacing: 0.4,
+        ),
+      ),
+    );
+
     final title = RichText(
       text: TextSpan(
         style: theme.textTheme.displaySmall?.copyWith(
-          fontWeight: FontWeight.bold,
-          height: 1.1,
+          fontWeight: FontWeight.w900,
+          height: 1.02,
+          letterSpacing: -1.2,
         ),
         children: const [
-          TextSpan(text: 'Mobile Apps,\n'),
-          TextSpan(text: 'Gaming Tools & '),
+          TextSpan(text: 'Apps, Gaming Tools\n'),
+          TextSpan(text: '& digitale Produkte '),
           TextSpan(
-            text: 'Digital Products',
+            text: 'mit Forge-Style.',
             style: TextStyle(color: Color(0xFF00FF5F)),
           ),
         ],
@@ -41,24 +62,29 @@ class HeroSection extends StatelessWidget {
     );
 
     final subtitle = Text(
-      'Ich bin Michael Winkler, App-Entwickler und Gründer von Jchillah Coding & Design Forge. '
-      'Ich entwickle mobile Apps, Flutter Web Apps und digitale Produkte – von der ersten Idee '
-      'bis zum Release. Mein erstes veröffentlichtes Android-Projekt ist ASA Server Eye, '
+      'Ich bin Michael Winkler, App-Entwickler und Gründer von Jchillah’s Design & Coding Forge. '
+      'Ich entwickle moderne Mobile Apps, Flutter Web Apps und digitale Produkte – mit dunklem Neon-Design, '
+      'klarer Architektur und echtem Release-Fokus. Mein erstes veröffentlichtes Android-Projekt ist ASA Server Eye, '
       'ein Server-Tracker für ARK: Survival Ascended.',
-      style: theme.textTheme.bodyLarge?.copyWith(color: Colors.white70),
+      style: theme.textTheme.bodyLarge?.copyWith(
+        color: Colors.white.withOpacity(0.76),
+        height: 1.55,
+      ),
     );
 
     final ctaButtons = Wrap(
       spacing: 16,
-      runSpacing: 8,
+      runSpacing: 10,
       children: [
-        FilledButton(
+        FilledButton.icon(
           onPressed: _openMail,
-          child: const Text('Unverbindliches Gespräch starten'),
+          icon: const Icon(Icons.mail_outline),
+          label: const Text('Projekt anfragen'),
         ),
-        OutlinedButton(
+        OutlinedButton.icon(
           onPressed: onShowServices,
-          child: const Text('Leistungen ansehen'),
+          icon: const Icon(Icons.design_services_outlined),
+          label: const Text('Leistungen ansehen'),
         ),
       ],
     );
@@ -67,51 +93,43 @@ class HeroSection extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: const [
         HeroBullet(text: 'Flutter Apps für Android, iOS und Web'),
-        HeroBullet(text: 'Native Android-Entwicklung mit Kotlin & Jetpack Compose'),
-        HeroBullet(
-          text: 'Eigene Produkte wie ASA Server Eye und Business-App-Konzepte',
-        ),
+        HeroBullet(text: 'Gaming Companion Tools wie ASA Server Eye'),
+        HeroBullet(text: 'UI/UX, Branding, App-Store-Vorbereitung und Release-Begleitung'),
+      ],
+    );
+
+    final textContent = Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        brandBadge,
+        const SizedBox(height: 18),
+        title,
+        const SizedBox(height: 18),
+        subtitle,
+        const SizedBox(height: 26),
+        ctaButtons,
+        const SizedBox(height: 26),
+        bulletPoints,
       ],
     );
 
     if (isWide) {
       return Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Expanded(
-            flex: 3,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                title,
-                const SizedBox(height: 16),
-                subtitle,
-                const SizedBox(height: 24),
-                ctaButtons,
-                const SizedBox(height: 24),
-                bulletPoints,
-              ],
-            ),
-          ),
-          const SizedBox(width: 32),
-          const Expanded(flex: 2, child: HeroMockup()),
+          Expanded(flex: 5, child: textContent),
+          const SizedBox(width: 34),
+          const Expanded(flex: 4, child: HeroMockup()),
         ],
       );
     }
 
-    // Mobile / schmal
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        title,
-        const SizedBox(height: 16),
-        subtitle,
-        const SizedBox(height: 24),
-        ctaButtons,
-        const SizedBox(height: 24),
+        textContent,
+        const SizedBox(height: 28),
         const HeroMockup(),
-        const SizedBox(height: 24),
-        bulletPoints,
       ],
     );
   }
