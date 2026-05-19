@@ -50,9 +50,9 @@ class HeroMockup extends StatelessWidget {
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
                     colors: [
-                      Colors.black.withOpacity(0.26),
-                      Colors.black.withOpacity(0.05),
-                      Colors.black.withOpacity(0.52),
+                      Colors.black.withOpacity(0.24),
+                      Colors.black.withOpacity(0.04),
+                      Colors.black.withOpacity(0.58),
                     ],
                     stops: const [0.0, 0.42, 1.0],
                   ),
@@ -99,38 +99,109 @@ class HeroMockup extends StatelessWidget {
                 ),
               ),
             ),
-            Align(
-              alignment: Alignment.bottomCenter,
-              child: Padding(
-                padding: const EdgeInsets.only(
-                  left: 18,
-                  right: 18,
-                  bottom: 24,
+            Positioned(
+              left: 22,
+              bottom: 22,
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(
+                  minWidth: 260,
+                  maxWidth: 360,
                 ),
-                child: FractionallySizedBox(
-                  widthFactor: 0.58,
-                  child: const Text(
-                    '> forge_brand_identity();\n> build_mobile_apps();\n> ship_digital_products();',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontFamily: 'monospace',
-                      fontSize: 14,
-                      height: 1.42,
-                      color: Color(0xFFB7FFAD),
-                      fontWeight: FontWeight.w700,
-                      shadows: [
-                        Shadow(
-                          color: Colors.black,
-                          blurRadius: 10,
-                        ),
-                      ],
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.black.withOpacity(0.76),
+                    borderRadius: BorderRadius.circular(18),
+                    border: Border.all(
+                      color: const Color(0xFF00FF5F).withOpacity(0.28),
                     ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.45),
+                        blurRadius: 22,
+                        offset: const Offset(0, 12),
+                      ),
+                    ],
+                  ),
+                  clipBehavior: Clip.antiAlias,
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Container(
+                        height: 30,
+                        padding: const EdgeInsets.symmetric(horizontal: 12),
+                        decoration: BoxDecoration(
+                          color: Colors.white.withOpacity(0.05),
+                          border: Border(
+                            bottom: BorderSide(
+                              color: const Color(0xFF00FF5F).withOpacity(0.16),
+                            ),
+                          ),
+                        ),
+                        child: Row(
+                          children: [
+                            _TerminalDot(color: Color(0xFFFF5F57)),
+                            SizedBox(width: 6),
+                            _TerminalDot(color: Color(0xFFFFBD2E)),
+                            SizedBox(width: 6),
+                            _TerminalDot(color: Color(0xFF28C840)),
+                            SizedBox(width: 10),
+                            Text(
+                              'forge.sh',
+                              style: TextStyle(
+                                color: Colors.white54,
+                                fontSize: 11,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(14, 11, 14, 13),
+                        child: Text(
+                          '> forge_brand_identity();\n> build_mobile_apps();\n> ship_digital_products();',
+                          textAlign: TextAlign.left,
+                          style: TextStyle(
+                            fontFamily: 'monospace',
+                            fontSize: 13,
+                            height: 1.42,
+                            color: Color(0xFFB7FFAD),
+                            fontWeight: FontWeight.w700,
+                            shadows: [
+                              Shadow(
+                                color: Colors.black,
+                                blurRadius: 8,
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ),
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class _TerminalDot extends StatelessWidget {
+  final Color color;
+
+  const _TerminalDot({required this.color});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 8,
+      height: 8,
+      decoration: BoxDecoration(
+        color: color,
+        shape: BoxShape.circle,
       ),
     );
   }
