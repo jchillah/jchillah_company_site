@@ -15,7 +15,7 @@ class HeroSection extends StatelessWidget {
       scheme: 'mailto',
       path: 'jchillah@gmail.com',
       query:
-          'subject=Projektanfrage%20-%20Jchillah%27s%20Design%20%26%20Coding%20Forge',
+          'subject=Projektanfrage%20-%20Jchillah%E2%80%99s%20Design%20%26%20Coding%20Forge',
     );
     await launchUrl(uri, mode: LaunchMode.platformDefault);
   }

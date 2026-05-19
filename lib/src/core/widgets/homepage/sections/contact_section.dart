@@ -11,7 +11,7 @@ class ContactSection extends StatelessWidget {
       scheme: 'mailto',
       path: 'jchillah@gmail.com',
       query:
-          'subject=App%20Projektanfrage%20-%20Jchillah%20Coding%20and%20Design%20Forge',
+          'subject=App%20Projektanfrage%20-%20Jchillah%E2%80%99s%20Design%20%26%20Coding%20Forge',
     );
     await launchUrl(uri, mode: LaunchMode.platformDefault);
   }

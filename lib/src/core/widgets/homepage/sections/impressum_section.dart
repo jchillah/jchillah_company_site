@@ -25,7 +25,7 @@ class ImpressumSection extends StatelessWidget {
           const SizedBox(height: 8),
           Text(
             'Michael Winkler\n'
-            'Jchillah Coding & Design Forge\n'
+            'Jchillah’s Design & Coding Forge\n'
             'Am Schülerheim 17\n'
             '14195 Berlin\n'
             'Deutschland',

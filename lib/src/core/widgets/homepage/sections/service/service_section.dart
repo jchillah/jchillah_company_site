@@ -11,7 +11,7 @@ class ServicesSection extends StatelessWidget {
     return Section(
       title: 'Leistungen',
       subtitle:
-          'Was ich als Jchillah Coding & Design Forge für dich übernehmen kann',
+          'Was ich als Jchillah’s Design & Coding Forge für dich übernehmen kann',
       child: LayoutBuilder(
         builder: (context, constraints) {
           final isWide = constraints.maxWidth > 700;

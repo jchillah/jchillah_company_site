@@ -32,7 +32,7 @@ class ServicesPage extends StatelessWidget {
                     ),
                     const SizedBox(height: 16),
                     Text(
-                      'Hier findest du die Leistungen von Jchillah Coding & Design Forge '
+                      'Hier findest du die Leistungen von Jchillah’s Design & Coding Forge '
                       'noch einmal kompakt und übersichtlich dargestellt.',
                       style: theme.textTheme.bodyMedium?.copyWith(
                         color: Colors.white70,

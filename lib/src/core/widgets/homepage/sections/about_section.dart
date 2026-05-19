@@ -16,7 +16,7 @@ class AboutSection extends StatelessWidget {
       scheme: 'mailto',
       path: 'jchillah@gmail.com',
       query:
-          'subject=Projektanfrage%20-%20Jchillah%20Coding%20%26%20Design%20Forge',
+          'subject=Projektanfrage%20-%20Jchillah%E2%80%99s%20Design%20%26%20Coding%20Forge',
     );
     await launchUrl(uri, mode: LaunchMode.platformDefault);
   }
@@ -27,12 +27,12 @@ class AboutSection extends StatelessWidget {
 
     return Section(
       title: 'Über mich',
-      subtitle: 'Michael Winkler · Jchillah Coding & Design Forge',
+      subtitle: 'Michael Winkler · Jchillah’s Design & Coding Forge',
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Ich bin Michael Winkler, App-Entwickler und Gründer von Jchillah Coding & Design Forge. '
+            'Ich bin Michael Winkler, App-Entwickler und Gründer von Jchillah’s Design & Coding Forge. '
             'Mein Fokus liegt auf modernen Mobile- und Web-App-Projekten mit Flutter, Dart, Kotlin, '
             'Jetpack Compose und langfristig auch SwiftUI.\n\n'
             'Mit ASA Server Eye habe ich mein erstes veröffentlichtes Android-Projekt umgesetzt: '
@@ -40,7 +40,7 @@ class AboutSection extends StatelessWidget {
             'Favoriten speichern und schneller entscheiden können, welchen Server sie betreten möchten.\n\n'
             'Ich arbeite produktorientiert: klare Architektur, verständliche Oberflächen, saubere Projektstruktur, '
             'GitHub-Workflow, App-Store-Vorbereitung, Datenschutzseiten und technische Grundlagen wie app-ads.txt gehören für mich zum Gesamtpaket.\n\n'
-            'Jchillah Coding & Design Forge steht für praktische Apps, Gaming-Tools und digitale Produkte, '
+            'Jchillah’s Design & Coding Forge steht für praktische Apps, Gaming-Tools und digitale Produkte, '
             'die Schritt für Schritt professioneller, stabiler und marktfähiger werden.',
             style: theme.textTheme.bodyMedium?.copyWith(color: Colors.white70),
           ),

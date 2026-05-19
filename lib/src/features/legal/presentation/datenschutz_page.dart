@@ -47,7 +47,7 @@ class DatenschutzPage extends StatelessWidget {
                       child: Text(
                         'Verantwortlich für die Datenverarbeitung auf dieser Website ist:\n\n'
                         'Michael Winkler\n'
-                        'Jchillah Coding & Design Forge\n'
+                        'Jchillah’s Design & Coding Forge\n'
                         'Am Schülerheim 17\n'
                         '14195 Berlin\n'
                         'Deutschland\n\n'

@@ -28,7 +28,7 @@ class Footer extends StatelessWidget {
       style: theme.textTheme.bodySmall!.copyWith(color: Colors.white54),
       child: Row(
         children: [
-          Text('© $year Jchillah Coding & Design Forge'),
+          Text('© $year Jchillah’s Design & Coding Forge'),
           const Spacer(),
           Row(
             children: [

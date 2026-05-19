@@ -10,7 +10,7 @@ class JchillahApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Jchillah's Design & Coding Forge",
+      title: "Jchillah’s Design & Coding Forge",
       debugShowCheckedModeBanner: false,
       theme: AppTheme.light,
       home: const HomePage(),
