@@ -120,7 +120,12 @@ class PortfolioSection extends StatelessWidget {
             'App-Store-, Datenschutz- und app-ads.txt-Setup',
             'Aktive Weiterentwicklung mit Fokus auf Alerts und bessere Server Intelligence',
           ],
-          screenshotAssets: [],
+          screenshotAssets: [
+            'assets/images/asa_server_eye_1.png',
+            'assets/images/asa_server_eye_2.png',
+            'assets/images/asa_server_eye_3.png',
+            'assets/images/asa_server_eye_4.png',
+          ],
           appRepoUrl: 'https://github.com/jchillah/asa-server-eye',
           privacyPolicyUrl:
               'https://jchillah.github.io/asa-server-eye-privacy-policy/',
