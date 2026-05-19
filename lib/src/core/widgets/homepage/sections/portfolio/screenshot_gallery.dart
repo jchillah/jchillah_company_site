@@ -18,7 +18,7 @@ class _ScreenshotGalleryState extends State<ScreenshotGallery> {
   void _openFullscreen(BuildContext context, String assetPath) {
     showDialog(
       context: context,
-      barrierColor: Colors.black.withOpacity(0.85),
+      barrierColor: Colors.black.withValues(alpha: 0.85),
       builder: (context) {
         return GestureDetector(
           onTap: () => Navigator.of(context).pop(),
@@ -55,9 +55,9 @@ class _ScreenshotGalleryState extends State<ScreenshotGallery> {
       children: [
         Text(
           'Horizontal scrollen oder die Scrollleiste ziehen, um alle Screenshots zu sehen.',
-          style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                color: Colors.white60,
-              ),
+          style: Theme.of(
+            context,
+          ).textTheme.bodySmall?.copyWith(color: Colors.white60),
         ),
         const SizedBox(height: 10),
         SizedBox(
@@ -83,7 +83,7 @@ class _ScreenshotGalleryState extends State<ScreenshotGallery> {
                   controller: _scrollController,
                   scrollDirection: Axis.horizontal,
                   itemCount: widget.screenshotAssets.length,
-                  separatorBuilder: (_, __) => const SizedBox(width: 12),
+                  separatorBuilder: (_, _) => const SizedBox(width: 12),
                   itemBuilder: (context, index) {
                     final path = widget.screenshotAssets[index];
 
@@ -93,9 +93,11 @@ class _ScreenshotGalleryState extends State<ScreenshotGallery> {
                         width: 320,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(16),
-                          color: Colors.black.withOpacity(0.6),
+                          color: Colors.black.withValues(alpha: 0.6),
                           border: Border.all(
-                            color: const Color(0xFF00FF5F).withOpacity(0.2),
+                            color: const Color(
+                              0xFF00FF5F,
+                            ).withValues(alpha: 0.2),
                           ),
                         ),
                         child: ClipRRect(

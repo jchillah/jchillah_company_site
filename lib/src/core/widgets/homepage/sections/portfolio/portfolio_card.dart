@@ -31,11 +31,13 @@ class PortfolioCard extends StatelessWidget {
         padding: const EdgeInsets.all(20),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
-          color: Colors.black.withOpacity(0.9),
-          border: Border.all(color: const Color(0xFF00FF5F).withOpacity(0.25)),
+          color: Colors.black.withValues(alpha: 0.9),
+          border: Border.all(
+            color: const Color(0xFF00FF5F).withValues(alpha: 0.25),
+          ),
           boxShadow: [
             BoxShadow(
-              color: const Color(0xFF00FF5F).withOpacity(0.15),
+              color: const Color(0xFF00FF5F).withValues(alpha: 0.15),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -60,7 +62,7 @@ class PortfolioCard extends StatelessWidget {
                         return Container(
                           width: 40,
                           height: 40,
-                          color: Colors.black.withOpacity(0.6),
+                          color: Colors.black.withValues(alpha: 0.6),
                           alignment: Alignment.center,
                           child: const Icon(
                             Icons.broken_image,

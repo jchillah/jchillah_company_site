@@ -1,4 +1,4 @@
-// src/core/widgets/section.dart
+// src/core/widgets/homepage/sections/section.dart
 import 'package:flutter/material.dart';
 
 class Section extends StatelessWidget {
@@ -20,12 +20,12 @@ class Section extends StatelessWidget {
     return Card(
       margin: const EdgeInsets.symmetric(vertical: 16),
       elevation: 12,
-      shadowColor: const Color(0xFF00FF5F).withOpacity(0.2),
-      color: Colors.black.withOpacity(0.85),
+      shadowColor: const Color(0xFF00FF5F).withValues(alpha: 0.2),
+      color: Colors.black.withValues(alpha: 0.85),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(24),
         side: BorderSide(
-          color: const Color(0xFF00FF5F).withOpacity(0.35),
+          color: const Color(0xFF00FF5F).withValues(alpha: 0.35),
           width: 1.2,
         ),
       ),
@@ -35,7 +35,10 @@ class Section extends StatelessWidget {
           gradient: LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
-            colors: [Colors.black.withOpacity(0.95), const Color(0xFF001B12)],
+            colors: [
+              Colors.black.withValues(alpha: 0.95),
+              const Color(0xFF001B12),
+            ],
           ),
         ),
         child: Padding(

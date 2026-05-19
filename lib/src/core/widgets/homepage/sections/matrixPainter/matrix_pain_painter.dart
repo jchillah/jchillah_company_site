@@ -1,4 +1,4 @@
-// src/core/widgets/matrix_pain_painter.dart
+// src/core/widgets/homepage/sections/matrixPainter/matrix_pain_painter.dart
 import 'package:flutter/material.dart';
 
 class MatrixRainPainter extends CustomPainter {
@@ -9,7 +9,7 @@ class MatrixRainPainter extends CustomPainter {
     }
 
     final paint = Paint()
-      ..color = const Color(0xFF00FF5F).withOpacity(0.5)
+      ..color = const Color(0xFF00FF5F).withValues(alpha: 0.5)
       ..strokeWidth = 1.2;
 
     const columns = 14;

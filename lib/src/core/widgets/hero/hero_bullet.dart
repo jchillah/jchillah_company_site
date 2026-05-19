@@ -19,10 +19,10 @@ class HeroBullet extends StatelessWidget {
             width: 24,
             height: 24,
             decoration: BoxDecoration(
-              color: const Color(0xFF00FF5F).withOpacity(0.12),
+              color: const Color(0xFF00FF5F).withValues(alpha: 0.12),
               borderRadius: BorderRadius.circular(999),
               border: Border.all(
-                color: const Color(0xFF00FF5F).withOpacity(0.55),
+                color: const Color(0xFF00FF5F).withValues(alpha: 0.55),
               ),
             ),
             child: const Icon(
@@ -36,7 +36,7 @@ class HeroBullet extends StatelessWidget {
             child: Text(
               text,
               style: theme.textTheme.bodyMedium?.copyWith(
-                color: Colors.white.withOpacity(0.82),
+                color: Colors.white.withValues(alpha: 0.82),
                 height: 1.35,
               ),
             ),

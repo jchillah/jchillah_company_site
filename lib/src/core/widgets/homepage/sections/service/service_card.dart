@@ -1,4 +1,4 @@
-// src/core/widgets/service/service_card.dart
+// src/core/widgets/homepage/sections/service/service_card.dart
 import 'package:flutter/material.dart';
 
 class ServiceCard extends StatelessWidget {
@@ -22,11 +22,13 @@ class ServiceCard extends StatelessWidget {
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
-        color: Colors.black.withOpacity(0.9),
-        border: Border.all(color: const Color(0xFF00FF5F).withOpacity(0.25)),
+        color: Colors.black.withValues(alpha: 0.9),
+        border: Border.all(
+          color: const Color(0xFF00FF5F).withValues(alpha: 0.25),
+        ),
         boxShadow: [
           BoxShadow(
-            color: const Color(0xFF00FF5F).withOpacity(0.15),
+            color: const Color(0xFF00FF5F).withValues(alpha: 0.15),
             blurRadius: 18,
             offset: const Offset(0, 10),
           ),

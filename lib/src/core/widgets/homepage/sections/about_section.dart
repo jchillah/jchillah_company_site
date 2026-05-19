@@ -50,7 +50,9 @@ class AboutSection extends StatelessWidget {
                 'GitHub-Workflow, App-Store-Vorbereitung, Datenschutzseiten und technische Grundlagen wie app-ads.txt gehören für mich zum Gesamtpaket.\n\n'
                 'Jchillah’s Design & Coding Forge steht für praktische Apps, Gaming-Tools und digitale Produkte, '
                 'die Schritt für Schritt professioneller, stabiler und marktfähiger werden.',
-                style: theme.textTheme.bodyMedium?.copyWith(color: Colors.white70),
+                style: theme.textTheme.bodyMedium?.copyWith(
+                  color: Colors.white70,
+                ),
               ),
               const SizedBox(height: 16),
               Wrap(
@@ -87,14 +89,14 @@ class AboutSection extends StatelessWidget {
             width: isWide ? 260 : double.infinity,
             padding: const EdgeInsets.all(18),
             decoration: BoxDecoration(
-              color: Colors.black.withOpacity(0.34),
+              color: Colors.black.withValues(alpha: 0.34),
               borderRadius: BorderRadius.circular(24),
               border: Border.all(
-                color: const Color(0xFF00FF5F).withOpacity(0.22),
+                color: const Color(0xFF00FF5F).withValues(alpha: 0.22),
               ),
               boxShadow: [
                 BoxShadow(
-                  color: const Color(0xFF00FF5F).withOpacity(0.08),
+                  color: const Color(0xFF00FF5F).withValues(alpha: 0.08),
                   blurRadius: 28,
                 ),
               ],
@@ -109,15 +111,17 @@ class AboutSection extends StatelessWidget {
                     width: isWide ? 170 : 150,
                     height: isWide ? 170 : 150,
                     fit: BoxFit.cover,
-                    errorBuilder: (_, __, ___) => Container(
+                    errorBuilder: (_, _, _) => Container(
                       width: 150,
                       height: 150,
                       alignment: Alignment.center,
                       decoration: BoxDecoration(
-                        color: Colors.black.withOpacity(0.55),
+                        color: Colors.black.withValues(alpha: 0.55),
                         borderRadius: BorderRadius.circular(26),
                         border: Border.all(
-                          color: const Color(0xFF00FF5F).withOpacity(0.35),
+                          color: const Color(
+                            0xFF00FF5F,
+                          ).withValues(alpha: 0.35),
                         ),
                       ),
                       child: const Text(
@@ -166,11 +170,7 @@ class AboutSection extends StatelessWidget {
 
           return Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              brandCard,
-              const SizedBox(height: 20),
-              aboutText,
-            ],
+            children: [brandCard, const SizedBox(height: 20), aboutText],
           );
         },
       ),

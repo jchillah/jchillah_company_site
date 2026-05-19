@@ -1,4 +1,4 @@
-// src/core/widgets/header.dart
+// src/core/widgets/homepage/sections/header.dart
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -37,10 +37,10 @@ class Header extends StatelessWidget {
                 width: 42,
                 height: 42,
                 decoration: BoxDecoration(
-                  color: const Color(0xFF00FF5F).withOpacity(0.08),
+                  color: const Color(0xFF00FF5F).withValues(alpha: 0.08),
                   borderRadius: BorderRadius.circular(12),
                   border: Border.all(
-                    color: const Color(0xFF00FF5F).withOpacity(0.26),
+                    color: const Color(0xFF00FF5F).withValues(alpha: 0.26),
                   ),
                 ),
                 child: const Icon(
@@ -68,15 +68,15 @@ class Header extends StatelessWidget {
                   width: 42,
                   height: 42,
                   fit: BoxFit.cover,
-                  errorBuilder: (_, __, ___) => Container(
+                  errorBuilder: (_, _, _) => Container(
                     width: 42,
                     height: 42,
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
-                      color: Colors.black.withOpacity(0.45),
+                      color: Colors.black.withValues(alpha: 0.45),
                       borderRadius: BorderRadius.circular(12),
                       border: Border.all(
-                        color: const Color(0xFF00FF5F).withOpacity(0.35),
+                        color: const Color(0xFF00FF5F).withValues(alpha: 0.35),
                       ),
                     ),
                     child: const Text(

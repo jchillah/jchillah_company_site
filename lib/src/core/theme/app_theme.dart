@@ -24,7 +24,7 @@ class AppTheme {
         backgroundColor: _matrixBlack,
         elevation: 0,
       ),
-      dividerColor: _matrixGreenSoft.withOpacity(0.4),
+      dividerColor: _matrixGreenSoft.withValues(alpha: 0.4),
       filledButtonTheme: FilledButtonThemeData(
         style: FilledButton.styleFrom(
           backgroundColor: _matrixGreen,
@@ -39,7 +39,7 @@ class AppTheme {
         style: OutlinedButton.styleFrom(
           foregroundColor: _matrixGreen,
           side: BorderSide(
-            color: _matrixGreenSoft.withOpacity(0.8),
+            color: _matrixGreenSoft.withValues(alpha: 0.8),
             width: 1.3,
           ),
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
