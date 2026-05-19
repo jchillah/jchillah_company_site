@@ -13,7 +13,6 @@ class ProjectDetailPage extends StatelessWidget {
   final List<String> features;
   final List<String> screenshotAssets;
 
-  // 🔹 NEU: optionale Links
   final String? pitchDeckUrl;
   final String? appRepoUrl;
   final String? pitchRepoUrl;
@@ -37,7 +36,6 @@ class ProjectDetailPage extends StatelessWidget {
   Future<void> _openUrl(String url) async {
     final uri = Uri.parse(url);
     if (!await launchUrl(uri, mode: LaunchMode.externalApplication)) {
-      // optional: SnackBar oder Debug-Ausgabe
       debugPrint('Konnte URL nicht öffnen: $url');
     }
   }
@@ -137,12 +135,11 @@ class ProjectDetailPage extends StatelessWidget {
 
                     const SizedBox(height: 24),
 
-                    // 🔹 NEU: Pitchdeck & Links, nur wenn vorhanden
                     if (hasLinks)
                       Section(
-                        title: 'Pitchdeck & Ressourcen',
+                        title: 'Projektressourcen',
                         subtitle:
-                            'Weitere Einblicke in GameRadar, Code und rechtliche Infos.',
+                            'Links zum Code, zu Präsentationen und zu rechtlichen Informationen.',
                         child: Wrap(
                           spacing: 12,
                           runSpacing: 12,
@@ -157,19 +154,19 @@ class ProjectDetailPage extends StatelessWidget {
                               OutlinedButton.icon(
                                 onPressed: () => _openUrl(appRepoUrl!),
                                 icon: const Icon(Icons.code),
-                                label: const Text('GitHub: GameRadar App'),
+                                label: const Text('GitHub Repository'),
                               ),
                             if (pitchRepoUrl != null)
                               OutlinedButton.icon(
                                 onPressed: () => _openUrl(pitchRepoUrl!),
                                 icon: const Icon(Icons.picture_as_pdf),
-                                label: const Text('GitHub: Pitchdeck'),
+                                label: const Text('Pitchdeck Repository'),
                               ),
                             if (privacyPolicyUrl != null)
                               OutlinedButton.icon(
                                 onPressed: () => _openUrl(privacyPolicyUrl!),
                                 icon: const Icon(Icons.privacy_tip_outlined),
-                                label: const Text('Privacy Policy'),
+                                label: const Text('Datenschutzerklärung'),
                               ),
                           ],
                         ),

@@ -11,33 +11,37 @@ class AboutSection extends StatelessWidget {
     await launchUrl(uri, mode: LaunchMode.externalApplication);
   }
 
+  Future<void> _openMail() async {
+    final uri = Uri(
+      scheme: 'mailto',
+      path: 'jchillah@gmail.com',
+      query:
+          'subject=Projektanfrage%20-%20Jchillah%20Coding%20%26%20Design%20Forge',
+    );
+    await launchUrl(uri, mode: LaunchMode.platformDefault);
+  }
+
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
 
     return Section(
       title: 'Über mich',
-      subtitle: 'Wer hinter Jchillah Coding & Design Forge steckt',
+      subtitle: 'Michael Winkler · Jchillah Coding & Design Forge',
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Ich bin Michael Winkler – angehender Fachinformatiker für Anwendungsentwicklung '
-            'und fokussierter Junior Mobile Developer. Mein Schwerpunkt liegt auf modernen '
-            'Mobile-Stacks: Kotlin mit Jetpack Compose für Android, Flutter für Cross-Platform '
-            '(iOS, Android, Web) und langfristig SwiftUI für native iOS-Entwicklung.\n\n'
-            'Mit GameRadar habe ich ein eigenes, praxisnahes Referenzprojekt aufgebaut: eine offene '
-            'Android-App, in der ich eine MVVM/MVI-Hybridarchitektur, die Anbindung an eine echte '
-            'API (RAWG), Offline-First mit Room und ein sauberes, edge-to-edge Compose-UI umsetze. '
-            'Dieses Projekt nutze ich, um mein Wissen in Architektur, State-Management und '
-            'sauberer Code-Struktur kontinuierlich zu vertiefen.\n\n'
-            'Neben GameRadar arbeite ich an kleineren Business- und WaWi-Konzepten (z.B. WiWa System) '
-            'sowie Ideen rund um ARK: ASA Companion-Apps. Damit decke ich sowohl klassische '
-            'Business-Cases als auch Nischen-Apps für Gamer ab – immer mit dem Ziel, klar '
-            'strukturierten, verständlichen Code zu schreiben, der sich später gut erweitern lässt.\n\n'
-            'Wenn du jemanden suchst, der nicht nur “irgendwie eine App hinbaut”, sondern gemeinsam '
-            'mit dir die Anforderungen durchdenkt, ein MVP sauber strukturiert und transparent arbeitet, '
-            'bist du bei Jchillah Coding & Design Forge genau richtig.',
+            'Ich bin Michael Winkler, App-Entwickler und Gründer von Jchillah Coding & Design Forge. '
+            'Mein Fokus liegt auf modernen Mobile- und Web-App-Projekten mit Flutter, Dart, Kotlin, '
+            'Jetpack Compose und langfristig auch SwiftUI.\n\n'
+            'Mit ASA Server Eye habe ich mein erstes veröffentlichtes Android-Projekt umgesetzt: '
+            'eine Companion-App für ARK: Survival Ascended, mit der Spieler offizielle Serverdaten prüfen, '
+            'Favoriten speichern und schneller entscheiden können, welchen Server sie betreten möchten.\n\n'
+            'Ich arbeite produktorientiert: klare Architektur, verständliche Oberflächen, saubere Projektstruktur, '
+            'GitHub-Workflow, App-Store-Vorbereitung, Datenschutzseiten und technische Grundlagen wie app-ads.txt gehören für mich zum Gesamtpaket.\n\n'
+            'Jchillah Coding & Design Forge steht für praktische Apps, Gaming-Tools und digitale Produkte, '
+            'die Schritt für Schritt professioneller, stabiler und marktfähiger werden.',
             style: theme.textTheme.bodyMedium?.copyWith(color: Colors.white70),
           ),
           const SizedBox(height: 16),
@@ -46,10 +50,9 @@ class AboutSection extends StatelessWidget {
             runSpacing: 8,
             children: [
               FilledButton.icon(
-                onPressed: () =>
-                    _openUrl('https://my-personal-cv-app-65750.web.app/'),
-                icon: const Icon(Icons.person),
-                label: const Text('CV als Web-App öffnen'),
+                onPressed: _openMail,
+                icon: const Icon(Icons.mail_outline),
+                label: const Text('Kontakt aufnehmen'),
               ),
               OutlinedButton.icon(
                 onPressed: () => _openUrl('https://github.com/jchillah'),
@@ -58,9 +61,9 @@ class AboutSection extends StatelessWidget {
               ),
               OutlinedButton.icon(
                 onPressed: () =>
-                    _openUrl('https://github.com/jchillah/GameRadar'),
-                icon: const Icon(Icons.videogame_asset_outlined),
-                label: const Text('GameRadar auf GitHub'),
+                    _openUrl('https://github.com/jchillah/asa-server-eye'),
+                icon: const Icon(Icons.visibility_outlined),
+                label: const Text('ASA Server Eye auf GitHub'),
               ),
             ],
           ),

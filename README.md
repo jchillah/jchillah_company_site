@@ -1,17 +1,63 @@
-# jchillah_company_site
+# Jchillah Coding & Design Forge
 
-A new Flutter project.
+Official Flutter web portfolio for **Jchillah Coding & Design Forge**.
 
-## Getting Started
+Live site:
 
-This project is a starting point for a Flutter application.
+```txt
+https://jchillah.github.io/jchillah_company_site/
+```
 
-A few resources to get you started if this is your first Flutter project:
+## Purpose
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+This site presents the developer brand of Michael Winkler / Jchillah and showcases mobile app projects, technical skills, and released products.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Featured Project
+
+### ASA Server Eye
+
+ASA Server Eye is an Android companion app for **ARK: Survival Ascended** players. It focuses on official server data, server overview, details, and favorites.
+
+Repository:
+
+```txt
+https://github.com/jchillah/asa-server-eye
+```
+
+Privacy Policy:
+
+```txt
+https://jchillah.github.io/asa-server-eye-privacy-policy/
+```
+
+## Tech Stack
+
+- Flutter
+- Dart
+- Material 3
+- GitHub Pages
+- Mobile-first responsive layout
+
+## Development
+
+```bash
+flutter pub get
+flutter run -d chrome
+```
+
+## Build for GitHub Pages
+
+```bash
+flutter build web --release --base-href /jchillah_company_site/
+```
+
+Deploy the generated `build/web` folder to GitHub Pages.
+
+## Developer
+
+Michael Winkler  
+Jchillah Coding & Design Forge
+
+```txt
+jchillah@gmail.com
+```
