@@ -1,6 +1,6 @@
-# Jchillah Coding & Design Forge
+# Jchillah’s Design & Coding Forge
 
-Official Flutter web portfolio for **Jchillah Coding & Design Forge**.
+Official Flutter web portfolio for **Jchillah’s Design & Coding Forge**.
 
 Live site:
 
@@ -56,7 +56,7 @@ Deploy the generated `build/web` folder to GitHub Pages.
 ## Developer
 
 Michael Winkler  
-Jchillah Coding & Design Forge
+Jchillah’s Design & Coding Forge
 
 ```txt
 jchillah@gmail.com
