@@ -6,6 +6,8 @@ import 'package:url_launcher/url_launcher.dart';
 class AboutSection extends StatelessWidget {
   const AboutSection({super.key});
 
+  static const String _cvUrl = 'https://my-personal-cv-app-65750.web.app/';
+
   Future<void> _openUrl(String url) async {
     final uri = Uri.parse(url);
     await launchUrl(uri, mode: LaunchMode.externalApplication);
@@ -53,6 +55,11 @@ class AboutSection extends StatelessWidget {
                 onPressed: _openMail,
                 icon: const Icon(Icons.mail_outline),
                 label: const Text('Kontakt aufnehmen'),
+              ),
+              OutlinedButton.icon(
+                onPressed: () => _openUrl(_cvUrl),
+                icon: const Icon(Icons.badge_outlined),
+                label: const Text('Lebenslauf öffnen'),
               ),
               OutlinedButton.icon(
                 onPressed: () => _openUrl('https://github.com/jchillah'),
