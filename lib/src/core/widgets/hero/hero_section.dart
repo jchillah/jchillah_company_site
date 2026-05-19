@@ -94,7 +94,9 @@ class HeroSection extends StatelessWidget {
       children: const [
         HeroBullet(text: 'Flutter Apps für Android, iOS und Web'),
         HeroBullet(text: 'Gaming Companion Tools wie ASA Server Eye'),
-        HeroBullet(text: 'UI/UX, Branding, App-Store-Vorbereitung und Release-Begleitung'),
+        HeroBullet(
+          text: 'UI/UX, Branding, App-Store-Vorbereitung und Release-Begleitung',
+        ),
       ],
     );
 
@@ -117,9 +119,9 @@ class HeroSection extends StatelessWidget {
       return Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Expanded(flex: 5, child: textContent),
-          const SizedBox(width: 34),
-          const Expanded(flex: 4, child: HeroMockup()),
+          Expanded(flex: 9, child: textContent),
+          const SizedBox(width: 30),
+          const Expanded(flex: 8, child: HeroMockup()),
         ],
       );
     }
