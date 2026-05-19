@@ -7,6 +7,9 @@ class Header extends StatelessWidget {
 
   const Header({super.key, required this.isWide});
 
+  static const String _logoAsset =
+      'assets/images/branding/jchillah_logo_square.png';
+
   Future<void> _openMail() async {
     final uri = Uri(
       scheme: 'mailto',
@@ -26,19 +29,36 @@ class Header extends StatelessWidget {
           ? MainAxisAlignment.spaceBetween
           : MainAxisAlignment.center,
       children: [
-        Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            const Icon(Icons.terminal, size: 28),
-            const SizedBox(width: 8),
-            Text(
-              "Jchillah’s Design & Coding Forge",
-              style: theme.textTheme.titleMedium?.copyWith(
-                fontWeight: FontWeight.bold,
-                letterSpacing: 0.8,
+        Flexible(
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              ClipRRect(
+                borderRadius: BorderRadius.circular(12),
+                child: Image.asset(
+                  _logoAsset,
+                  width: 42,
+                  height: 42,
+                  fit: BoxFit.cover,
+                  errorBuilder: (_, __, ___) => const Icon(
+                    Icons.terminal,
+                    size: 28,
+                  ),
+                ),
               ),
-            ),
-          ],
+              const SizedBox(width: 12),
+              Flexible(
+                child: Text(
+                  'Jchillah’s Design & Coding Forge',
+                  overflow: TextOverflow.ellipsis,
+                  style: theme.textTheme.titleMedium?.copyWith(
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 0.6,
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
         if (isWide) ...[
           const Spacer(),
