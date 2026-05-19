@@ -30,10 +30,10 @@ class HeroSection extends StatelessWidget {
           height: 1.1,
         ),
         children: const [
-          TextSpan(text: 'Apps, die dein\n'),
-          TextSpan(text: 'Business '),
+          TextSpan(text: 'Mobile Apps,\n'),
+          TextSpan(text: 'Gaming Tools & '),
           TextSpan(
-            text: 'voranbringen',
+            text: 'Digital Products',
             style: TextStyle(color: Color(0xFF00FF5F)),
           ),
         ],
@@ -41,9 +41,10 @@ class HeroSection extends StatelessWidget {
     );
 
     final subtitle = Text(
-      'Ich bin Michael, App-Entwickler mit Fokus auf Flutter, Kotlin/Jetpack '
-      'Compose und SwiftUI. Ich begleite dich von der ersten Idee über das '
-      'technische Konzept bis zur fertigen App – passgenau für dein Business.',
+      'Ich bin Michael Winkler, App-Entwickler und Gründer von Jchillah Coding & Design Forge. '
+      'Ich entwickle mobile Apps, Flutter Web Apps und digitale Produkte – von der ersten Idee '
+      'bis zum Release. Mein erstes veröffentlichtes Android-Projekt ist ASA Server Eye, '
+      'ein Server-Tracker für ARK: Survival Ascended.',
       style: theme.textTheme.bodyLarge?.copyWith(color: Colors.white70),
     );
 
@@ -65,10 +66,10 @@ class HeroSection extends StatelessWidget {
     final bulletPoints = Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: const [
-        HeroBullet(text: 'Cross-Platform-Apps mit Flutter (iOS, Android, Web)'),
-        HeroBullet(text: 'Native Entwicklung mit Kotlin & SwiftUI'),
+        HeroBullet(text: 'Flutter Apps für Android, iOS und Web'),
+        HeroBullet(text: 'Native Android-Entwicklung mit Kotlin & Jetpack Compose'),
         HeroBullet(
-          text: 'Technische Begleitung für Freelancer & kleine Unternehmen',
+          text: 'Eigene Produkte wie ASA Server Eye und Business-App-Konzepte',
         ),
       ],
     );

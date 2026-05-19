@@ -1,5 +1,5 @@
 name: jchillah_company_site
-description: "A new Flutter project."
+description: "Official Flutter web portfolio for Jchillah Coding Forge, featuring ASA Server Eye and mobile app development projects."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev

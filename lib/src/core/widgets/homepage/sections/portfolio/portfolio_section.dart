@@ -97,30 +97,39 @@ class PortfolioSection extends StatelessWidget {
     );
   }
 
-  void _openArkCompanion(BuildContext context) {
+  void _openAsaServerEye(BuildContext context) {
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (_) => const ProjectDetailPage(
-          title: 'ARK Companion / Server-Tools (Eigenprojekt)',
+          title: 'ASA Server Eye – ARK: Survival Ascended Server Tracker',
           subtitle:
-              'Persönliches Konzeptprojekt rund um ARK: ASA Server-Status & Management.',
-          status: 'Eigenprojekt · Konzeptphase',
-          techStack: 'Flutter · REST APIs',
+              'Android-App zum Beobachten offizieller ARK: Survival Ascended Server mit Serverliste, Details und Favoriten.',
+          status: 'Eigenprojekt · Android Release · Aktiv in Weiterentwicklung',
+          techStack: 'Flutter · Dart · Dio · Riverpod · Firebase · GitHub Pages',
           longDescription:
-              'Die ARK Companion App ist ein persönliches Konzeptprojekt, mit dem ich Ideen rund um '
-              'Server-Status, Tools für Spieler und API-Anbindung ausprobiere. \n\n'
-              'Ich nutze dieses Projekt, um REST-APIs in Flutter anzubinden, UI für Listen, Filter und '
-              'Detailansichten zu gestalten und generell Erfahrung mit datengetriebenen Oberflächen zu sammeln. '
-              'Aktuell ist das Projekt noch nicht produktiv nutzbar, sondern dient mir als Experimentier- und '
-              'Lernfläche rund um ARK: ASA.',
+              'ASA Server Eye ist mein erstes veröffentlichtes Android-App-Projekt. '
+              'Die App hilft ARK: Survival Ascended Spielern dabei, offizielle Server schneller zu finden, '
+              'Serverdaten zu prüfen und wichtige Server als Favoriten zu speichern.\n\n'
+              'Technisch ist ASA Server Eye als Flutter-App aufgebaut und nutzt eine datengetriebene Architektur '
+              'mit API-Anbindung, sauberer Feature-Struktur und modernen Mobile-App-Prinzipien. '
+              'Das Projekt ist besonders wichtig für mein Portfolio, weil es nicht nur ein Lernprojekt ist, '
+              'sondern ein echter Release mit Play-Store-, Datenschutz- und Monetarisierungsanforderungen.',
           features: [
-            'Eigenes Konzept- und Lernprojekt (kein offizielles Tool)',
-            'Serverlisten mit Filtermöglichkeiten (geplant)',
-            'Favoriten-Server markieren und schnell wiederfinden (geplant)',
-            'Statusanzeige basierend auf externen APIs (abhängig von Verfügbarkeit)',
-            'Übungsprojekt für REST-API-Anbindung und UI-Design in Flutter',
+            'Veröffentlichte Android-App für ARK: Survival Ascended Spieler',
+            'Offizielle Serverliste mit relevanten Serverdaten',
+            'Server-Detailansichten für bessere Entscheidungen vor dem Login',
+            'Favoriten-Funktion für wichtige Server',
+            'Flutter Cross-Platform-Codebasis',
+            'Firebase-Integration für Nutzer- und App-Funktionen',
+            'App-Store-, Datenschutz- und app-ads.txt-Setup',
+            'Aktive Weiterentwicklung mit Fokus auf Alerts und bessere Server Intelligence',
           ],
-          screenshotAssets: ['assets/images/ark_companion_1.png'],
+          screenshotAssets: [
+            'assets/images/ark_companion_1.png',
+          ],
+          appRepoUrl: 'https://github.com/jchillah/asa-server-eye',
+          privacyPolicyUrl:
+              'https://jchillah.github.io/asa-server-eye-privacy-policy/',
         ),
       ),
     );
@@ -168,13 +177,13 @@ class PortfolioSection extends StatelessWidget {
               const SizedBox(width: 16, height: 16),
               Expanded(
                 child: PortfolioCard(
-                  title: 'ARK Companion / Server-Tools',
+                  title: 'ASA Server Eye – ARK Server Tracker',
                   description:
-                      'Konzept-App rund um ARK: ASA, um API-Anbindung, Server-Status und '
-                      'Listen/Filter-UI in Flutter zu trainieren.',
-                  techStack: 'Flutter · REST APIs',
-                  status: 'Eigenprojekt · Konzeptphase',
-                  onTap: () => _openArkCompanion(context),
+                      'Veröffentlichte Android-App für ARK: Survival Ascended Serverdaten, '
+                      'Favoriten und Server-Übersicht – gebaut mit Flutter.',
+                  techStack: 'Flutter · Dart · Dio · Riverpod · Firebase',
+                  status: 'Eigenprojekt · Android Release',
+                  onTap: () => _openAsaServerEye(context),
                 ),
               ),
             ],
