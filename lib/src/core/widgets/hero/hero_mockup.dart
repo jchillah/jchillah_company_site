@@ -13,16 +13,18 @@ class HeroMockup extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
-      aspectRatio: 4 / 3,
+      aspectRatio: 16 / 10,
       child: Container(
         clipBehavior: Clip.antiAlias,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(28),
-          border: Border.all(color: const Color(0xFF00FF5F).withOpacity(0.45)),
+          borderRadius: BorderRadius.circular(30),
+          border: Border.all(
+            color: const Color(0xFF00FF5F).withOpacity(0.42),
+          ),
           boxShadow: [
             BoxShadow(
-              color: const Color(0xFF00FF5F).withOpacity(0.12),
-              blurRadius: 34,
+              color: const Color(0xFF00FF5F).withOpacity(0.14),
+              blurRadius: 38,
               spreadRadius: 2,
             ),
           ],
@@ -35,17 +37,31 @@ class HeroMockup extends StatelessWidget {
         child: Stack(
           fit: StackFit.expand,
           children: [
-            /// Background image full width / full field
             Positioned.fill(
-              child: Image.asset(
-                _codingSetupAsset,
-                fit: BoxFit.cover,
-                alignment: Alignment.center,
-                errorBuilder: (_, __, ___) => const SizedBox.shrink(),
+              child: DecoratedBox(
+                decoration: BoxDecoration(
+                  gradient: RadialGradient(
+                    center: Alignment.center,
+                    radius: 1.05,
+                    colors: [
+                      const Color(0xFF00351C).withOpacity(0.78),
+                      Colors.black.withOpacity(0.95),
+                    ],
+                  ),
+                ),
               ),
             ),
-
-            /// Dark overlay for readability
+            Positioned.fill(
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(18, 54, 18, 18),
+                child: Image.asset(
+                  _codingSetupAsset,
+                  fit: BoxFit.contain,
+                  alignment: Alignment.center,
+                  errorBuilder: (_, __, ___) => const SizedBox.shrink(),
+                ),
+              ),
+            ),
             Positioned.fill(
               child: DecoratedBox(
                 decoration: BoxDecoration(
@@ -54,108 +70,84 @@ class HeroMockup extends StatelessWidget {
                     end: Alignment.bottomCenter,
                     colors: [
                       Colors.black.withOpacity(0.18),
-                      Colors.black.withOpacity(0.58),
+                      Colors.black.withOpacity(0.06),
+                      Colors.black.withOpacity(0.42),
                     ],
+                    stops: const [0.0, 0.52, 1.0],
                   ),
                 ),
               ),
             ),
-
-            /// Matrix overlay
             Positioned.fill(
               child: Opacity(
-                opacity: 0.12,
+                opacity: 0.10,
                 child: CustomPaint(painter: MatrixRainPainter()),
               ),
             ),
-
-            /// Top centered badge
             Align(
               alignment: Alignment.topCenter,
               child: Padding(
-                padding: const EdgeInsets.only(top: 20),
+                padding: const EdgeInsets.only(top: 18),
                 child: Container(
                   padding: const EdgeInsets.symmetric(
-                    horizontal: 14,
-                    vertical: 8,
+                    horizontal: 18,
+                    vertical: 9,
                   ),
                   decoration: BoxDecoration(
-                    color: Colors.black.withOpacity(0.58),
+                    color: Colors.black.withOpacity(0.62),
                     borderRadius: BorderRadius.circular(999),
                     border: Border.all(
-                      color: const Color(0xFF00FF5F).withOpacity(0.35),
+                      color: const Color(0xFF00FF5F).withOpacity(0.42),
                     ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: const Color(0xFF00FF5F).withOpacity(0.16),
+                        blurRadius: 18,
+                      ),
+                    ],
                   ),
                   child: const Text(
                     'Jchillah’s Forge',
+                    textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Color(0xFF00FF5F),
-                      fontWeight: FontWeight.w800,
-                      letterSpacing: 0.6,
+                      fontWeight: FontWeight.w900,
+                      letterSpacing: 0.7,
                     ),
                   ),
                 ),
               ),
             ),
-
-            /// Bottom area content
-            Padding(
-              padding: const EdgeInsets.all(22),
-              child: Column(
-                children: [
-                  const Spacer(),
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.end,
-                    children: [
-                      /// Logo bottom left
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(18),
-                        child: Image.asset(
-                          _logoAsset,
-                          width: 92,
-                          height: 92,
-                          fit: BoxFit.cover,
-                          errorBuilder: (_, __, ___) => Container(
-                            width: 92,
-                            height: 92,
-                            alignment: Alignment.center,
-                            decoration: BoxDecoration(
-                              color: Colors.black.withOpacity(0.65),
-                              borderRadius: BorderRadius.circular(18),
-                              border: Border.all(
-                                color: const Color(
-                                  0xFF00FF5F,
-                                ).withOpacity(0.45),
-                              ),
-                            ),
-                            child: const Text(
-                              'JF',
-                              style: TextStyle(
-                                color: Color(0xFF00FF5F),
-                                fontWeight: FontWeight.w900,
-                              ),
-                            ),
-                          ),
-                        ),
+            Positioned(
+              left: 22,
+              bottom: 22,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(20),
+                child: Image.asset(
+                  _logoAsset,
+                  width: 96,
+                  height: 96,
+                  fit: BoxFit.cover,
+                  errorBuilder: (_, __, ___) => Container(
+                    width: 96,
+                    height: 96,
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                      color: Colors.black.withOpacity(0.72),
+                      borderRadius: BorderRadius.circular(20),
+                      border: Border.all(
+                        color: const Color(0xFF00FF5F).withOpacity(0.45),
                       ),
-                      const SizedBox(width: 14),
-
-                      /// Code text right of logo
-                      const Expanded(
-                        child: Text(
-                          '> build_mobile_apps();\n> ship_digital_products();',
-                          style: TextStyle(
-                            fontFamily: 'monospace',
-                            fontSize: 15,
-                            height: 1.35,
-                            color: Color(0xFFB7FFAD),
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
+                    ),
+                    child: const Text(
+                      'JF',
+                      style: TextStyle(
+                        color: Color(0xFF00FF5F),
+                        fontWeight: FontWeight.w900,
                       ),
-                    ],
+                    ),
                   ),
-                ],
+                ),
               ),
             ),
           ],
