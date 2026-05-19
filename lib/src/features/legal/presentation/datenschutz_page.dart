@@ -28,14 +28,14 @@ class DatenschutzPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Section(
-                      title: 'Hinweis',
+                      title: 'Datenschutzerklärung',
                       subtitle:
-                          'Dieses Muster dient nur als allgemeiner Platzhalter und ersetzt keine rechtliche Beratung.',
+                          'Informationen zur Datenverarbeitung auf dieser Website.',
                       child: Text(
-                        'Bitte lass deine endgültige Datenschutzerklärung von einer '
-                        'geeigneten Stelle (z.B. Anwalt oder Generator seriöser Anbieter) prüfen. '
-                        'Die folgenden Inhalte sind ein Beispiel, das du an deine tatsächliche '
-                        'Datenverarbeitung anpassen musst.',
+                        'Diese Datenschutzerklärung beschreibt die Verarbeitung personenbezogener Daten '
+                        'auf der Website von Jchillah’s Design & Coding Forge. Sie ist als sachliche '
+                        'Grundlage für diese Portfolio-Website formuliert und sollte vor kommerzieller '
+                        'Nutzung zusätzlich rechtlich geprüft werden.',
                         style: theme.textTheme.bodyMedium?.copyWith(
                           color: Colors.white70,
                         ),
@@ -45,7 +45,7 @@ class DatenschutzPage extends StatelessWidget {
                     Section(
                       title: '1. Verantwortlicher',
                       child: Text(
-                        'Verantwortlich für die Datenverarbeitung auf dieser Website ist:\n\n'
+                        'Verantwortlich für diese Website ist:\n\n'
                         'Michael Winkler\n'
                         'Jchillah’s Design & Coding Forge\n'
                         'Am Schülerheim 17\n'
@@ -59,18 +59,15 @@ class DatenschutzPage extends StatelessWidget {
                     ),
                     const SizedBox(height: 24),
                     Section(
-                      title: '2. Hosting & Zugriffsdaten',
+                      title: '2. Hosting über GitHub Pages',
                       child: Text(
-                        'Beim Aufrufen dieser Website werden durch den Browser deines Endgeräts '
-                        'automatisch Informationen an den Server dieser Website gesendet. Diese '
-                        'Informationen können z.B. sein:\n\n'
-                        '• IP-Adresse\n'
-                        '• Datum und Uhrzeit der Anfrage\n'
-                        '• Name und URL der abgerufenen Datei\n'
-                        '• verwendeter Browser und Betriebssystem\n\n'
-                        'Diese Daten werden in der Regel temporär in Logfiles gespeichert, um '
-                        'die Stabilität und Sicherheit des Angebots zu gewährleisten. Eine '
-                        'Zuordnung zu bestimmten Personen findet dabei in der Regel nicht statt.',
+                        'Diese Website wird über GitHub Pages bereitgestellt. Beim Aufruf der Website '
+                        'können technisch notwendige Zugriffsdaten verarbeitet werden, damit die Seite '
+                        'ausgeliefert und sicher betrieben werden kann. Dazu können insbesondere IP-Adresse, '
+                        'Datum und Uhrzeit des Zugriffs, abgerufene Dateien, Browsertyp, Betriebssystem und '
+                        'Referrer-URL gehören.\n\n'
+                        'Die Verarbeitung erfolgt, um die Website technisch bereitzustellen, die Sicherheit '
+                        'des Angebots zu gewährleisten und Fehler nachvollziehen zu können.',
                         style: theme.textTheme.bodySmall?.copyWith(
                           color: Colors.white70,
                         ),
@@ -80,12 +77,13 @@ class DatenschutzPage extends StatelessWidget {
                     Section(
                       title: '3. Kontaktaufnahme per E-Mail',
                       child: Text(
-                        'Wenn du mich per E-Mail kontaktierst, werden die von dir übermittelten '
-                        'Daten (z.B. Name, E-Mail-Adresse, Nachricht) zum Zweck der Bearbeitung '
-                        'der Anfrage und für den Fall von Anschlussfragen gespeichert. \n\n'
-                        'Rechtsgrundlage kann hier je nach Inhalt deiner Anfrage Art. 6 Abs. 1 lit. b '
-                        'DSGVO (Vertrag/Anbahnung) oder Art. 6 Abs. 1 lit. f DSGVO (berechtigtes '
-                        'Interesse an einer sinnvollen Kommunikation) sein.',
+                        'Wenn du per E-Mail Kontakt aufnimmst, werden die von dir übermittelten Angaben '
+                        'verarbeitet, zum Beispiel Name, E-Mail-Adresse, Inhalt der Nachricht und der Zeitpunkt '
+                        'der Kontaktaufnahme. Diese Daten werden genutzt, um deine Anfrage zu beantworten und '
+                        'gegebenenfalls Anschlussfragen zu klären.\n\n'
+                        'Die Verarbeitung erfolgt je nach Inhalt der Anfrage zur Vertragsanbahnung oder auf '
+                        'Grundlage eines berechtigten Interesses an der Kommunikation mit Interessenten, '
+                        'Kunden und Projektpartnern.',
                         style: theme.textTheme.bodySmall?.copyWith(
                           color: Colors.white70,
                         ),
@@ -93,14 +91,17 @@ class DatenschutzPage extends StatelessWidget {
                     ),
                     const SizedBox(height: 24),
                     Section(
-                      title: '4. Verwendung von Log- und Analysedaten',
+                      title: '4. Externe Links',
                       child: Text(
-                        'Falls du zukünftig Analyse-Tools (z.B. Google Analytics) oder andere '
-                        'Tracking-Werkzeuge einsetzt, müssen diese hier genau beschrieben werden '
-                        'und ggf. nur mit Einwilligung (Cookie-Banner) genutzt werden. \n\n'
-                        'Aktuell ist diese Website als einfache Präsentationsseite ohne '
-                        'Tracking konzipiert. Wenn sich das ändert, solltest du deine '
-                        'Datenschutzerklärung entsprechend anpassen.',
+                        'Diese Website enthält Links zu externen Angeboten, insbesondere zu GitHub, zur '
+                        'Lebenslauf-Web-App, zu Projekt-Repositories und zu Datenschutzseiten einzelner Apps. '
+                        'Wenn du einen externen Link öffnest, verlässt du diese Website. Für die Verarbeitung '
+                        'personenbezogener Daten auf externen Seiten sind die jeweiligen Betreiber verantwortlich.\n\n'
+                        'Externe Links auf dieser Website können unter anderem zu folgenden Angeboten führen:\n\n'
+                        '• GitHub Profil und Projekt-Repositories\n'
+                        '• Lebenslauf-Web-App unter my-personal-cv-app-65750.web.app\n'
+                        '• ASA Server Eye Repository\n'
+                        '• ASA Server Eye Datenschutzerklärung',
                         style: theme.textTheme.bodySmall?.copyWith(
                           color: Colors.white70,
                         ),
@@ -108,18 +109,44 @@ class DatenschutzPage extends StatelessWidget {
                     ),
                     const SizedBox(height: 24),
                     Section(
-                      title: '5. Deine Rechte',
+                      title: '5. Cookies, Tracking und Analyse',
                       child: Text(
-                        'Dir stehen hinsichtlich deiner personenbezogenen Daten insbesondere '
-                        'folgende Rechte nach der DSGVO zu:\n\n'
+                        'Diese Portfolio-Website ist als einfache Präsentationsseite konzipiert. Es werden '
+                        'keine eigenen Tracking-Cookies, kein eigenes Analyse-Tracking und kein Newsletter-System '
+                        'eingesetzt.\n\n'
+                        'Sollten später Analyse-Dienste, Kontaktformulare, Newsletter, eingebettete Inhalte oder '
+                        'andere Drittanbieter-Funktionen ergänzt werden, muss diese Datenschutzerklärung entsprechend '
+                        'aktualisiert werden.',
+                        style: theme.textTheme.bodySmall?.copyWith(
+                          color: Colors.white70,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 24),
+                    Section(
+                      title: '6. Speicherdauer',
+                      child: Text(
+                        'Personenbezogene Daten werden nur so lange gespeichert, wie es für den jeweiligen Zweck '
+                        'erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen. E-Mail-Anfragen können '
+                        'gespeichert werden, solange dies für die Bearbeitung, Nachverfolgung oder Dokumentation der '
+                        'Kommunikation erforderlich ist.',
+                        style: theme.textTheme.bodySmall?.copyWith(
+                          color: Colors.white70,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 24),
+                    Section(
+                      title: '7. Deine Rechte',
+                      child: Text(
+                        'Dir stehen hinsichtlich deiner personenbezogenen Daten insbesondere folgende Rechte zu:\n\n'
                         '• Recht auf Auskunft\n'
                         '• Recht auf Berichtigung\n'
                         '• Recht auf Löschung\n'
                         '• Recht auf Einschränkung der Verarbeitung\n'
                         '• Recht auf Widerspruch gegen die Verarbeitung\n'
                         '• Recht auf Datenübertragbarkeit\n\n'
-                        'Du kannst dich hierzu jederzeit unter der oben angegebenen Adresse '
-                        'an mich wenden.',
+                        'Du kannst dich hierzu jederzeit über die angegebene E-Mail-Adresse melden.',
                         style: theme.textTheme.bodySmall?.copyWith(
                           color: Colors.white70,
                         ),
@@ -127,12 +154,10 @@ class DatenschutzPage extends StatelessWidget {
                     ),
                     const SizedBox(height: 24),
                     Section(
-                      title: '6. Aktualität und Änderung dieser Datenschutzerklärung',
+                      title: '8. Aktualität dieser Datenschutzerklärung',
                       child: Text(
-                        'Diese Datenschutzerklärung ist ein Platzhalter und muss an deinen '
-                        'konkreten technischen Stand angepasst werden. Wenn du Funktionen, '
-                        'Drittanbieter oder Tracking änderst, solltest du auch diese '
-                        'Erklärung entsprechend aktualisieren.',
+                        'Stand: Mai 2026. Diese Datenschutzerklärung wird angepasst, sobald sich die technische '
+                        'Umsetzung dieser Website oder die eingebundenen Dienste wesentlich ändern.',
                         style: theme.textTheme.bodySmall?.copyWith(
                           color: Colors.white70,
                         ),
