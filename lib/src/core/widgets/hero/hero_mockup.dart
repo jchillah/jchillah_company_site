@@ -22,9 +22,11 @@ class HeroMockup extends StatelessWidget {
         ),
         child: Stack(
           children: [
-            Opacity(
-              opacity: 0.12,
-              child: CustomPaint(painter: MatrixRainPainter()),
+            Positioned.fill(
+              child: Opacity(
+                opacity: 0.12,
+                child: CustomPaint(painter: MatrixRainPainter()),
+              ),
             ),
             const Center(
               child: Text(
