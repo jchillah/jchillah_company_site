@@ -52,7 +52,7 @@ class HeroMockup extends StatelessWidget {
                     colors: [
                       Colors.black.withOpacity(0.26),
                       Colors.black.withOpacity(0.05),
-                      Colors.black.withOpacity(0.46),
+                      Colors.black.withOpacity(0.52),
                     ],
                     stops: const [0.0, 0.42, 1.0],
                   ),
@@ -99,24 +99,32 @@ class HeroMockup extends StatelessWidget {
                 ),
               ),
             ),
-            Center(
-              child: FractionallySizedBox(
-                widthFactor: 0.56,
-                child: const Text(
-                  '> forge_brand_identity();\n> build_mobile_apps();\n> ship_digital_products();',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: 'monospace',
-                    fontSize: 14,
-                    height: 1.42,
-                    color: Color(0xFFB7FFAD),
-                    fontWeight: FontWeight.w700,
-                    shadows: [
-                      Shadow(
-                        color: Colors.black,
-                        blurRadius: 10,
-                      ),
-                    ],
+            Align(
+              alignment: Alignment.bottomCenter,
+              child: Padding(
+                padding: const EdgeInsets.only(
+                  left: 18,
+                  right: 18,
+                  bottom: 24,
+                ),
+                child: FractionallySizedBox(
+                  widthFactor: 0.58,
+                  child: const Text(
+                    '> forge_brand_identity();\n> build_mobile_apps();\n> ship_digital_products();',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontFamily: 'monospace',
+                      fontSize: 14,
+                      height: 1.42,
+                      color: Color(0xFFB7FFAD),
+                      fontWeight: FontWeight.w700,
+                      shadows: [
+                        Shadow(
+                          color: Colors.black,
+                          blurRadius: 10,
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
