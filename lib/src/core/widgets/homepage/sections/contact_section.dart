@@ -16,11 +16,6 @@ class ContactSection extends StatelessWidget {
     await launchUrl(uri, mode: LaunchMode.platformDefault);
   }
 
-  Future<void> _openGithub() async {
-    final uri = Uri.parse('https://github.com/jchillah');
-    await launchUrl(uri, mode: LaunchMode.platformDefault);
-  }
-
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
