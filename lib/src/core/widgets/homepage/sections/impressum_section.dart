@@ -12,7 +12,7 @@ class ImpressumSection extends StatelessWidget {
     return Section(
       title: 'Impressum',
       subtitle:
-          'Angaben gemäß § 5 TMG. Dieses Impressum ist ein allgemeines Beispiel und ersetzt keine Rechtsberatung.',
+          'Anbieterkennzeichnung gemäß den geltenden Informationspflichten für digitale Dienste.',
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -41,12 +41,13 @@ class ImpressumSection extends StatelessWidget {
           const SizedBox(height: 8),
           Text(
             'E-Mail: jchillah@gmail.com\n'
-            'GitHub: https://github.com/jchillah',
+            'GitHub: https://github.com/jchillah\n'
+            'Website: https://jchillah.github.io/jchillah_company_site/',
             style: theme.textTheme.bodyMedium?.copyWith(color: Colors.white70),
           ),
           const SizedBox(height: 16),
           Text(
-            'Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV',
+            'Verantwortlich für den Inhalt',
             style: theme.textTheme.titleMedium?.copyWith(
               fontWeight: FontWeight.bold,
             ),
@@ -68,12 +69,10 @@ class ImpressumSection extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           Text(
-            'Als Diensteanbieter bin ich gemäß § 7 Abs. 1 TMG für eigene Inhalte auf '
-            'diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG '
-            'bin ich als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte '
-            'fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine '
-            'rechtswidrige Tätigkeit hinweisen. Bei Bekanntwerden von Rechtsverletzungen werden '
-            'entsprechende Inhalte umgehend entfernt.',
+            'Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, '
+            'Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden. '
+            'Bei Bekanntwerden von Rechtsverletzungen werden entsprechende Inhalte umgehend geprüft '
+            'und soweit erforderlich entfernt.',
             style: theme.textTheme.bodySmall?.copyWith(color: Colors.white70),
           ),
           const SizedBox(height: 16),
@@ -85,9 +84,9 @@ class ImpressumSection extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           Text(
-            'Mein Angebot kann Links zu externen Websites Dritter enthalten, auf deren Inhalte ich '
-            'keinen Einfluss habe. Für diese fremden Inhalte übernehme ich keine Gewähr. Für die '
-            'Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber verantwortlich.',
+            'Diese Website enthält Links zu externen Websites Dritter. Auf deren Inhalte habe ich '
+            'keinen Einfluss. Für diese fremden Inhalte übernehme ich keine Gewähr. Für die Inhalte '
+            'der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber verantwortlich.',
             style: theme.textTheme.bodySmall?.copyWith(color: Colors.white70),
           ),
           const SizedBox(height: 16),
@@ -102,6 +101,20 @@ class ImpressumSection extends StatelessWidget {
             'Die auf dieser Website erstellten Inhalte und Werke unterliegen dem deutschen Urheberrecht. '
             'Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen '
             'des Urheberrechts bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.',
+            style: theme.textTheme.bodySmall?.copyWith(color: Colors.white70),
+          ),
+          const SizedBox(height: 16),
+          Text(
+            'Hinweis',
+            style: theme.textTheme.titleMedium?.copyWith(
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          const SizedBox(height: 8),
+          Text(
+            'Dieses Impressum wurde für eine persönliche Portfolio- und Entwicklerwebsite erstellt. '
+            'Bei geschäftlicher Nutzung, Erweiterung um Shops, Verträge, Zahlungsfunktionen oder '
+            'weitere Dienste sollte die rechtliche Ausgestaltung zusätzlich geprüft werden.',
             style: theme.textTheme.bodySmall?.copyWith(color: Colors.white70),
           ),
         ],
