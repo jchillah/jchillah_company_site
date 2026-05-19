@@ -11,17 +11,17 @@ class HeroMockup extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
-      aspectRatio: 3 / 2,
+      aspectRatio: 2 / 1.75,
       child: Container(
         clipBehavior: Clip.antiAlias,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(30),
           border: Border.all(
-            color: const Color(0xFF00FF5F).withOpacity(0.42),
+            color: const Color(0xFF00FF5F).withValues(alpha: 0.42),
           ),
           boxShadow: [
             BoxShadow(
-              color: const Color(0xFF00FF5F).withOpacity(0.14),
+              color: const Color(0xFF00FF5F).withValues(alpha: 0.14),
               blurRadius: 38,
               spreadRadius: 2,
             ),
@@ -38,9 +38,9 @@ class HeroMockup extends StatelessWidget {
             Positioned.fill(
               child: Image.asset(
                 _codingSetupAsset,
-                fit: BoxFit.cover,
+                fit: BoxFit.fill,
                 alignment: Alignment.center,
-                errorBuilder: (_, __, ___) => const SizedBox.shrink(),
+                errorBuilder: (_, _, _) => const SizedBox.shrink(),
               ),
             ),
             Positioned.fill(
@@ -50,9 +50,9 @@ class HeroMockup extends StatelessWidget {
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
                     colors: [
-                      Colors.black.withOpacity(0.24),
-                      Colors.black.withOpacity(0.04),
-                      Colors.black.withOpacity(0.58),
+                      Colors.black.withValues(alpha: 0.24),
+                      Colors.black.withValues(alpha: 0.04),
+                      Colors.black.withValues(alpha: 0.58),
                     ],
                     stops: const [0.0, 0.42, 1.0],
                   ),
@@ -75,14 +75,14 @@ class HeroMockup extends StatelessWidget {
                     vertical: 9,
                   ),
                   decoration: BoxDecoration(
-                    color: Colors.black.withOpacity(0.64),
+                    color: Colors.black.withValues(alpha: 0.64),
                     borderRadius: BorderRadius.circular(999),
                     border: Border.all(
-                      color: const Color(0xFF00FF5F).withOpacity(0.42),
+                      color: const Color(0xFF00FF5F).withValues(alpha: 0.42),
                     ),
                     boxShadow: [
                       BoxShadow(
-                        color: const Color(0xFF00FF5F).withOpacity(0.18),
+                        color: const Color(0xFF00FF5F).withValues(alpha: 0.18),
                         blurRadius: 18,
                       ),
                     ],
@@ -103,20 +103,17 @@ class HeroMockup extends StatelessWidget {
               left: 22,
               bottom: 22,
               child: ConstrainedBox(
-                constraints: const BoxConstraints(
-                  minWidth: 260,
-                  maxWidth: 360,
-                ),
+                constraints: const BoxConstraints(minWidth: 190, maxWidth: 195),
                 child: Container(
                   decoration: BoxDecoration(
-                    color: Colors.black.withOpacity(0.76),
+                    color: Colors.black.withValues(alpha: 0.76),
                     borderRadius: BorderRadius.circular(18),
                     border: Border.all(
-                      color: const Color(0xFF00FF5F).withOpacity(0.28),
+                      color: const Color(0xFF00FF5F).withValues(alpha: 0.28),
                     ),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black.withOpacity(0.45),
+                        color: Colors.black.withValues(alpha: 0.45),
                         blurRadius: 22,
                         offset: const Offset(0, 12),
                       ),
@@ -131,10 +128,12 @@ class HeroMockup extends StatelessWidget {
                         height: 30,
                         padding: const EdgeInsets.symmetric(horizontal: 12),
                         decoration: BoxDecoration(
-                          color: Colors.white.withOpacity(0.05),
+                          color: Colors.white.withValues(alpha: 0.05),
                           border: Border(
                             bottom: BorderSide(
-                              color: const Color(0xFF00FF5F).withOpacity(0.16),
+                              color: const Color(
+                                0xFF00FF5F,
+                              ).withValues(alpha: 0.16),
                             ),
                           ),
                         ),
@@ -169,10 +168,7 @@ class HeroMockup extends StatelessWidget {
                             color: Color(0xFFB7FFAD),
                             fontWeight: FontWeight.w700,
                             shadows: [
-                              Shadow(
-                                color: Colors.black,
-                                blurRadius: 8,
-                              ),
+                              Shadow(color: Colors.black, blurRadius: 8),
                             ],
                           ),
                         ),
@@ -199,10 +195,7 @@ class _TerminalDot extends StatelessWidget {
     return Container(
       width: 8,
       height: 8,
-      decoration: BoxDecoration(
-        color: color,
-        shape: BoxShape.circle,
-      ),
+      decoration: BoxDecoration(color: color, shape: BoxShape.circle),
     );
   }
 }

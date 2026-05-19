@@ -27,10 +27,10 @@ class HeroSection extends StatelessWidget {
     final brandBadge = Container(
       padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
       decoration: BoxDecoration(
-        color: const Color(0xFF00FF5F).withOpacity(0.1),
+        color: const Color(0xFF00FF5F).withValues(alpha: 0.1),
         borderRadius: BorderRadius.circular(999),
         border: Border.all(
-          color: const Color(0xFF00FF5F).withOpacity(0.34),
+          color: const Color(0xFF00FF5F).withValues(alpha: 0.34),
         ),
       ),
       child: Text(
@@ -67,7 +67,7 @@ class HeroSection extends StatelessWidget {
       'klarer Architektur und echtem Release-Fokus. Mein erstes veröffentlichtes Android-Projekt ist ASA Server Eye, '
       'ein Server-Tracker für ARK: Survival Ascended.',
       style: theme.textTheme.bodyLarge?.copyWith(
-        color: Colors.white.withOpacity(0.76),
+        color: Colors.white.withValues(alpha: 0.76),
         height: 1.55,
       ),
     );
@@ -95,7 +95,8 @@ class HeroSection extends StatelessWidget {
         HeroBullet(text: 'Flutter Apps für Android, iOS und Web'),
         HeroBullet(text: 'Gaming Companion Tools wie ASA Server Eye'),
         HeroBullet(
-          text: 'UI/UX, Branding, App-Store-Vorbereitung und Release-Begleitung',
+          text:
+              'UI/UX, Branding, App-Store-Vorbereitung und Release-Begleitung',
         ),
       ],
     );
@@ -119,20 +120,16 @@ class HeroSection extends StatelessWidget {
       return Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Expanded(flex: 9, child: textContent),
+          Expanded(flex: 7, child: textContent),
           const SizedBox(width: 30),
-          const Expanded(flex: 8, child: HeroMockup()),
+          const Expanded(flex: 9, child: HeroMockup()),
         ],
       );
     }
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        textContent,
-        const SizedBox(height: 28),
-        const HeroMockup(),
-      ],
+      children: [textContent, const SizedBox(height: 28), const HeroMockup()],
     );
   }
 }
