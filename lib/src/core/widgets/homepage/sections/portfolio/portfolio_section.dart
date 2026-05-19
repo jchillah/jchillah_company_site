@@ -43,8 +43,6 @@ class PortfolioSection extends StatelessWidget {
             'assets/images/gameradar_2.png',
             'assets/images/gameradar_3.png',
           ],
-
-          // 🔹 NEU: Links
           pitchDeckUrl: 'https://jchillah.github.io/gameradar-pitchdeck/',
           appRepoUrl: 'https://github.com/jchillah/GameRadar',
           pitchRepoUrl: 'https://github.com/jchillah/gameradar-pitchdeck',
@@ -89,8 +87,6 @@ class PortfolioSection extends StatelessWidget {
             'assets/images/cryptotracker_6.png',
             'assets/images/cryptotracker_7.jpg',
           ],
-
-          // Optional: GitHub Link
           appRepoUrl: 'https://github.com/jchillah/CryptoTracker',
         ),
       ),
@@ -124,9 +120,7 @@ class PortfolioSection extends StatelessWidget {
             'App-Store-, Datenschutz- und app-ads.txt-Setup',
             'Aktive Weiterentwicklung mit Fokus auf Alerts und bessere Server Intelligence',
           ],
-          screenshotAssets: [
-            'assets/images/ark_companion_1.png',
-          ],
+          screenshotAssets: [],
           appRepoUrl: 'https://github.com/jchillah/asa-server-eye',
           privacyPolicyUrl:
               'https://jchillah.github.io/asa-server-eye-privacy-policy/',
@@ -171,7 +165,7 @@ class PortfolioSection extends StatelessWidget {
                   techStack: 'Kotlin · Jetpack Compose · MVVM · REST API',
                   status: 'Eigenprojekt · Open Source',
                   onTap: () => _openCryptoTracker(context),
-                  iconAsset: null, // optional später eigenes Icon
+                  iconAsset: null,
                 ),
               ),
               const SizedBox(width: 16, height: 16),
