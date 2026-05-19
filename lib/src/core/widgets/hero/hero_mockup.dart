@@ -7,13 +7,11 @@ class HeroMockup extends StatelessWidget {
 
   static const String _codingSetupAsset =
       'assets/images/branding/jchillah_coding_setup.png';
-  static const String _logoAsset =
-      'assets/images/branding/jchillah_logo_square.png';
 
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
-      aspectRatio: 16 / 10,
+      aspectRatio: 3 / 2,
       child: Container(
         clipBehavior: Clip.antiAlias,
         decoration: BoxDecoration(
@@ -38,28 +36,11 @@ class HeroMockup extends StatelessWidget {
           fit: StackFit.expand,
           children: [
             Positioned.fill(
-              child: DecoratedBox(
-                decoration: BoxDecoration(
-                  gradient: RadialGradient(
-                    center: Alignment.center,
-                    radius: 1.05,
-                    colors: [
-                      const Color(0xFF00351C).withOpacity(0.78),
-                      Colors.black.withOpacity(0.95),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            Positioned.fill(
-              child: Padding(
-                padding: const EdgeInsets.fromLTRB(18, 54, 18, 18),
-                child: Image.asset(
-                  _codingSetupAsset,
-                  fit: BoxFit.contain,
-                  alignment: Alignment.center,
-                  errorBuilder: (_, __, ___) => const SizedBox.shrink(),
-                ),
+              child: Image.asset(
+                _codingSetupAsset,
+                fit: BoxFit.cover,
+                alignment: Alignment.center,
+                errorBuilder: (_, __, ___) => const SizedBox.shrink(),
               ),
             ),
             Positioned.fill(
@@ -69,39 +50,39 @@ class HeroMockup extends StatelessWidget {
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
                     colors: [
-                      Colors.black.withOpacity(0.18),
-                      Colors.black.withOpacity(0.06),
-                      Colors.black.withOpacity(0.42),
+                      Colors.black.withOpacity(0.24),
+                      Colors.black.withOpacity(0.04),
+                      Colors.black.withOpacity(0.40),
                     ],
-                    stops: const [0.0, 0.52, 1.0],
+                    stops: const [0.0, 0.46, 1.0],
                   ),
                 ),
               ),
             ),
             Positioned.fill(
               child: Opacity(
-                opacity: 0.10,
+                opacity: 0.08,
                 child: CustomPaint(painter: MatrixRainPainter()),
               ),
             ),
             Align(
               alignment: Alignment.topCenter,
               child: Padding(
-                padding: const EdgeInsets.only(top: 18),
+                padding: const EdgeInsets.only(top: 16),
                 child: Container(
                   padding: const EdgeInsets.symmetric(
                     horizontal: 18,
                     vertical: 9,
                   ),
                   decoration: BoxDecoration(
-                    color: Colors.black.withOpacity(0.62),
+                    color: Colors.black.withOpacity(0.64),
                     borderRadius: BorderRadius.circular(999),
                     border: Border.all(
                       color: const Color(0xFF00FF5F).withOpacity(0.42),
                     ),
                     boxShadow: [
                       BoxShadow(
-                        color: const Color(0xFF00FF5F).withOpacity(0.16),
+                        color: const Color(0xFF00FF5F).withOpacity(0.18),
                         blurRadius: 18,
                       ),
                     ],
@@ -113,38 +94,6 @@ class HeroMockup extends StatelessWidget {
                       color: Color(0xFF00FF5F),
                       fontWeight: FontWeight.w900,
                       letterSpacing: 0.7,
-                    ),
-                  ),
-                ),
-              ),
-            ),
-            Positioned(
-              left: 22,
-              bottom: 22,
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(20),
-                child: Image.asset(
-                  _logoAsset,
-                  width: 96,
-                  height: 96,
-                  fit: BoxFit.cover,
-                  errorBuilder: (_, __, ___) => Container(
-                    width: 96,
-                    height: 96,
-                    alignment: Alignment.center,
-                    decoration: BoxDecoration(
-                      color: Colors.black.withOpacity(0.72),
-                      borderRadius: BorderRadius.circular(20),
-                      border: Border.all(
-                        color: const Color(0xFF00FF5F).withOpacity(0.45),
-                      ),
-                    ),
-                    child: const Text(
-                      'JF',
-                      style: TextStyle(
-                        color: Color(0xFF00FF5F),
-                        fontWeight: FontWeight.w900,
-                      ),
                     ),
                   ),
                 ),
