@@ -15,16 +15,6 @@ class AboutSection extends StatelessWidget {
     await launchUrl(uri, mode: LaunchMode.externalApplication);
   }
 
-  Future<void> _openMail() async {
-    final uri = Uri(
-      scheme: 'mailto',
-      path: 'jchillah@gmail.com',
-      query:
-          'subject=Projektanfrage%20-%20Jchillah%E2%80%99s%20Design%20%26%20Coding%20Forge',
-    );
-    await launchUrl(uri, mode: LaunchMode.platformDefault);
-  }
-
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
@@ -59,11 +49,6 @@ class AboutSection extends StatelessWidget {
                 spacing: 12,
                 runSpacing: 8,
                 children: [
-                  FilledButton.icon(
-                    onPressed: _openMail,
-                    icon: const Icon(Icons.mail_outline),
-                    label: const Text('Kontakt aufnehmen'),
-                  ),
                   OutlinedButton.icon(
                     onPressed: () => _openUrl(_cvUrl),
                     icon: const Icon(Icons.badge_outlined),
