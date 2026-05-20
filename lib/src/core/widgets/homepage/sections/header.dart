@@ -1,6 +1,6 @@
 // src/core/widgets/homepage/sections/header.dart
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:jchillah_company_site/src/features/contact/presentation/contact_page.dart';
 
 class Header extends StatelessWidget {
   final bool isWide;
@@ -10,14 +10,10 @@ class Header extends StatelessWidget {
   static const String _logoAsset =
       'assets/images/branding/jchillah_logo_square.png';
 
-  Future<void> _openMail() async {
-    final uri = Uri(
-      scheme: 'mailto',
-      path: 'jchillah@gmail.com',
-      query:
-          'subject=App%20Projektanfrage%20-%20Jchillah%E2%80%99s%20Design%20%26%20Coding%20Forge',
+  void _openContactPage(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(builder: (_) => const ContactPage()),
     );
-    await launchUrl(uri, mode: LaunchMode.platformDefault);
   }
 
   @override
@@ -94,9 +90,10 @@ class Header extends StatelessWidget {
         ),
         if (isWide) ...[
           const Spacer(),
-          FilledButton(
-            onPressed: _openMail,
-            child: const Text('Projekt anfragen'),
+          FilledButton.icon(
+            onPressed: () => _openContactPage(context),
+            icon: const Icon(Icons.contact_mail_outlined),
+            label: const Text('Kontakt'),
           ),
         ],
       ],
