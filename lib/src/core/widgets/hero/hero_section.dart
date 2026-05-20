@@ -2,23 +2,12 @@
 import 'package:flutter/material.dart';
 import 'package:jchillah_company_site/src/core/widgets/hero/hero_bullet.dart';
 import 'package:jchillah_company_site/src/core/widgets/hero/hero_mockup.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class HeroSection extends StatelessWidget {
   final bool isWide;
   final VoidCallback? onShowServices;
 
   const HeroSection({super.key, required this.isWide, this.onShowServices});
-
-  Future<void> _openMail() async {
-    final uri = Uri(
-      scheme: 'mailto',
-      path: 'jchillah@gmail.com',
-      query:
-          'subject=Projektanfrage%20-%20Jchillah%E2%80%99s%20Design%20%26%20Coding%20Forge',
-    );
-    await launchUrl(uri, mode: LaunchMode.platformDefault);
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -77,11 +66,6 @@ class HeroSection extends StatelessWidget {
       runSpacing: 10,
       children: [
         FilledButton.icon(
-          onPressed: _openMail,
-          icon: const Icon(Icons.mail_outline),
-          label: const Text('Projekt anfragen'),
-        ),
-        OutlinedButton.icon(
           onPressed: onShowServices,
           icon: const Icon(Icons.design_services_outlined),
           label: const Text('Leistungen ansehen'),
