@@ -1,19 +1,15 @@
 // src/core/widgets/homepage/sections/contact_section.dart
 import 'package:flutter/material.dart';
 import 'package:jchillah_company_site/src/core/widgets/homepage/sections/section.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:jchillah_company_site/src/features/contact/presentation/contact_page.dart';
 
 class ContactSection extends StatelessWidget {
   const ContactSection({super.key});
 
-  Future<void> _openMail() async {
-    final uri = Uri(
-      scheme: 'mailto',
-      path: 'jchillah@gmail.com',
-      query:
-          'subject=App%20Projektanfrage%20-%20Jchillah%E2%80%99s%20Design%20%26%20Coding%20Forge',
+  void _openContactPage(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(builder: (_) => const ContactPage()),
     );
-    await launchUrl(uri, mode: LaunchMode.platformDefault);
   }
 
   @override
@@ -22,27 +18,19 @@ class ContactSection extends StatelessWidget {
 
     return Section(
       title: 'Kontakt',
-      subtitle: 'Bereit, deine App-Idee zu schmieden?',
+      subtitle: 'Alle Kontaktmöglichkeiten an einem Ort.',
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Erzähl mir kurz, wer du bist, was du machst und welche Art von App '
-            'du dir vorstellst. Ob du noch ganz am Anfang stehst oder bereits '
-            'erste Konzepte hast – wir finden gemeinsam den nächsten sinnvollen Schritt.',
+            'Für Projektanfragen, Rückfragen oder eine erste Abstimmung findest du auf der Kontaktseite E-Mail, Telefon, SMS, WhatsApp und die postalische Adresse.',
             style: theme.textTheme.bodyMedium?.copyWith(color: Colors.white70),
           ),
           const SizedBox(height: 16),
-          Wrap(
-            spacing: 16,
-            runSpacing: 8,
-            children: [
-              FilledButton.icon(
-                onPressed: _openMail,
-                icon: const Icon(Icons.email_outlined),
-                label: const Text('E-Mail schreiben'),
-              ),
-            ],
+          FilledButton.icon(
+            onPressed: () => _openContactPage(context),
+            icon: const Icon(Icons.contact_mail_outlined),
+            label: const Text('Kontaktseite öffnen'),
           ),
         ],
       ),
