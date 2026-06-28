@@ -55,7 +55,7 @@ class PortfolioSection extends StatelessWidget {
           title: 'GameRadar – Gaming Discovery App (Eigenprojekt)',
           subtitle:
               'Moderne Android-App zum Entdecken, Verwalten und Analysieren von Videospielen – gebaut mit Jetpack Compose und RAWG API.',
-          status: 'Eigenprojekt · Open Source · Aktiv in Entwicklung',
+          status: 'Abschlussprojekt · Android App Development'
           techStack:
               'Kotlin · Jetpack Compose · MVVM/MVI Hybrid · Room · Retrofit · RAWG API',
           longDescription:
@@ -93,42 +93,49 @@ class PortfolioSection extends StatelessWidget {
   }
 
   void _openCryptoTracker(BuildContext context) {
-    Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (_) => const ProjectDetailPage(
-          title: 'CryptoTracker – Krypto Portfolio & Market App (Eigenprojekt)',
-          subtitle:
-              'Moderne Android-App zur Verfolgung von Kryptowährungen, Preisen und Portfolio-Werten.',
-          status: 'Eigenprojekt · Open Source',
-          techStack: 'Kotlin · Jetpack Compose · MVVM · Retrofit · REST API',
-          longDescription:
-              'CryptoTracker ist ein Android-Projekt zur Überwachung von Kryptowährungen. '
-              'Die App nutzt eine externe REST-API, um Preise, Marktveränderungen und '
-              'weitere Kennzahlen abzurufen und visuell darzustellen.\n\n'
-              'Das Projekt dient als technisches Showcase für API-Integration, State-Management '
-              'mit MVVM, moderne Compose-UI und saubere Trennung von Data-, Domain- und Presentation-Layer.',
-          features: [
-            'Preisabfragen über externe Krypto-API',
-            'Moderne UI mit Jetpack Compose',
-            'MVVM-Architektur mit klarer Layer-Trennung',
-            'Detailansichten für Coins mit Preisverlauf',
-            'Saubere Netzwerk- und Fehlerbehandlung',
-            'Dark Mode und performante UI-States',
-          ],
-          screenshotAssets: [
-            'assets/images/cryptotracker_1.png',
-            'assets/images/cryptotracker_2.png',
-            'assets/images/cryptotracker_3.png',
-            'assets/images/cryptotracker_4.png',
-            'assets/images/cryptotracker_5.png',
-            'assets/images/cryptotracker_6.png',
-            'assets/images/cryptotracker_7.jpg',
-          ],
-          appRepoUrl: 'https://github.com/jchillah/CryptoTracker',
-        ),
+  Navigator.of(context).push(
+    MaterialPageRoute(
+      builder: (_) => const ProjectDetailPage(
+        title: 'CryptoTracker – iOS Cryptocurrency Tracker',
+        subtitle:
+            'Native iOS-App zur Verfolgung von Kryptowährungen mit Echtzeitdaten, Charts und Favoriten.',
+        status: 'Abschlussprojekt · iOS App Development',
+        techStack:
+            'Swift · SwiftUI · MVVM · Firebase · Firestore · SwiftData · Keychain · REST API',
+        longDescription:
+            'CryptoTracker ist eine native iOS-Anwendung, die im Rahmen meiner Weiterbildung '
+            'zum Mobile App Developer entwickelt wurde. Die App ermöglicht das Verfolgen '
+            'von Kryptowährungen in Echtzeit, das Analysieren historischer Preisdaten '
+            'sowie das Speichern persönlicher Favoriten.\n\n'
+            'Die Anwendung setzt auf eine moderne MVVM-Architektur, Firebase Authentication '
+            'für die Benutzeranmeldung, Firestore zur Synchronisierung der Favoriten, '
+            'SwiftData für lokale Persistenz sowie die sichere Speicherung sensibler '
+            'API-Schlüssel über die iOS Keychain. Bei API-Ausfällen oder Limits greift '
+            'die App auf lokal gespeicherte Daten zurück.',
+        features: [
+          'Echtzeit-Kryptodaten über REST API',
+          'Interaktive Preisdiagramme',
+          'Favoriten mit Firebase Firestore',
+          'Firebase Authentication (Sign In / Sign Up)',
+          'Lokale Datenspeicherung mit SwiftData',
+          'Sichere API-Schlüsselverwaltung mit Keychain',
+          'MVVM-Architektur mit sauberer Projektstruktur',
+          'Offline-Fallback bei API-Limits',
+        ],
+        screenshotAssets: [
+          'assets/images/cryptotracker_1.png',
+          'assets/images/cryptotracker_2.png',
+          'assets/images/cryptotracker_3.png',
+          'assets/images/cryptotracker_4.png',
+          'assets/images/cryptotracker_5.png',
+          'assets/images/cryptotracker_6.png',
+          'assets/images/cryptotracker_7.jpg',
+        ],
+        appRepoUrl: 'https://github.com/jchillah/CryptoTracker',
       ),
-    );
-  }
+    ),
+  );
+}
 
   @override
   Widget build(BuildContext context) {
