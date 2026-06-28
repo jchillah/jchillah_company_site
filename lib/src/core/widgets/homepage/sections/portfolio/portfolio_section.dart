@@ -55,7 +55,7 @@ class PortfolioSection extends StatelessWidget {
           title: 'GameRadar – Gaming Discovery App (Eigenprojekt)',
           subtitle:
               'Moderne Android-App zum Entdecken, Verwalten und Analysieren von Videospielen – gebaut mit Jetpack Compose und RAWG API.',
-          status: 'Abschlussprojekt · Android App Development'
+          status: 'Abschlussprojekt · Android App Development',
           techStack:
               'Kotlin · Jetpack Compose · MVVM/MVI Hybrid · Room · Retrofit · RAWG API',
           longDescription:
