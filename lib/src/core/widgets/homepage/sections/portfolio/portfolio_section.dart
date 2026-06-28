@@ -170,7 +170,7 @@ class PortfolioSection extends StatelessWidget {
                       'RAWG-API, lokale Speicherung und Jetpack Compose.',
                   techStack:
                       'Kotlin · Jetpack Compose · MVVM/MVI · RAWG API · Room',
-                  status: 'Eigenprojekt · Showcase',
+                  status: 'Abschlussprojekt · Android App Development · Showcase',
                   onTap: () => _openGameRadar(context),
                   iconAsset: 'assets/images/gameradar_app_icon.png',
                 ),
@@ -180,10 +180,10 @@ class PortfolioSection extends StatelessWidget {
                 child: PortfolioCard(
                   title: 'CryptoTracker – Krypto Portfolio App',
                   description:
-                      'Android-App zur Verfolgung von Kryptowährungen. REST-API Integration, '
+                      'iOS-App zur Verfolgung von Kryptowährungen. REST-API Integration, '
                       'MVVM Architektur und modernes Compose-UI.',
-                  techStack: 'Kotlin · Jetpack Compose · MVVM · REST API',
-                  status: 'Eigenprojekt · Open Source',
+                  techStack: 'Swift · SwiftUI · MVVM · REST API',
+                  status: 'Abschlussprojekt · iOS App Development · Open Source',
                   onTap: () => _openCryptoTracker(context),
                   iconAsset: null,
                 ),
