@@ -10175,7 +10175,7 @@ case 4:s=l.a
 s===$&&A.a()
 s=A.b2(s,200)
 r=A.b2(A.Tl(l,B.lC,B.DB),24)
-q=A.b2(A.Tl(l,B.lC,B.E4),32)
+q=A.b2(A.Tl(l,B.lC,B.E3),32)
 p=A.b2(l.a,10)
 o=A.b2(l.a,12)
 l.d===$&&A.a()
@@ -18494,7 +18494,7 @@ if(a.as!==q)return q?-1:1
 return 0},
 asn(a,b){var s=A.Z(b).h("ad<1,cK>")
 s=A.W(new A.ad(b,new A.Tu(),s),s.h("av.E"))
-return A.arO(!0,s,a,B.Ec,!0,B.Ar,null)},
+return A.arO(!0,s,a,B.Eb,!0,B.Ar,null)},
 af5(a){var s
 try{a.cO()}catch(s){a.Gh()}a.w=B.R7
 try{a.bj(A.aA1())}catch(s){}},
@@ -18987,7 +18987,7 @@ _.as=!0
 _.at=!1
 _.$ti=d},
 ata(a,b){var s
-if(a===b)return new A.Cf(B.Eb)
+if(a===b)return new A.Cf(B.Ea)
 s=A.c([],t.fJ)
 A.bU()
 a.lC(new A.Wb(b,A.ay(t.u),s))
@@ -22807,7 +22807,7 @@ $iEC:1}
 A.ad_.prototype={
 $1(a){var s=A.cw().b
 s=s==null?null:s.canvasKitBaseUrl
-return(s==null?"https://www.gstatic.com/flutter-canvaskit/4c525dac5ebe5971c5708ef73558ed8edcf4a362/":s)+a},
+return(s==null?"https://www.gstatic.com/flutter-canvaskit/a10d8ac38de835021c8d2f920dbf50a920ccc030/":s)+a},
 $S:106}
 A.ET.prototype={
 gq(a){var s=this.a
@@ -23558,7 +23558,7 @@ qv(){var s=this.Q
 s===$&&A.a()
 return s},
 qw(a,b,c,d){var s,r,q,p
-if(a<0||b<0)return B.Eh
+if(a<0||b<0)return B.Eg
 s=this.a
 s===$&&A.a()
 s=s.a
@@ -28643,7 +28643,7 @@ if(m.f!==B.lg){m.f=B.lg
 m.HM()}}return m.d.a.Qq(a)},
 HM(){var s,r
 for(s=this.w,r=0;r<s.length;++r)s[r].$1(this.f)},
-Qp(a){if(B.b.t(B.E6,a))return this.f===B.eG
+Qp(a){if(B.b.t(B.E5,a))return this.f===B.eG
 return!1}}
 A.U1.prototype={
 $0(){return new A.fN(Date.now(),0,!1)},
@@ -35223,7 +35223,7 @@ if(o>0)return s
 return null}}
 A.a74.prototype={
 D(a,b){this.FR(b,0,b.length,!1)},
-ba(){this.FR(B.Ea,0,0,!0)}}
+ba(){this.FR(B.E9,0,0,!0)}}
 A.acu.prototype={
 FR(a,b,c,d){var s=this.b.a6E(a,b,c,d)
 if(s!=null)this.a.kL(s,0,s.length,d)}}
@@ -40668,7 +40668,7 @@ A.qt.prototype={
 G(){return"_CornerId."+this.b}}
 A.jk.prototype={}
 A.p6.prototype={
-iI(){var s,r,q,p=this,o=A.ayH(B.E2,new A.Zl(p,p.b.gaU().Z(0,p.a.gaU()))),n=p.a
+iI(){var s,r,q,p=this,o=A.ayH(B.E1,new A.Zl(p,p.b.gaU().Z(0,p.a.gaU()))),n=p.a
 n.toString
 s=o.a
 r=p.m3(n,s)
@@ -43319,7 +43319,7 @@ $3(a,b,c){return new A.lf(b,this.a,!1,c,null)},
 $S:123}
 A.Fy.prototype={
 UN(a){var s=t.Tr
-s=A.W(new A.ad(B.E1,new A.a_z(a),s),s.h("av.E"))
+s=A.W(new A.ad(B.E0,new A.a_z(a),s),s.h("av.E"))
 return s},
 i(a,b){if(b==null)return!1
 if(this===b)return!0
@@ -46765,7 +46765,7 @@ Px(a){var s=this.b,r=s.a.c.Db(a.Z(0,s.gfj()))
 if(r==null||s.gfj().i(0,B.i))return r
 return new A.jU(r.a.dY(s.gfj()),r.b,r.c)},
 tv(){var s,r,q=this.b,p=q.gfj()
-if(!isFinite(p.a)||!isFinite(p.b))return B.Ej
+if(!isFinite(p.a)||!isFinite(p.b))return B.Ei
 s=q.f
 if(s==null){s=q.a.c.tv()
 q.f=s}if(p.i(0,B.i))r=s
@@ -54268,7 +54268,7 @@ break
 case 1:return A.N(q,r)}})
 return A.O($async$xP,r)},
 X8(a,b){var s,r,q,p
-if(a===b)return B.Eg
+if(a===b)return B.Ef
 s=A.c([],t.QP)
 if(a==null)s.push(b)
 else{r=B.b.lc(B.dn,a)
@@ -55523,7 +55523,7 @@ A.kq.prototype={}
 A.FS.prototype={
 j9(a,b){var s,r,q,p,o,n=$.a5.al$.d.c
 if(n==null||n.e==null)return!1
-for(s=t.r,r=0;r<2;++r){q=B.E7[r]
+for(s=t.r,r=0;r<2;++r){q=B.E6[r]
 p=n.e
 p.toString
 o=A.aeE(p,q,s)
@@ -55724,7 +55724,7 @@ r=m.gZU()
 q=m.a
 q=q.ch
 q.toString
-k.a=A.asR(!0,A.ak4(B.w,r,s,q,A.anM(),m.ga_R(),l,m.ga0a(),B.Ed,!0,"nav",B.PW),"Navigator Scope",!0,l,l,l,l)}else m.a.toString
+k.a=A.asR(!0,A.ak4(B.w,r,s,q,A.anM(),m.ga_R(),l,m.ga0a(),B.Ec,!0,"nav",B.PW),"Navigator Scope",!0,l,l,l,l)}else m.a.toString
 k.b=null
 s=m.a
 s.toString
@@ -58986,7 +58986,7 @@ i(a,b){var s=this
 if(b==null)return!1
 if(J.L(b)!==A.t(s))return!1
 return b instanceof A.c4&&b.a===s.a&&b.b==s.b&&b.d===s.d&&A.d2(null,null)},
-gq(a){return A.K(this.a,this.b,null,this.d,A.bq(B.Ei),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
+gq(a){return A.K(this.a,this.b,null,this.d,A.bq(B.Eh),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 k(a){return"IconData(U+"+B.d.qa(B.h.kh(this.a,16).toUpperCase(),5,"0")+")"}}
 A.mh.prototype={
 bs(a){return!this.w.i(0,a.w)},
@@ -60161,7 +60161,7 @@ b=r?a1:a3.fr
 if(b==null)b=a2.b.c.z
 a3=r?a1:a3.fx
 if(a3==null)a3=a2.b.c.Q
-a=new A.vk(a4,s,q,p,m,o,n,a5,g===!0,a6,a7,i,h,l,k,j,f,new A.tQ(a1),B.Ee,e===!0,d,c,b,a3,A.atH(a2))
+a=new A.vk(a4,s,q,p,m,o,n,a5,g===!0,a6,a7,i,h,l,k,j,f,new A.tQ(a1),B.Ed,e===!0,d,c,b,a3,A.atH(a2))
 if(!a.i(0,a0.e))a0.aN(new A.aa8(a0,a))},
 tQ(){if(this.d==null)this.mq()},
 LS(){this.mq()},
@@ -66216,7 +66216,7 @@ r.t1()
 return s.aT()},
 l(){var s,r,q,p,o=this
 for(s=o.b,r=s.length,q=o.gxR(),p=0;p<s.length;s.length===r||(0,A.r)(s),++p)s[p].K(q)
-o.b=B.Ef
+o.b=B.Ee
 o.y=!1
 o.e_()},
 cI(a,b){return a.jW(b)},
@@ -68143,13 +68143,13 @@ a0p(a){A.eI(a,!1).fl(A.ke(new A.a0m(),null,t.z))},
 a0m(a){A.eI(a,!1).fl(A.ke(new A.a0l(),null,t.z))},
 J(a){return new A.cY("Portfolio","Ausgew\xe4hlte Projekte \u2013 vom ver\xf6ffentlichten Android-Release bis zu technischen Showcase-Apps mit moderner Architektur.",A.WW(new A.a0q(this)),null)}}
 A.a0k.prototype={
-$1(a){return B.Im},
+$1(a){return B.Io},
 $S:89}
 A.a0m.prototype={
-$1(a){return B.In},
+$1(a){return B.Im},
 $S:89}
 A.a0l.prototype={
-$1(a){return B.Io},
+$1(a){return B.In},
 $S:89}
 A.a0q.prototype={
 $2(a,b){var s=null,r=b.b>800?B.av:B.aw,q=this.a
@@ -68305,12 +68305,13 @@ l=A.eK(A.c([B.BS,B.jp,j,B.wi,A.aK(r.f,q,l,q)],k),B.am,B.v,B.C,0)
 j=m.z
 j=j==null?q:j.bb(B.q)
 j=A.c([l,B.aN,A.aK(r.r,q,j,q),B.aN],k)
-l=r.w
-if(l.length!==0){m=m.w
+m=m.w
 m=A.aK("Schwerpunkte & Features",q,m==null?q:m.fb(B.a1),q)
+l=r.w
 s=A.Z(l).h("ad<1,ce>")
 l=A.W(new A.ad(l,new A.a0y(),s),s.h("av.E"))
-B.b.L(j,A.c([m,B.aD,A.cJ(l,B.B,B.v,B.C)],k))}o=A.c([new A.cY(o,r.d,A.cJ(j,B.B,B.v,B.C),q),B.aC],k)
+B.b.L(j,A.c([m,B.aD,A.cJ(l,B.B,B.v,B.C)],k))
+o=A.c([new A.cY(o,r.d,A.cJ(j,B.B,B.v,B.C),q),B.aC],k)
 m=A.c([],k)
 if(r.y!=null)m.push(A.DK(B.BQ,B.PK,new A.a0z(r)))
 m.push(A.pj(B.lp,B.PC,new A.a0A(r)))
@@ -71668,7 +71669,7 @@ B.yU=new A.a63()
 B.a3=new A.a66()
 B.bP=new A.a68()
 B.cL=new A.Ik(0,0,0,0)
-B.Ee=s([],A.aj("x<SX>"))
+B.Ed=s([],A.aj("x<SX>"))
 B.Sa=new A.a6d()
 B.aM={}
 B.qH=new A.bB(B.aM,[],t.li)
@@ -72135,10 +72136,10 @@ B.DP=s([B.zI,B.zE],t.t_)
 B.CF=new A.k8(B.h2,B.jQ,B.cJ,B.DP,null,null)
 B.CG=new A.v8(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.CI=s([0,6,12,18],t.t)
-B.E3=s([1373.2198709594231,-1100.4251190754821,-7.278681089101213],t.n)
+B.E2=s([1373.2198709594231,-1100.4251190754821,-7.278681089101213],t.n)
 B.DN=s([-271.815969077903,559.6580465940733,-32.46047482791194],t.n)
 B.EF=s([1.9622899599665666,-57.173814538844006,308.7233197812385],t.n)
-B.CK=s([B.E3,B.DN,B.EF],t.zg)
+B.CK=s([B.E2,B.DN,B.EF],t.zg)
 B.D7=s([4,9,14,19],t.t)
 B.Es=s([137,80,78,71,13,10,26,10],t.Z)
 B.C3=new A.jX(0,"png")
@@ -72218,7 +72219,7 @@ B.z5=new A.lF(1,"full")
 B.z6=new A.lF(2,"chromium")
 B.DZ=s([B.z4,B.z5,B.z6,B.bR],A.aj("x<lF>"))
 B.b_=new A.e_(1,"fuchsia")
-B.E1=s([B.ag,B.b_,B.ac,B.aO,B.aP,B.aQ],A.aj("x<e_>"))
+B.E0=s([B.ag,B.b_,B.ac,B.aO,B.aP,B.aQ],A.aj("x<e_>"))
 B.x5=new A.qt(0,"topLeft")
 B.x8=new A.qt(3,"bottomRight")
 B.R3=new A.jk(B.x5,B.x8)
@@ -72227,41 +72228,41 @@ B.x6=new A.qt(1,"topRight")
 B.x7=new A.qt(2,"bottomLeft")
 B.R4=new A.jk(B.x6,B.x7)
 B.R5=new A.jk(B.x7,B.x6)
-B.E2=s([B.R3,B.R6,B.R4,B.R5],A.aj("x<jk>"))
-B.E4=s([35,30,20,25,30,35,30,25,25],t.n)
-B.E6=s(["click","scroll"],t.s)
+B.E1=s([B.R3,B.R6,B.R4,B.R5],A.aj("x<jk>"))
+B.E3=s([35,30,20,25,30,35,30,25,25],t.n)
+B.E5=s(["click","scroll"],t.s)
 B.xX=new A.nZ()
 B.iZ=new A.H6(1,"page")
 B.j_=new A.eL(B.aG,B.iZ)
-B.E7=s([B.xX,B.j_],A.aj("x<aL>"))
-B.Eg=s([],t.QP)
+B.E6=s([B.xX,B.j_],A.aj("x<aL>"))
+B.Ef=s([],t.QP)
 B.lG=s([],A.aj("x<aBe>"))
-B.Ec=s([],t.D)
-B.Eb=s([],t.fJ)
-B.Ej=s([],t.ER)
+B.Eb=s([],t.D)
+B.Ea=s([],t.fJ)
+B.Ei=s([],t.ER)
 B.lH=s([],t.tc)
 B.eP=s([],t.jl)
 B.lJ=s([],t.wi)
-B.Ed=s([],A.aj("x<hW<@>>"))
+B.Ec=s([],A.aj("x<hW<@>>"))
 B.ip=s([],t.AO)
-B.Ef=s([],t.D1)
+B.Ee=s([],t.D1)
 B.io=s([],t.g)
 B.lF=s([],t.s)
 B.an=s([],t.oU)
-B.Eh=s([],t.Lx)
+B.Eg=s([],t.Lx)
 B.Sh=s([],t.p)
-B.Ea=s([],t.t)
+B.E9=s([],t.t)
 B.lI=s([],t.ee)
-B.Ei=s([],t.XS)
+B.Eh=s([],t.XS)
 B.Bk=new A.oL("Flutter Apps f\xfcr Android, iOS und Web",null)
 B.Bi=new A.oL("Gaming Companion Tools wie ASA Server Eye",null)
 B.Bj=new A.oL("UI/UX, Branding, App-Store-Vorbereitung und Release-Begleitung",null)
 B.En=s([B.Bk,B.Bi,B.Bj],t.p)
 B.dn=s([B.bJ,B.bt,B.e3,B.e4,B.h5],t.QP)
 B.Dp=s([0.001200833568784504,0.002389694492170889,0.0002795742885861124],t.n)
-B.E8=s([0.0005891086651375999,0.0029785502573438758,0.0003270666104008398],t.n)
+B.E7=s([0.0005891086651375999,0.0029785502573438758,0.0003270666104008398],t.n)
 B.DA=s([0.00010146692491640572,0.0005364214359186694,0.0032979401770712076],t.n)
-B.Ew=s([B.Dp,B.E8,B.DA],t.zg)
+B.Ew=s([B.Dp,B.E7,B.DA],t.zg)
 B.Ex=s([45,95,45,20,45,90,45,45,45],t.n)
 B.Ey=s([120,120,20,45,20,15,20,120,120],t.n)
 B.cu=new A.f7(0,"controlModifier")
@@ -72857,16 +72858,16 @@ B.DI=s([B.aW,null,null,B.c1],t.L)
 B.Ez=s([B.b5,null,null,B.c2],t.L)
 B.Eo=s([B.iu,null,null,B.iB],t.L)
 B.Dr=s([B.dv,B.dv,B.eV,null],t.L)
-B.E5=s([B.ap,null,null,B.bZ],t.L)
+B.E4=s([B.ap,null,null,B.bZ],t.L)
 B.DJ=s([B.bW,null,null,B.dy],t.L)
 B.Dk=s([B.eR,null,null,B.iz],t.L)
 B.DK=s([B.bX,null,null,B.dA],t.L)
 B.Ep=s([B.du,null,null,B.iA],t.L)
 B.Ds=s([B.dx,B.dx,B.eX,null],t.L)
 B.DL=s([B.ds,null,null,B.dz],t.L)
-B.E9=s([B.dt,null,null,B.dB],t.L)
+B.E8=s([B.dt,null,null,B.dB],t.L)
 B.Dt=s([B.bY,B.bY,B.cs,null],t.L)
-B.Gk=new A.cV(["*",B.Dg,"+",B.Ek,"-",B.DD,".",B.DY,"/",B.CH,"0",B.Eu,"1",B.Er,"2",B.Dn,"3",B.EA,"4",B.Eq,"5",B.Dl,"6",B.CM,"7",B.Dx,"8",B.El,"9",B.Em,"Alt",B.Dq,"AltGraph",B.Ev,"ArrowDown",B.DG,"ArrowLeft",B.DH,"ArrowRight",B.DI,"ArrowUp",B.Ez,"Clear",B.Eo,"Control",B.Dr,"Delete",B.E5,"End",B.DJ,"Enter",B.Dk,"Home",B.DK,"Insert",B.Ep,"Meta",B.Ds,"PageDown",B.DL,"PageUp",B.E9,"Shift",B.Dt],A.aj("cV<B,V<e?>>"))
+B.Gk=new A.cV(["*",B.Dg,"+",B.Ek,"-",B.DD,".",B.DY,"/",B.CH,"0",B.Eu,"1",B.Er,"2",B.Dn,"3",B.EA,"4",B.Eq,"5",B.Dl,"6",B.CM,"7",B.Dx,"8",B.El,"9",B.Em,"Alt",B.Dq,"AltGraph",B.Ev,"ArrowDown",B.DG,"ArrowLeft",B.DH,"ArrowRight",B.DI,"ArrowUp",B.Ez,"Clear",B.Eo,"Control",B.Dr,"Delete",B.E4,"End",B.DJ,"Enter",B.Dk,"Home",B.DK,"Insert",B.Ep,"Meta",B.Ds,"PageDown",B.DL,"PageUp",B.E8,"Shift",B.Dt],A.aj("cV<B,V<e?>>"))
 B.GQ={KeyA:0,KeyB:1,KeyC:2,KeyD:3,KeyE:4,KeyF:5,KeyG:6,KeyH:7,KeyI:8,KeyJ:9,KeyK:10,KeyL:11,KeyM:12,KeyN:13,KeyO:14,KeyP:15,KeyQ:16,KeyR:17,KeyS:18,KeyT:19,KeyU:20,KeyV:21,KeyW:22,KeyX:23,KeyY:24,KeyZ:25,Digit1:26,Digit2:27,Digit3:28,Digit4:29,Digit5:30,Digit6:31,Digit7:32,Digit8:33,Digit9:34,Digit0:35,Minus:36,Equal:37,BracketLeft:38,BracketRight:39,Backslash:40,Semicolon:41,Quote:42,Backquote:43,Comma:44,Period:45,Slash:46}
 B.qM=new A.bB(B.GQ,["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","1","2","3","4","5","6","7","8","9","0","-","=","[","]","\\",";","'","`",",",".","/"],t.li)
 B.GM={Abort:0,Again:1,AltLeft:2,AltRight:3,ArrowDown:4,ArrowLeft:5,ArrowRight:6,ArrowUp:7,AudioVolumeDown:8,AudioVolumeMute:9,AudioVolumeUp:10,Backquote:11,Backslash:12,Backspace:13,BracketLeft:14,BracketRight:15,BrightnessDown:16,BrightnessUp:17,BrowserBack:18,BrowserFavorites:19,BrowserForward:20,BrowserHome:21,BrowserRefresh:22,BrowserSearch:23,BrowserStop:24,CapsLock:25,Comma:26,ContextMenu:27,ControlLeft:28,ControlRight:29,Convert:30,Copy:31,Cut:32,Delete:33,Digit0:34,Digit1:35,Digit2:36,Digit3:37,Digit4:38,Digit5:39,Digit6:40,Digit7:41,Digit8:42,Digit9:43,DisplayToggleIntExt:44,Eject:45,End:46,Enter:47,Equal:48,Escape:49,Esc:50,F1:51,F10:52,F11:53,F12:54,F13:55,F14:56,F15:57,F16:58,F17:59,F18:60,F19:61,F2:62,F20:63,F21:64,F22:65,F23:66,F24:67,F3:68,F4:69,F5:70,F6:71,F7:72,F8:73,F9:74,Find:75,Fn:76,FnLock:77,GameButton1:78,GameButton10:79,GameButton11:80,GameButton12:81,GameButton13:82,GameButton14:83,GameButton15:84,GameButton16:85,GameButton2:86,GameButton3:87,GameButton4:88,GameButton5:89,GameButton6:90,GameButton7:91,GameButton8:92,GameButton9:93,GameButtonA:94,GameButtonB:95,GameButtonC:96,GameButtonLeft1:97,GameButtonLeft2:98,GameButtonMode:99,GameButtonRight1:100,GameButtonRight2:101,GameButtonSelect:102,GameButtonStart:103,GameButtonThumbLeft:104,GameButtonThumbRight:105,GameButtonX:106,GameButtonY:107,GameButtonZ:108,Help:109,Home:110,Hyper:111,Insert:112,IntlBackslash:113,IntlRo:114,IntlYen:115,KanaMode:116,KeyA:117,KeyB:118,KeyC:119,KeyD:120,KeyE:121,KeyF:122,KeyG:123,KeyH:124,KeyI:125,KeyJ:126,KeyK:127,KeyL:128,KeyM:129,KeyN:130,KeyO:131,KeyP:132,KeyQ:133,KeyR:134,KeyS:135,KeyT:136,KeyU:137,KeyV:138,KeyW:139,KeyX:140,KeyY:141,KeyZ:142,KeyboardLayoutSelect:143,Lang1:144,Lang2:145,Lang3:146,Lang4:147,Lang5:148,LaunchApp1:149,LaunchApp2:150,LaunchAssistant:151,LaunchControlPanel:152,LaunchMail:153,LaunchScreenSaver:154,MailForward:155,MailReply:156,MailSend:157,MediaFastForward:158,MediaPause:159,MediaPlay:160,MediaPlayPause:161,MediaRecord:162,MediaRewind:163,MediaSelect:164,MediaStop:165,MediaTrackNext:166,MediaTrackPrevious:167,MetaLeft:168,MetaRight:169,MicrophoneMuteToggle:170,Minus:171,NonConvert:172,NumLock:173,Numpad0:174,Numpad1:175,Numpad2:176,Numpad3:177,Numpad4:178,Numpad5:179,Numpad6:180,Numpad7:181,Numpad8:182,Numpad9:183,NumpadAdd:184,NumpadBackspace:185,NumpadClear:186,NumpadClearEntry:187,NumpadComma:188,NumpadDecimal:189,NumpadDivide:190,NumpadEnter:191,NumpadEqual:192,NumpadMemoryAdd:193,NumpadMemoryClear:194,NumpadMemoryRecall:195,NumpadMemoryStore:196,NumpadMemorySubtract:197,NumpadMultiply:198,NumpadParenLeft:199,NumpadParenRight:200,NumpadSubtract:201,Open:202,PageDown:203,PageUp:204,Paste:205,Pause:206,Period:207,Power:208,PrintScreen:209,PrivacyScreenToggle:210,Props:211,Quote:212,Resume:213,ScrollLock:214,Select:215,SelectTask:216,Semicolon:217,ShiftLeft:218,ShiftRight:219,ShowAllWindows:220,Slash:221,Sleep:222,Space:223,Super:224,Suspend:225,Tab:226,Turbo:227,Undo:228,WakeUp:229,ZoomToggle:230}
@@ -73254,15 +73255,15 @@ B.If=new A.mS(3,"externalApplication")
 B.vw=new A.mS(4,"externalNonBrowserApplication")
 B.Ig=new A.FT(null)
 B.Il=new A.w1(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.Dy=s(["Ver\xf6ffentlichte Android-App f\xfcr ARK: Survival Ascended Spieler","Offizielle Serverliste mit relevanten Serverdaten","Server-Detailansichten f\xfcr bessere Entscheidungen vor dem Login","Favoriten-Funktion f\xfcr wichtige Server","Flutter Cross-Platform-Codebasis","Firebase-Integration f\xfcr Nutzer- und App-Funktionen","App-Store-, Datenschutz- und app-ads.txt-Setup","Aktive Weiterentwicklung mit Fokus auf Alerts und bessere Server Intelligence"],t.s)
-B.DE=s(["assets/images/asa_server_eye_1.png","assets/images/asa_server_eye_2.png","assets/images/asa_server_eye_3.png","assets/images/asa_server_eye_4.png"],t.s)
-B.Im=new A.kr("ASA Server Eye \u2013 ARK: Survival Ascended Server Tracker","Ver\xf6ffentlichte Android-App zum Beobachten offizieller ARK: Survival Ascended Server mit Serverliste, Details und Favoriten.","Eigenprojekt \xb7 Android Release \xb7 Aktiv in Weiterentwicklung","Flutter \xb7 Dart \xb7 Dio \xb7 Riverpod \xb7 Firebase \xb7 GitHub Pages","ASA Server Eye ist mein erstes ver\xf6ffentlichtes Android-App-Projekt. Die App hilft ARK: Survival Ascended Spielern dabei, offizielle Server schneller zu finden, Serverdaten zu pr\xfcfen und wichtige Server als Favoriten zu speichern.\n\nTechnisch ist ASA Server Eye als Flutter-App aufgebaut und nutzt eine datengetriebene Architektur mit API-Anbindung, sauberer Feature-Struktur und modernen Mobile-App-Prinzipien. Das Projekt ist besonders wichtig f\xfcr mein Portfolio, weil es nicht nur ein Lernprojekt ist, sondern ein echter Release mit Play-Store-, Datenschutz- und Monetarisierungsanforderungen.",B.Dy,B.DE,null,u.y,null,"https://jchillah.github.io/asa-server-eye-privacy-policy/",null)
 B.Do=s(["Eigenes Open-Source-Projekt f\xfcr Android","Spiele-Suche mit Filtern f\xfcr Plattform, Genre, Bewertung und Release-Datum","Favoriten und Wunschlisten mit lokaler Speicherung","Detailseiten mit Beschreibungen, Screenshots, Ratings und Plattformen","Statistiken und Charts zur Analyse pers\xf6nlicher Spielvorlieben","Dark-/Light-Mode und modernes Jetpack-Compose-UI","MVVM/MVI-Hybrid-Architektur mit Repository-Pattern","RAWG-API-Integration als reale externe Datenquelle"],t.s)
 B.DS=s(["assets/images/gameradar_1.png","assets/images/gameradar_2.png","assets/images/gameradar_3.png"],t.s)
-B.In=new A.kr("GameRadar \u2013 Gaming Discovery App (Eigenprojekt)","Moderne Android-App zum Entdecken, Verwalten und Analysieren von Videospielen \u2013 gebaut mit Jetpack Compose und RAWG API.","Eigenprojekt \xb7 Open Source \xb7 Aktiv in Entwicklung","Kotlin \xb7 Jetpack Compose \xb7 MVVM/MVI Hybrid \xb7 Room \xb7 Retrofit \xb7 RAWG API","GameRadar ist ein Android-Referenzprojekt: eine moderne Gaming-Discovery-App, mit der Nutzer Spiele durchsuchen, Favoriten und Wunschlisten verwalten und ihr eigenes Spieleverhalten analysieren k\xf6nnen.\n\nDie App setzt auf eine MVVM/MVI-Hybridarchitektur mit klarem Layering: Pr\xe4sentation mit Jetpack Compose, Domain-Layer f\xfcr Gesch\xe4ftslogik und ein Data-Layer mit Repository-Pattern, Room-Database und RAWG-API-Anbindung f\xfcr Spieledaten.\n\nTechnisch ist GameRadar ein Showcase-Projekt f\xfcr moderne Android-Patterns, saubere Navigation, State-Management und robuste Fehlerbehandlung.",B.Do,B.DS,"https://jchillah.github.io/gameradar-pitchdeck/","https://github.com/jchillah/GameRadar","https://github.com/jchillah/gameradar-pitchdeck","https://jchillah.github.io/GameRadar-Privacy-Policy/",null)
-B.E0=s(["Preisabfragen \xfcber externe Krypto-API","Moderne UI mit Jetpack Compose","MVVM-Architektur mit klarer Layer-Trennung","Detailansichten f\xfcr Coins mit Preisverlauf","Saubere Netzwerk- und Fehlerbehandlung","Dark Mode und performante UI-States"],t.s)
+B.Im=new A.kr("GameRadar \u2013 Gaming Discovery App (Eigenprojekt)","Moderne Android-App zum Entdecken, Verwalten und Analysieren von Videospielen \u2013 gebaut mit Jetpack Compose und RAWG API.","Abschlussprojekt \xb7 Android App Development","Kotlin \xb7 Jetpack Compose \xb7 MVVM/MVI Hybrid \xb7 Room \xb7 Retrofit \xb7 RAWG API","GameRadar ist ein Android-Referenzprojekt: eine moderne Gaming-Discovery-App, mit der Nutzer Spiele durchsuchen, Favoriten und Wunschlisten verwalten und ihr eigenes Spieleverhalten analysieren k\xf6nnen.\n\nDie App setzt auf eine MVVM/MVI-Hybridarchitektur mit klarem Layering: Pr\xe4sentation mit Jetpack Compose, Domain-Layer f\xfcr Gesch\xe4ftslogik und ein Data-Layer mit Repository-Pattern, Room-Database und RAWG-API-Anbindung f\xfcr Spieledaten.\n\nTechnisch ist GameRadar ein Showcase-Projekt f\xfcr moderne Android-Patterns, saubere Navigation, State-Management und robuste Fehlerbehandlung.",B.Do,B.DS,"https://jchillah.github.io/gameradar-pitchdeck/","https://github.com/jchillah/GameRadar","https://github.com/jchillah/gameradar-pitchdeck","https://jchillah.github.io/GameRadar-Privacy-Policy/",null)
+B.Ej=s(["Echtzeit-Kryptodaten \xfcber REST API","Interaktive Preisdiagramme","Favoriten mit Firebase Firestore","Firebase Authentication (Sign In / Sign Up)","Lokale Datenspeicherung mit SwiftData","Sichere API-Schl\xfcsselverwaltung mit Keychain","MVVM-Architektur mit sauberer Projektstruktur","Offline-Fallback bei API-Limits"],t.s)
 B.DF=s(["assets/images/cryptotracker_1.png","assets/images/cryptotracker_2.png","assets/images/cryptotracker_3.png","assets/images/cryptotracker_4.png","assets/images/cryptotracker_5.png","assets/images/cryptotracker_6.png","assets/images/cryptotracker_7.jpg"],t.s)
-B.Io=new A.kr("CryptoTracker \u2013 Krypto Portfolio & Market App (Eigenprojekt)","Moderne Android-App zur Verfolgung von Kryptow\xe4hrungen, Preisen und Portfolio-Werten.","Eigenprojekt \xb7 Open Source","Kotlin \xb7 Jetpack Compose \xb7 MVVM \xb7 Retrofit \xb7 REST API","CryptoTracker ist ein Android-Projekt zur \xdcberwachung von Kryptow\xe4hrungen. Die App nutzt eine externe REST-API, um Preise, Marktver\xe4nderungen und weitere Kennzahlen abzurufen und visuell darzustellen.\n\nDas Projekt dient als technisches Showcase f\xfcr API-Integration, State-Management mit MVVM, moderne Compose-UI und saubere Trennung von Data-, Domain- und Presentation-Layer.",B.E0,B.DF,null,"https://github.com/jchillah/CryptoTracker",null,null,null)
+B.In=new A.kr("CryptoTracker \u2013 iOS Cryptocurrency Tracker","Native iOS-App zur Verfolgung von Kryptow\xe4hrungen mit Echtzeitdaten, Charts und Favoriten.","Abschlussprojekt \xb7 iOS App Development","Swift \xb7 SwiftUI \xb7 MVVM \xb7 Firebase \xb7 Firestore \xb7 SwiftData \xb7 Keychain \xb7 REST API","CryptoTracker ist eine native iOS-Anwendung, die im Rahmen meiner Weiterbildung zum Mobile App Developer entwickelt wurde. Die App erm\xf6glicht das Verfolgen von Kryptow\xe4hrungen in Echtzeit, das Analysieren historischer Preisdaten sowie das Speichern pers\xf6nlicher Favoriten.\n\nDie Anwendung setzt auf eine moderne MVVM-Architektur, Firebase Authentication f\xfcr die Benutzeranmeldung, Firestore zur Synchronisierung der Favoriten, SwiftData f\xfcr lokale Persistenz sowie die sichere Speicherung sensibler API-Schl\xfcssel \xfcber die iOS Keychain. Bei API-Ausf\xe4llen oder Limits greift die App auf lokal gespeicherte Daten zur\xfcck.",B.Ej,B.DF,null,"https://github.com/jchillah/CryptoTracker",null,null,null)
+B.Dy=s(["Ver\xf6ffentlichte Android-App f\xfcr ARK: Survival Ascended Spieler","Offizielle Serverliste mit relevanten Serverdaten","Server-Detailansichten f\xfcr bessere Entscheidungen vor dem Login","Favoriten-Funktion f\xfcr wichtige Server","Flutter Cross-Platform-Codebasis","Firebase-Integration f\xfcr Nutzer- und App-Funktionen","App-Store-, Datenschutz- und app-ads.txt-Setup","Aktive Weiterentwicklung mit Fokus auf Alerts und bessere Server Intelligence"],t.s)
+B.DE=s(["assets/images/asa_server_eye_1.png","assets/images/asa_server_eye_2.png","assets/images/asa_server_eye_3.png","assets/images/asa_server_eye_4.png"],t.s)
+B.Io=new A.kr("ASA Server Eye \u2013 ARK: Survival Ascended Server Tracker","Ver\xf6ffentlichte Android-App zum Beobachten offizieller ARK: Survival Ascended Server mit Serverliste, Details und Favoriten.","Eigenprojekt \xb7 Android Release \xb7 Aktiv in Weiterentwicklung","Flutter \xb7 Dart \xb7 Dio \xb7 Riverpod \xb7 Firebase \xb7 GitHub Pages","ASA Server Eye ist mein erstes ver\xf6ffentlichtes Android-App-Projekt. Die App hilft ARK: Survival Ascended Spielern dabei, offizielle Server schneller zu finden, Serverdaten zu pr\xfcfen und wichtige Server als Favoriten zu speichern.\n\nTechnisch ist ASA Server Eye als Flutter-App aufgebaut und nutzt eine datengetriebene Architektur mit API-Anbindung, sauberer Feature-Struktur und modernen Mobile-App-Prinzipien. Das Projekt ist besonders wichtig f\xfcr mein Portfolio, weil es nicht nur ein Lernprojekt ist, sondern ein echter Release mit Play-Store-, Datenschutz- und Monetarisierungsanforderungen.",B.Dy,B.DE,null,u.y,null,"https://jchillah.github.io/asa-server-eye-privacy-policy/",null)
 B.Ip=new A.w4(null,null,null,null,null,null,null,null,null)
 B.Iq=new A.b1(8,8)
 B.Ir=new A.b1(1.5,1.5)
