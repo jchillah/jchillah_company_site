@@ -170,7 +170,7 @@ class PortfolioSection extends StatelessWidget {
                       'RAWG-API, lokale Speicherung und Jetpack Compose.',
                   techStack:
                       'Kotlin · Jetpack Compose · MVVM/MVI · RAWG API · Room',
-                  status: 'Abschlussprojekt · Android App Development · Showcase',
+                  status: 'Abschlussprojekt · Android App Development',
                   onTap: () => _openGameRadar(context),
                   iconAsset: 'assets/images/gameradar_app_icon.png',
                 ),
@@ -183,7 +183,7 @@ class PortfolioSection extends StatelessWidget {
                       'iOS-App zur Verfolgung von Kryptowährungen. REST-API Integration, '
                       'MVVM Architektur und modernes Compose-UI.',
                   techStack: 'Swift · SwiftUI · MVVM · REST API',
-                  status: 'Abschlussprojekt · iOS App Development · Open Source',
+                  status: 'Abschlussprojekt · iOS App Development',
                   onTap: () => _openCryptoTracker(context),
                   iconAsset: null,
                 ),
