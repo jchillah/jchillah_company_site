@@ -12,7 +12,7 @@ class ImpressumSection extends StatelessWidget {
     return Section(
       title: 'Impressum',
       subtitle:
-          'Anbieterkennzeichnung gemäß den geltenden Informationspflichten für digitale Dienste.',
+          'Anbieterkennzeichnung und Kontaktangaben für Jchillah’s Design & Coding Forge.',
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -41,8 +41,9 @@ class ImpressumSection extends StatelessWidget {
           const SizedBox(height: 8),
           Text(
             'E-Mail: jchillah@gmail.com\n'
+            'Telefon: +49 179 4089 187\n'
             'GitHub: https://github.com/jchillah\n'
-            'Website: https://jchillah.github.io/jchillah_company_site/',
+            'Website: https://jchillah.github.io/',
             style: theme.textTheme.bodyMedium?.copyWith(color: Colors.white70),
           ),
           const SizedBox(height: 16),
@@ -71,8 +72,7 @@ class ImpressumSection extends StatelessWidget {
           Text(
             'Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, '
             'Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden. '
-            'Bei Bekanntwerden von Rechtsverletzungen werden entsprechende Inhalte umgehend geprüft '
-            'und soweit erforderlich entfernt.',
+            'Bei Bekanntwerden von Rechtsverletzungen werden entsprechende Inhalte geprüft und, soweit erforderlich, entfernt.',
             style: theme.textTheme.bodySmall?.copyWith(color: Colors.white70),
           ),
           const SizedBox(height: 16),
@@ -84,9 +84,8 @@ class ImpressumSection extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           Text(
-            'Diese Website enthält Links zu externen Websites Dritter. Auf deren Inhalte habe ich '
-            'keinen Einfluss. Für diese fremden Inhalte übernehme ich keine Gewähr. Für die Inhalte '
-            'der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber verantwortlich.',
+            'Diese Website enthält Links zu externen Websites Dritter. Auf deren Inhalte besteht kein Einfluss. '
+            'Für die Inhalte der verlinkten Seiten ist der jeweilige Anbieter oder Betreiber verantwortlich.',
             style: theme.textTheme.bodySmall?.copyWith(color: Colors.white70),
           ),
           const SizedBox(height: 16),
@@ -100,21 +99,7 @@ class ImpressumSection extends StatelessWidget {
           Text(
             'Die auf dieser Website erstellten Inhalte und Werke unterliegen dem deutschen Urheberrecht. '
             'Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen '
-            'des Urheberrechts bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.',
-            style: theme.textTheme.bodySmall?.copyWith(color: Colors.white70),
-          ),
-          const SizedBox(height: 16),
-          Text(
-            'Hinweis',
-            style: theme.textTheme.titleMedium?.copyWith(
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-          const SizedBox(height: 8),
-          Text(
-            'Dieses Impressum wurde für eine persönliche Portfolio- und Entwicklerwebsite erstellt. '
-            'Bei geschäftlicher Nutzung, Erweiterung um Shops, Verträge, Zahlungsfunktionen oder '
-            'weitere Dienste sollte die rechtliche Ausgestaltung zusätzlich geprüft werden.',
+            'des Urheberrechts bedürfen der schriftlichen Zustimmung des jeweiligen Autors oder Erstellers.',
             style: theme.textTheme.bodySmall?.copyWith(color: Colors.white70),
           ),
         ],
