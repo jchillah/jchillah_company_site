@@ -25,17 +25,18 @@ class ServicesPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Was ich für dich tun kann',
+                      'Leistungen für digitale Produkte',
                       style: theme.textTheme.headlineSmall?.copyWith(
                         fontWeight: FontWeight.bold,
                       ),
                     ),
                     const SizedBox(height: 16),
                     Text(
-                      'Hier findest du die Leistungen von Jchillah’s Design & Coding Forge '
-                      'noch einmal kompakt und übersichtlich dargestellt.',
+                      'Das Leistungsangebot umfasst die strukturierte Planung, Gestaltung und Entwicklung von Apps und Web-Anwendungen. '
+                      'Der konkrete Umfang wird anhand Ihrer Ziele, bestehenden Systeme, Zielplattformen und technischen Anforderungen festgelegt.',
                       style: theme.textTheme.bodyMedium?.copyWith(
                         color: Colors.white70,
+                        height: 1.5,
                       ),
                     ),
                     const SizedBox(height: 24),

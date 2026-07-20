@@ -11,28 +11,21 @@ class PortfolioSection extends StatelessWidget {
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (_) => const ProjectDetailPage(
-          title: 'ASA Server Eye – ARK: Survival Ascended Server Tracker',
+          title: 'ASA Server Eye',
           subtitle:
-              'Veröffentlichte Android-App zum Beobachten offizieller ARK: Survival Ascended Server mit Serverliste, Details und Favoriten.',
-          status: 'Eigenprojekt · Android Release · Aktiv in Weiterentwicklung',
-          techStack: 'Flutter · Dart · Dio · Riverpod · Firebase · GitHub Pages',
+              'Veröffentlichte Flutter-App zur Suche und Beobachtung offizieller ARK: Survival Ascended Server.',
+          status: 'Android veröffentlicht · Aktive Weiterentwicklung',
+          techStack: 'Flutter · Dart · Riverpod · Dio · Firebase',
           longDescription:
-              'ASA Server Eye ist mein erstes veröffentlichtes Android-App-Projekt. '
-              'Die App hilft ARK: Survival Ascended Spielern dabei, offizielle Server schneller zu finden, '
-              'Serverdaten zu prüfen und wichtige Server als Favoriten zu speichern.\n\n'
-              'Technisch ist ASA Server Eye als Flutter-App aufgebaut und nutzt eine datengetriebene Architektur '
-              'mit API-Anbindung, sauberer Feature-Struktur und modernen Mobile-App-Prinzipien. '
-              'Das Projekt ist besonders wichtig für mein Portfolio, weil es nicht nur ein Lernprojekt ist, '
-              'sondern ein echter Release mit Play-Store-, Datenschutz- und Monetarisierungsanforderungen.',
+              'ASA Server Eye unterstützt Spieler dabei, offizielle ARK: Survival Ascended Server zu durchsuchen, relevante Serverinformationen aufzurufen und häufig genutzte Server als Favoriten zu verwalten.\n\n'
+              'Das Projekt wurde als releasefähige Flutter-Anwendung mit Feature-First-Struktur, lokalisierter Benutzeroberfläche, Firebase-Anbindung und separaten Support- und Datenschutzseiten umgesetzt. Die Weiterentwicklung konzentriert sich auf Benachrichtigungen, Watchlists und aussagekräftigere Serverdaten.',
           features: [
-            'Veröffentlichte Android-App für ARK: Survival Ascended Spieler',
-            'Offizielle Serverliste mit relevanten Serverdaten',
-            'Server-Detailansichten für bessere Entscheidungen vor dem Login',
-            'Favoriten-Funktion für wichtige Server',
-            'Flutter Cross-Platform-Codebasis',
-            'Firebase-Integration für Nutzer- und App-Funktionen',
-            'App-Store-, Datenschutz- und app-ads.txt-Setup',
-            'Aktive Weiterentwicklung mit Fokus auf Alerts und bessere Server Intelligence',
+            'Suche und Filterung offizieller Server',
+            'Detailansichten mit relevanten Serverinformationen',
+            'Favoriten für häufig genutzte Server',
+            'Lokalisierte Benutzeroberfläche',
+            'Firebase-gestützte App-Funktionen',
+            'Release-, Support- und Datenschutz-Infrastruktur',
           ],
           screenshotAssets: [
             'assets/images/asa_server_eye_1.png',
@@ -40,6 +33,7 @@ class PortfolioSection extends StatelessWidget {
             'assets/images/asa_server_eye_3.png',
             'assets/images/asa_server_eye_4.png',
           ],
+          projectPageUrl: 'https://jchillah.github.io/asa-server-eye/',
           appRepoUrl: 'https://github.com/jchillah/asa-server-eye',
           privacyPolicyUrl:
               'https://jchillah.github.io/asa-server-eye-privacy-policy/',
@@ -52,30 +46,24 @@ class PortfolioSection extends StatelessWidget {
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (_) => const ProjectDetailPage(
-          title: 'GameRadar – Gaming Discovery App (Eigenprojekt)',
+          title: 'GameRadar',
           subtitle:
-              'Moderne Android-App zum Entdecken, Verwalten und Analysieren von Videospielen – gebaut mit Jetpack Compose und RAWG API.',
-          status: 'Abschlussprojekt · Android App Development',
+              'Android-App zur Suche, Organisation und Analyse von Videospielen auf Basis der RAWG API.',
+          status: 'Android-Abschlussprojekt · Open Source',
           techStack:
-              'Kotlin · Jetpack Compose · MVVM/MVI Hybrid · Room · Retrofit · RAWG API',
+              'Kotlin · Jetpack Compose · MVVM/MVI · Room · Retrofit · Koin',
           longDescription:
-              'GameRadar ist ein Android-Referenzprojekt: eine moderne Gaming-Discovery-App, '
-              'mit der Nutzer Spiele durchsuchen, Favoriten und Wunschlisten verwalten und '
-              'ihr eigenes Spieleverhalten analysieren können.\n\n'
-              'Die App setzt auf eine MVVM/MVI-Hybridarchitektur mit klarem Layering: Präsentation mit '
-              'Jetpack Compose, Domain-Layer für Geschäftslogik und ein Data-Layer mit Repository-Pattern, '
-              'Room-Database und RAWG-API-Anbindung für Spieledaten.\n\n'
-              'Technisch ist GameRadar ein Showcase-Projekt für moderne Android-Patterns, saubere Navigation, '
-              'State-Management und robuste Fehlerbehandlung.',
+              'GameRadar bündelt Spielesuche, Favoriten, Wunschlisten und persönliche Statistiken in einer modernen Android-Anwendung. Die RAWG API liefert Spieledaten, während Room wichtige Inhalte und persönliche Listen lokal verfügbar hält.\n\n'
+              'Die Anwendung verwendet eine MVVM/MVI-Hybridarchitektur mit getrennten Data-, Domain- und Presentation-Bereichen. Zu den technischen Schwerpunkten zählen Paging, Filter und Sortierung, JSON-Export und -Import, Dark- und Light-Mode sowie robuste Lade- und Fehlerzustände.',
           features: [
-            'Eigenes Open-Source-Projekt für Android',
-            'Spiele-Suche mit Filtern für Plattform, Genre, Bewertung und Release-Datum',
+            'Spielesuche mit Plattform-, Genre-, Bewertungs- und Datumsfiltern',
             'Favoriten und Wunschlisten mit lokaler Speicherung',
-            'Detailseiten mit Beschreibungen, Screenshots, Ratings und Plattformen',
-            'Statistiken und Charts zur Analyse persönlicher Spielvorlieben',
-            'Dark-/Light-Mode und modernes Jetpack-Compose-UI',
-            'MVVM/MVI-Hybrid-Architektur mit Repository-Pattern',
-            'RAWG-API-Integration als reale externe Datenquelle',
+            'Detailansichten mit Beschreibungen, Medien und Bewertungen',
+            'Offline-Cache mit Room',
+            'JSON-Export und -Import persönlicher Listen',
+            'Statistiken und Auswertungen',
+            'Deutsch- und englischsprachige Benutzeroberfläche',
+            'MVVM/MVI-Hybridarchitektur mit Repository-Pattern',
           ],
           screenshotAssets: [
             'assets/images/gameradar_1.png',
@@ -93,56 +81,48 @@ class PortfolioSection extends StatelessWidget {
   }
 
   void _openCryptoTracker(BuildContext context) {
-  Navigator.of(context).push(
-    MaterialPageRoute(
-      builder: (_) => const ProjectDetailPage(
-        title: 'CryptoTracker – iOS Cryptocurrency Tracker',
-        subtitle:
-            'Native iOS-App zur Verfolgung von Kryptowährungen mit Echtzeitdaten, Charts und Favoriten.',
-        status: 'Abschlussprojekt · iOS App Development',
-        techStack:
-            'Swift · SwiftUI · MVVM · Firebase · Firestore · SwiftData · Keychain · REST API',
-        longDescription:
-            'CryptoTracker ist eine native iOS-Anwendung, die im Rahmen meiner Weiterbildung '
-            'zum Mobile App Developer entwickelt wurde. Die App ermöglicht das Verfolgen '
-            'von Kryptowährungen in Echtzeit, das Analysieren historischer Preisdaten '
-            'sowie das Speichern persönlicher Favoriten.\n\n'
-            'Die Anwendung setzt auf eine moderne MVVM-Architektur, Firebase Authentication '
-            'für die Benutzeranmeldung, Firestore zur Synchronisierung der Favoriten, '
-            'SwiftData für lokale Persistenz sowie die sichere Speicherung sensibler '
-            'API-Schlüssel über die iOS Keychain. Bei API-Ausfällen oder Limits greift '
-            'die App auf lokal gespeicherte Daten zurück.',
-        features: [
-          'Echtzeit-Kryptodaten über REST API',
-          'Interaktive Preisdiagramme',
-          'Favoriten mit Firebase Firestore',
-          'Firebase Authentication (Sign In / Sign Up)',
-          'Lokale Datenspeicherung mit SwiftData',
-          'Sichere API-Schlüsselverwaltung mit Keychain',
-          'MVVM-Architektur mit sauberer Projektstruktur',
-          'Offline-Fallback bei API-Limits',
-        ],
-        screenshotAssets: [
-          'assets/images/cryptotracker_1.png',
-          'assets/images/cryptotracker_2.png',
-          'assets/images/cryptotracker_3.png',
-          'assets/images/cryptotracker_4.png',
-          'assets/images/cryptotracker_5.png',
-          'assets/images/cryptotracker_6.png',
-          'assets/images/cryptotracker_7.jpg',
-        ],
-        appRepoUrl: 'https://github.com/jchillah/CryptoTracker',
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => const ProjectDetailPage(
+          title: 'CryptoTracker',
+          subtitle:
+              'Native SwiftUI-App zur Beobachtung von Kryptowährungen, Preisverläufen und persönlichen Favoriten.',
+          status: 'iOS-Abschlussprojekt',
+          techStack:
+              'Swift · SwiftUI · MVVM · Firebase Auth · Firestore · SwiftData · Keychain',
+          longDescription:
+              'CryptoTracker stellt aktuelle Kryptowährungsdaten und historische Preisverläufe in einer nativen iOS-Oberfläche bereit. Nutzer können Coins beobachten, Favoriten speichern und Preisentwicklungen in Diagrammen auswerten.\n\n'
+              'Die App basiert auf MVVM und verbindet Firebase Authentication mit Firestore für nutzerbezogene Favoriten. SwiftData dient als lokale Persistenz und als Fallback bei eingeschränkter API-Verfügbarkeit. API-Zugangsdaten werden über die iOS Keychain verwaltet.',
+          features: [
+            'Aktuelle Preise und Marktdaten über eine REST API',
+            'Historische Preisverläufe in interaktiven Diagrammen',
+            'Benutzeranmeldung mit Firebase Authentication',
+            'Synchronisierte Favoriten mit Firestore',
+            'Lokale Persistenz und Offline-Fallback mit SwiftData',
+            'Sichere Verwaltung von API-Zugangsdaten mit Keychain',
+            'MVVM-Struktur mit getrennten Views, ViewModels und Services',
+          ],
+          screenshotAssets: [
+            'assets/images/cryptotracker_1.png',
+            'assets/images/cryptotracker_2.png',
+            'assets/images/cryptotracker_3.png',
+            'assets/images/cryptotracker_4.png',
+            'assets/images/cryptotracker_5.png',
+            'assets/images/cryptotracker_6.png',
+            'assets/images/cryptotracker_7.jpg',
+          ],
+          appRepoUrl: 'https://github.com/jchillah/CryptoTracker',
+        ),
       ),
-    ),
-  );
-}
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
     return Section(
-      title: 'Portfolio',
+      title: 'Referenzprojekte',
       subtitle:
-          'Ausgewählte Projekte – vom veröffentlichten Android-Release bis zu technischen Showcase-Apps mit moderner Architektur.',
+          'Ausgewählte Anwendungen mit dokumentierter Architektur, realen Datenquellen und nachvollziehbarer technischer Umsetzung.',
       child: LayoutBuilder(
         builder: (context, constraints) {
           final isWide = constraints.maxWidth > 800;
@@ -152,25 +132,23 @@ class PortfolioSection extends StatelessWidget {
             children: [
               Expanded(
                 child: PortfolioCard(
-                  title: 'ASA Server Eye – ARK Server Tracker',
+                  title: 'ASA Server Eye',
                   description:
-                      'Veröffentlichte Android-App für ARK: Survival Ascended Serverdaten, '
-                      'Favoriten und Server-Übersicht – gebaut mit Flutter.',
-                  techStack: 'Flutter · Dart · Dio · Riverpod · Firebase',
-                  status: 'Eigenprojekt · Android Release',
+                      'Veröffentlichte Flutter-App für offizielle ARK: Survival Ascended Serverdaten, Suche, Details und Favoriten.',
+                  techStack: 'Flutter · Riverpod · Dio · Firebase',
+                  status: 'Android veröffentlicht',
                   onTap: () => _openAsaServerEye(context),
                 ),
               ),
               const SizedBox(width: 16, height: 16),
               Expanded(
                 child: PortfolioCard(
-                  title: 'GameRadar – Gaming Discovery App',
+                  title: 'GameRadar',
                   description:
-                      'Moderne Android-App zum Entdecken, Verwalten und Analysieren von Games. '
-                      'RAWG-API, lokale Speicherung und Jetpack Compose.',
+                      'Android-App für Spielesuche, Favoriten, Wunschlisten, Offline-Daten und persönliche Auswertungen.',
                   techStack:
-                      'Kotlin · Jetpack Compose · MVVM/MVI · RAWG API · Room',
-                  status: 'Abschlussprojekt · Android App Development',
+                      'Kotlin · Jetpack Compose · MVVM/MVI · Room · RAWG API',
+                  status: 'Android-Abschlussprojekt',
                   onTap: () => _openGameRadar(context),
                   iconAsset: 'assets/images/gameradar_app_icon.png',
                 ),
@@ -178,14 +156,12 @@ class PortfolioSection extends StatelessWidget {
               const SizedBox(width: 16, height: 16),
               Expanded(
                 child: PortfolioCard(
-                  title: 'CryptoTracker – Krypto Portfolio App',
+                  title: 'CryptoTracker',
                   description:
-                      'iOS-App zur Verfolgung von Kryptowährungen. REST-API Integration, '
-                      'MVVM Architektur und modernes Compose-UI.',
-                  techStack: 'Swift · SwiftUI · MVVM · REST API',
-                  status: 'Abschlussprojekt · iOS App Development',
+                      'Native iOS-App für Kryptomarktdaten, Preisdiagramme, Authentifizierung und synchronisierte Favoriten.',
+                  techStack: 'Swift · SwiftUI · Firebase · SwiftData',
+                  status: 'iOS-Abschlussprojekt',
                   onTap: () => _openCryptoTracker(context),
-                  iconAsset: null,
                 ),
               ),
             ],

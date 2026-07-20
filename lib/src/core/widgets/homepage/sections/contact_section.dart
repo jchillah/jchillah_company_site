@@ -18,19 +18,23 @@ class ContactSection extends StatelessWidget {
 
     return Section(
       title: 'Kontakt',
-      subtitle: 'Alle Kontaktmöglichkeiten an einem Ort.',
+      subtitle: 'Projektanfragen und fachlicher Austausch.',
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Für Projektanfragen, Rückfragen oder eine erste Abstimmung findest du auf der Kontaktseite E-Mail, Telefon, SMS, WhatsApp und die postalische Adresse.',
-            style: theme.textTheme.bodyMedium?.copyWith(color: Colors.white70),
+            'Für eine erste Einschätzung senden Sie bitte eine kurze Beschreibung Ihres Vorhabens mit Ziel, gewünschtem Funktionsumfang, Zielplattformen und aktuellem Projektstand. '
+            'Auf der Kontaktseite finden Sie alle direkten Kontaktmöglichkeiten sowie die Geschäftsanschrift.',
+            style: theme.textTheme.bodyMedium?.copyWith(
+              color: Colors.white70,
+              height: 1.5,
+            ),
           ),
           const SizedBox(height: 16),
           FilledButton.icon(
             onPressed: () => _openContactPage(context),
             icon: const Icon(Icons.contact_mail_outlined),
-            label: const Text('Kontaktseite öffnen'),
+            label: const Text('Projektanfrage starten'),
           ),
         ],
       ),

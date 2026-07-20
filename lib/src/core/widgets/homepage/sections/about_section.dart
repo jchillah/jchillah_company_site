@@ -20,7 +20,7 @@ class AboutSection extends StatelessWidget {
     final theme = Theme.of(context);
 
     return Section(
-      title: 'Über mich',
+      title: 'Über den Entwickler',
       subtitle: 'Michael Winkler · Jchillah’s Design & Coding Forge',
       child: LayoutBuilder(
         builder: (context, constraints) {
@@ -31,17 +31,14 @@ class AboutSection extends StatelessWidget {
             children: [
               Text(
                 'Ich bin Michael Winkler, App-Entwickler und Gründer von Jchillah’s Design & Coding Forge. '
-                'Mein Fokus liegt auf modernen Mobile- und Web-App-Projekten mit Flutter, Dart, Kotlin, '
-                'Jetpack Compose und langfristig auch SwiftUI.\n\n'
-                'Mit ASA Server Eye habe ich mein erstes veröffentlichtes Android-Projekt umgesetzt: '
-                'eine Companion-App für ARK: Survival Ascended, mit der Spieler offizielle Serverdaten prüfen, '
-                'Favoriten speichern und schneller entscheiden können, welchen Server sie betreten möchten.\n\n'
-                'Ich arbeite produktorientiert: klare Architektur, verständliche Oberflächen, saubere Projektstruktur, '
-                'GitHub-Workflow, App-Store-Vorbereitung, Datenschutzseiten und technische Grundlagen wie app-ads.txt gehören für mich zum Gesamtpaket.\n\n'
-                'Jchillah’s Design & Coding Forge steht für praktische Apps, Gaming-Tools und digitale Produkte, '
-                'die Schritt für Schritt professioneller, stabiler und marktfähiger werden.',
+                'Mein Schwerpunkt liegt auf mobilen Anwendungen und plattformübergreifenden Produktlösungen mit Flutter, Dart, Kotlin, Jetpack Compose, Swift und SwiftUI.\n\n'
+                'Zu meinen Referenzprojekten gehören ASA Server Eye als veröffentlichte Android-App, GameRadar als umfangreiches Android-Abschlussprojekt und CryptoTracker als native iOS-Anwendung. '
+                'Die Projekte decken unter anderem REST-API-Anbindungen, lokale Datenhaltung, Authentifizierung, Offline-Funktionen, responsives UI und strukturierte State-Verwaltung ab.\n\n'
+                'Bei der Umsetzung achte ich auf nachvollziehbare Anforderungen, wartbare Architekturen, sichere Konfiguration, Versionsverwaltung, Fehlerbehandlung, Tests und eine saubere Vorbereitung für Veröffentlichung und Betrieb.\n\n'
+                'Jchillah’s Design & Coding Forge steht für direkte Zusammenarbeit, transparente technische Entscheidungen und digitale Produkte, die funktional, verständlich und erweiterbar aufgebaut sind.',
                 style: theme.textTheme.bodyMedium?.copyWith(
                   color: Colors.white70,
+                  height: 1.55,
                 ),
               ),
               const SizedBox(height: 16),
@@ -52,18 +49,18 @@ class AboutSection extends StatelessWidget {
                   OutlinedButton.icon(
                     onPressed: () => _openUrl(_cvUrl),
                     icon: const Icon(Icons.badge_outlined),
-                    label: const Text('Lebenslauf öffnen'),
+                    label: const Text('Lebenslauf als Web-App'),
                   ),
                   OutlinedButton.icon(
                     onPressed: () => _openUrl('https://github.com/jchillah'),
                     icon: const Icon(Icons.code),
-                    label: const Text('GitHub Profil'),
+                    label: const Text('GitHub-Profil'),
                   ),
                   OutlinedButton.icon(
                     onPressed: () =>
                         _openUrl('https://github.com/jchillah/asa-server-eye'),
                     icon: const Icon(Icons.visibility_outlined),
-                    label: const Text('ASA Server Eye auf GitHub'),
+                    label: const Text('ASA Server Eye Repository'),
                   ),
                 ],
               ),

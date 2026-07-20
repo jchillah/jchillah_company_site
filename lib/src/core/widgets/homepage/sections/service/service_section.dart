@@ -11,7 +11,7 @@ class ServicesSection extends StatelessWidget {
     return Section(
       title: 'Leistungen',
       subtitle:
-          'Was ich als Jchillah’s Design & Coding Forge für dich übernehmen kann',
+          'Konzeption, Entwicklung und technische Begleitung für digitale Produkte aus einer Hand.',
       child: LayoutBuilder(
         builder: (context, constraints) {
           final isWide = constraints.maxWidth > 700;
@@ -22,33 +22,30 @@ class ServicesSection extends StatelessWidget {
               Expanded(
                 child: ServiceCard(
                   icon: Icons.phone_iphone,
-                  title: 'App-Entwicklung',
+                  title: 'Mobile- & Web-App-Entwicklung',
                   description:
-                      'Konzeption und Entwicklung von mobilen Apps und Web-Apps – '
-                      'mit Flutter für alle Plattformen oder nativ mit Kotlin und SwiftUI. '
-                      'Ideal für kleine Unternehmen, Freelancer und individuelle Projekte.',
+                      'Entwicklung responsiver Anwendungen mit Flutter sowie nativer Apps mit Kotlin, Jetpack Compose und SwiftUI. '
+                      'Der Fokus liegt auf wartbarer Architektur, klarer Benutzerführung und einer zuverlässigen technischen Umsetzung.',
                 ),
               ),
               SizedBox(width: 16, height: 16),
               Expanded(
                 child: ServiceCard(
                   icon: Icons.design_services_outlined,
-                  title: 'UI/UX & Prototyping',
+                  title: 'UX/UI & Produktkonzeption',
                   description:
-                      'Klar strukturierte Oberflächen, durchdachte User Flows und schnelle '
-                      'Prototypen, damit du früh Feedback bekommst und sicher entscheiden kannst, '
-                      'wie deine App aussehen und funktionieren soll.',
+                      'Strukturierung von Anforderungen, User Flows, Wireframes und Oberflächenkonzepten. '
+                      'So entsteht vor der Entwicklung ein nachvollziehbares Produktkonzept mit klar definierten Funktionen und Abläufen.',
                 ),
               ),
               SizedBox(width: 16, height: 16),
               Expanded(
                 child: ServiceCard(
                   icon: Icons.settings_suggest_outlined,
-                  title: 'Technische Beratung',
+                  title: 'Architektur & technische Begleitung',
                   description:
-                      'Unterstützung bei Architektur, Technologie-Stack und Umsetzung. '
-                      'Ob MVP, interne Business-App oder Erweiterung eines bestehenden Systems – '
-                      'ich helfe dir, eine saubere und wartbare Lösung zu finden.',
+                      'Auswahl eines geeigneten Technologie-Stacks, Aufbau einer skalierbaren Projektstruktur und Unterstützung bei Erweiterungen bestehender Anwendungen. '
+                      'Dazu gehören auch API-Anbindungen, Datenhaltung, Tests, Fehlerbehandlung und Release-Vorbereitung.',
                 ),
               ),
             ],
