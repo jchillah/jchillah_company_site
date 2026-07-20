@@ -12,7 +12,7 @@ class ProjectDetailPage extends StatelessWidget {
   final String longDescription;
   final List<String> features;
   final List<String> screenshotAssets;
-
+  final String? projectPageUrl;
   final String? pitchDeckUrl;
   final String? appRepoUrl;
   final String? pitchRepoUrl;
@@ -27,6 +27,7 @@ class ProjectDetailPage extends StatelessWidget {
     required this.longDescription,
     required this.features,
     required this.screenshotAssets,
+    this.projectPageUrl,
     this.pitchDeckUrl,
     this.appRepoUrl,
     this.pitchRepoUrl,
@@ -43,8 +44,8 @@ class ProjectDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-
     final hasLinks =
+        projectPageUrl != null ||
         pitchDeckUrl != null ||
         appRepoUrl != null ||
         pitchRepoUrl != null ||
@@ -58,10 +59,7 @@ class ProjectDetailPage extends StatelessWidget {
             child: ConstrainedBox(
               constraints: const BoxConstraints(maxWidth: 1100),
               child: Padding(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 16,
-                  vertical: 24,
-                ),
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 24),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -71,21 +69,28 @@ class ProjectDetailPage extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Row(
+                          Wrap(
+                            spacing: 16,
+                            runSpacing: 8,
+                            crossAxisAlignment: WrapCrossAlignment.center,
                             children: [
-                              const Icon(
-                                Icons.circle,
-                                size: 10,
-                                color: Color(0xFF00FF5F),
+                              Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  const Icon(
+                                    Icons.circle,
+                                    size: 10,
+                                    color: Color(0xFF00FF5F),
+                                  ),
+                                  const SizedBox(width: 8),
+                                  Text(
+                                    status,
+                                    style: theme.textTheme.bodySmall?.copyWith(
+                                      color: Colors.white70,
+                                    ),
+                                  ),
+                                ],
                               ),
-                              const SizedBox(width: 8),
-                              Text(
-                                status,
-                                style: theme.textTheme.bodySmall?.copyWith(
-                                  color: Colors.white70,
-                                ),
-                              ),
-                              const SizedBox(width: 16),
                               Text(
                                 techStack,
                                 style: theme.textTheme.bodySmall?.copyWith(
@@ -99,29 +104,30 @@ class ProjectDetailPage extends StatelessWidget {
                             longDescription,
                             style: theme.textTheme.bodyMedium?.copyWith(
                               color: Colors.white70,
+                              height: 1.55,
                             ),
                           ),
-                          const SizedBox(height: 16),
                           if (features.isNotEmpty) ...[
+                            const SizedBox(height: 20),
                             Text(
-                              'Schwerpunkte & Features',
+                              'Funktionen und technische Schwerpunkte',
                               style: theme.textTheme.titleMedium?.copyWith(
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            const SizedBox(height: 8),
+                            const SizedBox(height: 10),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: features
                                   .map(
-                                    (f) => Padding(
-                                      padding: const EdgeInsets.only(bottom: 4),
+                                    (feature) => Padding(
+                                      padding: const EdgeInsets.only(bottom: 6),
                                       child: Row(
                                         crossAxisAlignment:
                                             CrossAxisAlignment.start,
                                         children: [
                                           const Text('• '),
-                                          Expanded(child: Text(f)),
+                                          Expanded(child: Text(feature)),
                                         ],
                                       ),
                                     ),
@@ -132,18 +138,22 @@ class ProjectDetailPage extends StatelessWidget {
                         ],
                       ),
                     ),
-
-                    const SizedBox(height: 24),
-
-                    if (hasLinks)
+                    if (hasLinks) ...[
+                      const SizedBox(height: 24),
                       Section(
-                        title: 'Projektressourcen',
+                        title: 'Projektlinks',
                         subtitle:
-                            'Links zum Code, zu Präsentationen und zu rechtlichen Informationen.',
+                            'Weiterführende Informationen, Quellcode und rechtliche Hinweise.',
                         child: Wrap(
                           spacing: 12,
                           runSpacing: 12,
                           children: [
+                            if (projectPageUrl != null)
+                              FilledButton.icon(
+                                onPressed: () => _openUrl(projectPageUrl!),
+                                icon: const Icon(Icons.language),
+                                label: const Text('Projektwebsite öffnen'),
+                              ),
                             if (pitchDeckUrl != null)
                               FilledButton.icon(
                                 onPressed: () => _openUrl(pitchDeckUrl!),
@@ -154,13 +164,13 @@ class ProjectDetailPage extends StatelessWidget {
                               OutlinedButton.icon(
                                 onPressed: () => _openUrl(appRepoUrl!),
                                 icon: const Icon(Icons.code),
-                                label: const Text('GitHub Repository'),
+                                label: const Text('Quellcode auf GitHub'),
                               ),
                             if (pitchRepoUrl != null)
                               OutlinedButton.icon(
                                 onPressed: () => _openUrl(pitchRepoUrl!),
-                                icon: const Icon(Icons.picture_as_pdf),
-                                label: const Text('Pitchdeck Repository'),
+                                icon: const Icon(Icons.folder_outlined),
+                                label: const Text('Pitchdeck-Repository'),
                               ),
                             if (privacyPolicyUrl != null)
                               OutlinedButton.icon(
@@ -171,18 +181,18 @@ class ProjectDetailPage extends StatelessWidget {
                           ],
                         ),
                       ),
-
-                    const SizedBox(height: 24),
-
-                    if (screenshotAssets.isNotEmpty)
+                    ],
+                    if (screenshotAssets.isNotEmpty) ...[
+                      const SizedBox(height: 24),
                       Section(
                         title: 'Screenshots',
                         subtitle:
-                            'Ein Einblick in das aktuelle Design und den Stand des Projekts.',
+                            'Ausgewählte Ansichten aus der aktuellen Projektversion.',
                         child: ScreenshotGallery(
                           screenshotAssets: screenshotAssets,
                         ),
                       ),
+                    ],
                   ],
                 ),
               ),
