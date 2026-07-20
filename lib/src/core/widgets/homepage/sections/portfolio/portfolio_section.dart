@@ -34,7 +34,10 @@ class PortfolioSection extends StatelessWidget {
             'assets/images/asa_server_eye_4.png',
           ],
           projectPageUrl: 'https://jchillah.github.io/asa-server-eye/',
+          pitchDeckUrl: 'https://jchillah.github.io/asa-server-eye-pitchdeck/',
           appRepoUrl: 'https://github.com/jchillah/asa-server-eye',
+          pitchRepoUrl:
+              'https://github.com/jchillah/jchillah.github.io/tree/main/asa-server-eye-pitchdeck',
           privacyPolicyUrl:
               'https://jchillah.github.io/asa-server-eye-privacy-policy/',
         ),
@@ -111,7 +114,10 @@ class PortfolioSection extends StatelessWidget {
             'assets/images/cryptotracker_6.png',
             'assets/images/cryptotracker_7.jpg',
           ],
+          pitchDeckUrl: 'https://jchillah.github.io/cryptotracker-pitchdeck/',
           appRepoUrl: 'https://github.com/jchillah/CryptoTracker',
+          pitchRepoUrl:
+              'https://github.com/jchillah/jchillah.github.io/tree/main/cryptotracker-pitchdeck',
         ),
       ),
     );
