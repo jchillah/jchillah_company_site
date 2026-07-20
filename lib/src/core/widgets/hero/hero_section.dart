@@ -40,10 +40,10 @@ class HeroSection extends StatelessWidget {
           letterSpacing: -1.2,
         ),
         children: const [
-          TextSpan(text: 'Apps, Gaming Tools\n'),
-          TextSpan(text: '& digitale Produkte '),
+          TextSpan(text: 'Individuelle Apps\n'),
+          TextSpan(text: 'und digitale Produkte '),
           TextSpan(
-            text: 'mit Forge-Style.',
+            text: 'professionell umgesetzt.',
             style: TextStyle(color: Color(0xFF00FF5F)),
           ),
         ],
@@ -51,10 +51,8 @@ class HeroSection extends StatelessWidget {
     );
 
     final subtitle = Text(
-      'Ich bin Michael Winkler, App-Entwickler und Gründer von Jchillah’s Design & Coding Forge. '
-      'Ich entwickle moderne Mobile Apps, Flutter Web Apps und digitale Produkte – mit dunklem Neon-Design, '
-      'klarer Architektur und echtem Release-Fokus. Mein erstes veröffentlichtes Android-Projekt ist ASA Server Eye, '
-      'ein Server-Tracker für ARK: Survival Ascended.',
+      'Jchillah’s Design & Coding Forge entwickelt mobile Apps, Web-Anwendungen und digitale Produktlösungen für Selbstständige, kleine Unternehmen und Start-ups. '
+      'Ich begleite Projekte von der Anforderungsanalyse und UX-Konzeption über Architektur und Implementierung bis zu Tests und Veröffentlichung.',
       style: theme.textTheme.bodyLarge?.copyWith(
         color: Colors.white.withValues(alpha: 0.76),
         height: 1.55,
@@ -68,7 +66,7 @@ class HeroSection extends StatelessWidget {
         FilledButton.icon(
           onPressed: onShowServices,
           icon: const Icon(Icons.design_services_outlined),
-          label: const Text('Leistungen ansehen'),
+          label: const Text('Leistungen und Vorgehen'),
         ),
       ],
     );
@@ -76,11 +74,15 @@ class HeroSection extends StatelessWidget {
     final bulletPoints = Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: const [
-        HeroBullet(text: 'Flutter Apps für Android, iOS und Web'),
-        HeroBullet(text: 'Gaming Companion Tools wie ASA Server Eye'),
+        HeroBullet(
+          text: 'Cross-Platform-Entwicklung mit Flutter für Android, iOS und Web',
+        ),
+        HeroBullet(
+          text: 'Native App-Entwicklung mit Kotlin, Jetpack Compose und SwiftUI',
+        ),
         HeroBullet(
           text:
-              'UI/UX, Branding, App-Store-Vorbereitung und Release-Begleitung',
+              'Produktkonzeption, UI/UX, Qualitätssicherung und Release-Vorbereitung',
         ),
       ],
     );
