@@ -15,7 +15,9 @@ class ContactPage extends StatelessWidget {
   Future<void> _openUrl(Uri uri, {bool external = false}) async {
     await launchUrl(
       uri,
-      mode: external ? LaunchMode.externalApplication : LaunchMode.platformDefault,
+      mode: external
+          ? LaunchMode.externalApplication
+          : LaunchMode.platformDefault,
     );
   }
 
@@ -30,8 +32,10 @@ class ContactPage extends StatelessWidget {
     );
   }
 
-  Future<void> _openPhone() => _openUrl(Uri(scheme: 'tel', path: _phoneDial));
-  Future<void> _openSms() => _openUrl(Uri(scheme: 'sms', path: _phoneDial));
+  Future<void> _openPhone() =>
+      _openUrl(Uri(scheme: 'tel', path: _phoneDial));
+  Future<void> _openSms() =>
+      _openUrl(Uri(scheme: 'sms', path: _phoneDial));
   Future<void> _openWhatsApp() =>
       _openUrl(Uri.parse(_whatsAppUrl), external: true);
 
@@ -51,7 +55,7 @@ class ContactPage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Kontakt zu Jchillah’s Forge',
+                    'Projektanfrage und Kontakt',
                     style: theme.textTheme.displaySmall?.copyWith(
                       fontWeight: FontWeight.w900,
                       height: 1.05,
@@ -59,7 +63,7 @@ class ContactPage extends StatelessWidget {
                   ),
                   const SizedBox(height: 12),
                   Text(
-                    'Schreib mir kurz, worum es geht: App-Idee, aktueller Stand, Zielplattformen und was als Nächstes passieren soll.',
+                    'Bitte beschreiben Sie kurz das Ziel Ihres Projekts, den gewünschten Funktionsumfang, die vorgesehenen Plattformen und den aktuellen Stand. Vorhandene Konzepte, Wireframes oder technische Unterlagen können Sie in Ihrer Nachricht ebenfalls nennen.',
                     style: theme.textTheme.bodyLarge?.copyWith(
                       color: Colors.white70,
                       height: 1.55,
@@ -101,12 +105,12 @@ class ContactPage extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(height: 24),
-                  _AddressCard(address: _address),
+                  const _AddressCard(address: _address),
                   const SizedBox(height: 24),
                   FilledButton.icon(
                     onPressed: _openMail,
                     icon: const Icon(Icons.mail_outline),
-                    label: const Text('Projekt per E-Mail anfragen'),
+                    label: const Text('Projektanfrage per E-Mail senden'),
                   ),
                 ],
               ),
@@ -155,7 +159,12 @@ class _ContactCard extends StatelessWidget {
             const SizedBox(height: 10),
             Text(title, style: theme.textTheme.titleMedium),
             const SizedBox(height: 6),
-            Text(value, style: theme.textTheme.bodyMedium?.copyWith(color: const Color(0xFFB7FFAD))),
+            Text(
+              value,
+              style: theme.textTheme.bodyMedium?.copyWith(
+                color: const Color(0xFFB7FFAD),
+              ),
+            ),
             const SizedBox(height: 14),
             OutlinedButton.icon(
               onPressed: onPressed,
@@ -190,9 +199,15 @@ class _AddressCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Postalischer Kontakt', style: theme.textTheme.titleMedium),
+          Text('Geschäftsanschrift', style: theme.textTheme.titleMedium),
           const SizedBox(height: 12),
-          Text(address, style: theme.textTheme.bodyMedium?.copyWith(color: Colors.white70, height: 1.5)),
+          Text(
+            address,
+            style: theme.textTheme.bodyMedium?.copyWith(
+              color: Colors.white70,
+              height: 1.5,
+            ),
+          ),
         ],
       ),
     );
