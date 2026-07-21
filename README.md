@@ -1,6 +1,6 @@
 # Jchillah’s Design & Coding Forge
 
-Professional Flutter web portfolio for **Jchillah’s Design & Coding Forge**, the developer brand of Michael Winkler / jchillah.
+Professional Flutter web portfolio for **Jchillah’s Design & Coding Forge**, the developer brand of Michael Winkler.
 
 The site presents released apps, portfolio projects, technical skills, contact options, legal information and developer resources in one central place.
 
@@ -12,95 +12,49 @@ The site presents released apps, portfolio projects, technical skills, contact o
 | Firebase Hosting | https://jchillah-company-site.web.app/ |
 | Firebase Hosting fallback | https://jchillah-company-site.firebaseapp.com/ |
 
-## Purpose
-
-This project is the public company and portfolio website for Michael Winkler. It is designed to support:
-
-- App portfolio presentation
-- Developer branding
-- Project inquiries
-- Contact information
-- Legal pages and imprint information
-- GitHub Pages and Firebase Hosting deployment
-- Showcase material for released and in-development apps
-
-## Featured Project
+## Portfolio projects
 
 ### ASA Server Eye
 
-**ASA Server Eye** is a released Android companion app for **ARK: Survival Ascended** players. It helps users inspect official server data, view server details and save relevant servers as favorites.
+Released Flutter Android companion app for official ARK: Survival Ascended server data, search, details and favorites.
 
-Repository:
+- Repository: https://github.com/jchillah/asa-server-eye
+- Project page: https://jchillah.github.io/asa-server-eye/
+- Pitchdeck: https://jchillah.github.io/asa-server-eye-pitchdeck/
+- Privacy policy: https://jchillah.github.io/asa-server-eye-privacy-policy/
 
-```txt
-https://github.com/jchillah/asa-server-eye
-```
+### GameRadar
 
-Privacy Policy:
+Android application for game discovery, favorites, wishlist management, offline storage and personal statistics.
 
-```txt
-https://jchillah.github.io/asa-server-eye-privacy-policy/
-```
+- Repository: https://github.com/jchillah/GameRadar
+- Pitchdeck: https://jchillah.github.io/gameradar-pitchdeck/
+- Privacy policy: https://jchillah.github.io/GameRadar-Privacy-Policy/
 
-## Portfolio Projects
+### CryptoTracker
 
-The website currently highlights:
+Native iOS application for cryptocurrency market data, historical charts, authentication and synchronized favorites.
 
-- **ASA Server Eye** — released Flutter Android app for ARK: Survival Ascended server tracking
-- **GameRadar** — Kotlin / Jetpack Compose gaming discovery app
-- **CryptoTracker** — Kotlin / Jetpack Compose cryptocurrency tracking app
+- Repository: https://github.com/jchillah/CryptoTracker
+- Pitchdeck: https://jchillah.github.io/cryptotracker-pitchdeck/
+- Tech stack: Swift, SwiftUI, MVVM, Firebase Auth, Firestore, SwiftData and Keychain
 
-## Tech Stack
+The CryptoTracker project detail page in the company site contains a direct **Pitchdeck ansehen** button linking to the public pitchdeck.
 
-- Flutter
-- Dart
+## Tech stack
+
+- Flutter and Dart
 - Material 3
+- Responsive web layout
 - Firebase Hosting
 - GitHub Pages
 - GitHub Actions
-- Responsive Web Layout
-
-## Project Structure
-
-```txt
-lib/
-├── src/
-│   ├── app.dart
-│   ├── core/
-│   │   ├── theme/
-│   │   └── widgets/
-│   └── features/
-│       ├── contact/
-│       ├── home/
-│       ├── legal/
-│       ├── projects/
-│       └── services/
-assets/
-└── images/
-    └── branding/
-web/
-.github/
-└── workflows/
-```
 
 ## Development
 
-Install dependencies:
-
 ```bash
 flutter pub get
-```
-
-Run locally in Chrome:
-
-```bash
 flutter run -d chrome
-```
-
-Build for Firebase Hosting:
-
-```bash
-flutter build web --release
 ```
 
 Build for GitHub Pages:
@@ -109,55 +63,16 @@ Build for GitHub Pages:
 flutter build web --release --base-href /jchillah_company_site/
 ```
 
-## Automatic Deployment
+## Automatic deployment
 
-This repository uses GitHub Actions for deployment.
-
-On every push to `main`:
-
-1. The site is built for GitHub Pages.
-2. The generated `build/web` output is deployed to the `gh-pages` branch.
-3. The site is built and deployed to Firebase Hosting.
-
-Workflow files:
-
-```txt
-.github/workflows/deploy-gh-pages.yml
-.github/workflows/deploy-firebase-hosting.yml
-```
-
-Do not run `firebase init hosting:github` again unless the workflows intentionally need to be regenerated. The Firebase CLI can create duplicate workflows that do not install Flutter before running `flutter build`.
-
-## Deployment Workflow
-
-For normal changes:
-
-```bash
-git add .
-git commit -m "Update company site"
-git push origin main
-```
-
-Then check:
-
-```txt
-https://github.com/jchillah/jchillah_company_site/actions
-```
+Every push to `main` triggers the configured GitHub Actions workflows. The Flutter web build is deployed to GitHub Pages and Firebase Hosting.
 
 ## Developer
 
 Michael Winkler  
-Jchillah’s Design & Coding Forge
-
-```txt
-jchillah@gmail.com
-```
-
-GitHub:
-
-```txt
+Jchillah’s Design & Coding Forge  
+jchillah@gmail.com  
 https://github.com/jchillah
-```
 
 ## License
 
