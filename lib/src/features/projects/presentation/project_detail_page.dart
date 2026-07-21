@@ -12,6 +12,7 @@ class ProjectDetailPage extends StatelessWidget {
   final String longDescription;
   final List<String> features;
   final List<String> screenshotAssets;
+  final String? showcaseImageUrl;
   final String? projectPageUrl;
   final String? pitchDeckUrl;
   final String? appRepoUrl;
@@ -28,6 +29,7 @@ class ProjectDetailPage extends StatelessWidget {
     required this.longDescription,
     required this.features,
     required this.screenshotAssets,
+    this.showcaseImageUrl,
     this.projectPageUrl,
     this.pitchDeckUrl,
     this.appRepoUrl,
@@ -153,6 +155,19 @@ class ProjectDetailPage extends StatelessWidget {
                         ],
                       ),
                     ),
+                    if (showcaseImageUrl != null) ...[
+                      const SizedBox(height: 24),
+                      Section(
+                        title: 'Projekt-Showcase',
+                        subtitle:
+                            'Eine kompakte Übersicht der wichtigsten Benutzeroberflächen und Funktionen. Zum Vergrößern anklicken.',
+                        child: _ProjectShowcase(
+                          imageUrl: showcaseImageUrl!,
+                          title: title,
+                          onTap: () => _openUrl(showcaseImageUrl!),
+                        ),
+                      ),
+                    ],
                     if (hasLinks) ...[
                       const SizedBox(height: 24),
                       Section(
@@ -206,15 +221,99 @@ class ProjectDetailPage extends StatelessWidget {
                     if (screenshotAssets.isNotEmpty) ...[
                       const SizedBox(height: 24),
                       Section(
-                        title: 'Screenshots',
+                        title: 'Einzelne Screenshots',
                         subtitle:
-                            'Ausgewählte Ansichten aus der aktuellen Projektversion.',
+                            'Zusätzliche Ansichten aus der aktuellen Projektversion.',
                         child: ScreenshotGallery(
                           screenshotAssets: screenshotAssets,
                         ),
                       ),
                     ],
                   ],
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _ProjectShowcase extends StatelessWidget {
+  const _ProjectShowcase({
+    required this.imageUrl,
+    required this.title,
+    required this.onTap,
+  });
+
+  final String imageUrl;
+  final String title;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return Semantics(
+      button: true,
+      label: '$title Projekt-Showcase in voller Größe öffnen',
+      child: Material(
+        color: Colors.transparent,
+        borderRadius: BorderRadius.circular(20),
+        clipBehavior: Clip.antiAlias,
+        child: InkWell(
+          onTap: onTap,
+          child: Ink(
+            padding: const EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),
+              border: Border.all(
+                color: const Color(0xFF00FF5F).withValues(alpha: 0.28),
+              ),
+              gradient: LinearGradient(
+                colors: [
+                  const Color(0xFF00FF5F).withValues(alpha: 0.14),
+                  Colors.white.withValues(alpha: 0.035),
+                ],
+              ),
+              boxShadow: const [
+                BoxShadow(
+                  color: Color(0x55000000),
+                  blurRadius: 26,
+                  offset: Offset(0, 12),
+                ),
+              ],
+            ),
+            child: AspectRatio(
+              aspectRatio: 3 / 2,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(14),
+                child: Image.network(
+                  imageUrl,
+                  fit: BoxFit.contain,
+                  filterQuality: FilterQuality.high,
+                  loadingBuilder: (context, child, loadingProgress) {
+                    if (loadingProgress == null) return child;
+                    final expectedBytes = loadingProgress.expectedTotalBytes;
+                    final progress = expectedBytes == null
+                        ? null
+                        : loadingProgress.cumulativeBytesLoaded / expectedBytes;
+                    return Center(
+                      child: CircularProgressIndicator(value: progress),
+                    );
+                  },
+                  errorBuilder: (context, error, stackTrace) => Container(
+                    color: Colors.black26,
+                    alignment: Alignment.center,
+                    padding: const EdgeInsets.all(24),
+                    child: const Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Icon(Icons.broken_image_outlined, size: 42),
+                        SizedBox(height: 10),
+                        Text('Die Showcase-Grafik konnte nicht geladen werden.'),
+                      ],
+                    ),
+                  ),
                 ),
               ),
             ),
