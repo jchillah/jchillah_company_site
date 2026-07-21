@@ -5,7 +5,9 @@ import 'package:url_launcher/url_launcher.dart';
 class ContactPage extends StatelessWidget {
   const ContactPage({super.key});
 
-  static const String _email = 'jchillah@gmail.com';
+  static const String _projectEmail =
+      'michael.winkler.developer@gmail.com';
+  static const String _asaSupportEmail = 'asa.server.eye@gmail.com';
   static const String _address =
       'Michael Winkler\nJchillah’s Design & Coding Forge\nAm Schülerheim 17\n14195 Berlin\nDeutschland';
   static const String _phoneDisplay = '+49 179 4089 187';
@@ -21,13 +23,24 @@ class ContactPage extends StatelessWidget {
     );
   }
 
-  Future<void> _openMail() async {
+  Future<void> _openProjectMail() async {
     await _openUrl(
       Uri(
         scheme: 'mailto',
-        path: _email,
-        query:
-            'subject=Projektanfrage%20-%20Jchillah%E2%80%99s%20Design%20%26%20Coding%20Forge',
+        path: _projectEmail,
+        queryParameters: {
+          'subject': 'Projektanfrage – Jchillah’s Design & Coding Forge',
+        },
+      ),
+    );
+  }
+
+  Future<void> _openAsaSupportMail() async {
+    await _openUrl(
+      Uri(
+        scheme: 'mailto',
+        path: _asaSupportEmail,
+        queryParameters: {'subject': 'ASA Server Eye Supportanfrage'},
       ),
     );
   }
@@ -63,7 +76,7 @@ class ContactPage extends StatelessWidget {
                   ),
                   const SizedBox(height: 12),
                   Text(
-                    'Bitte beschreiben Sie kurz das Ziel Ihres Projekts, den gewünschten Funktionsumfang, die vorgesehenen Plattformen und den aktuellen Stand. Vorhandene Konzepte, Wireframes oder technische Unterlagen können Sie in Ihrer Nachricht ebenfalls nennen.',
+                    'Für neue App-, Web- und Softwareprojekte verwenden Sie bitte die Adresse für Projektanfragen. Supportanfragen zu ASA Server Eye werden über die separate Supportadresse bearbeitet.',
                     style: theme.textTheme.bodyLarge?.copyWith(
                       color: Colors.white70,
                       height: 1.55,
@@ -75,11 +88,18 @@ class ContactPage extends StatelessWidget {
                     runSpacing: 16,
                     children: [
                       _ContactCard(
-                        icon: Icons.email_outlined,
-                        title: 'E-Mail',
-                        value: _email,
-                        buttonLabel: 'E-Mail schreiben',
-                        onPressed: _openMail,
+                        icon: Icons.business_center_outlined,
+                        title: 'Projektanfragen',
+                        value: _projectEmail,
+                        buttonLabel: 'Projektanfrage senden',
+                        onPressed: _openProjectMail,
+                      ),
+                      _ContactCard(
+                        icon: Icons.support_agent,
+                        title: 'ASA Server Eye Support',
+                        value: _asaSupportEmail,
+                        buttonLabel: 'Supportanfrage senden',
+                        onPressed: _openAsaSupportMail,
                       ),
                       _ContactCard(
                         icon: Icons.phone_outlined,
@@ -108,7 +128,7 @@ class ContactPage extends StatelessWidget {
                   const _AddressCard(address: _address),
                   const SizedBox(height: 24),
                   FilledButton.icon(
-                    onPressed: _openMail,
+                    onPressed: _openProjectMail,
                     icon: const Icon(Icons.mail_outline),
                     label: const Text('Projektanfrage per E-Mail senden'),
                   ),
@@ -159,7 +179,7 @@ class _ContactCard extends StatelessWidget {
             const SizedBox(height: 10),
             Text(title, style: theme.textTheme.titleMedium),
             const SizedBox(height: 6),
-            Text(
+            SelectableText(
               value,
               style: theme.textTheme.bodyMedium?.copyWith(
                 color: const Color(0xFFB7FFAD),
