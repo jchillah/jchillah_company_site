@@ -3,9 +3,24 @@ import 'package:flutter/material.dart';
 import 'package:jchillah_company_site/src/core/widgets/homepage/sections/portfolio/portfolio_card.dart';
 import 'package:jchillah_company_site/src/core/widgets/homepage/sections/section.dart';
 import 'package:jchillah_company_site/src/features/projects/presentation/project_detail_page.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class PortfolioSection extends StatelessWidget {
   const PortfolioSection({super.key});
+
+  static const _asaPitchDeckUrl =
+      'https://jchillah.github.io/asa-server-eye-pitchdeck/';
+  static const _gameRadarPitchDeckUrl =
+      'https://jchillah.github.io/gameradar-pitchdeck/';
+  static const _cryptoTrackerPitchDeckUrl =
+      'https://jchillah.github.io/cryptotracker-pitchdeck/';
+
+  Future<void> _openExternalUrl(String url) async {
+    final uri = Uri.parse(url);
+    if (!await launchUrl(uri, mode: LaunchMode.externalApplication)) {
+      debugPrint('Konnte URL nicht öffnen: $url');
+    }
+  }
 
   void _openAsaServerEye(BuildContext context) {
     Navigator.of(context).push(
@@ -34,12 +49,13 @@ class PortfolioSection extends StatelessWidget {
             'assets/images/asa_server_eye_4.png',
           ],
           projectPageUrl: 'https://jchillah.github.io/asa-server-eye/',
-          pitchDeckUrl: 'https://jchillah.github.io/asa-server-eye-pitchdeck/',
+          pitchDeckUrl: _asaPitchDeckUrl,
           appRepoUrl: 'https://github.com/jchillah/asa-server-eye',
           pitchRepoUrl:
               'https://github.com/jchillah/jchillah.github.io/tree/main/asa-server-eye-pitchdeck',
           privacyPolicyUrl:
               'https://jchillah.github.io/asa-server-eye-privacy-policy/',
+          supportEmail: 'asa.server.eye@gmail.com',
         ),
       ),
     );
@@ -73,7 +89,7 @@ class PortfolioSection extends StatelessWidget {
             'assets/images/gameradar_2.png',
             'assets/images/gameradar_3.png',
           ],
-          pitchDeckUrl: 'https://jchillah.github.io/gameradar-pitchdeck/',
+          pitchDeckUrl: _gameRadarPitchDeckUrl,
           appRepoUrl: 'https://github.com/jchillah/GameRadar',
           pitchRepoUrl: 'https://github.com/jchillah/gameradar-pitchdeck',
           privacyPolicyUrl:
@@ -114,7 +130,7 @@ class PortfolioSection extends StatelessWidget {
             'assets/images/cryptotracker_6.png',
             'assets/images/cryptotracker_7.jpg',
           ],
-          pitchDeckUrl: 'https://jchillah.github.io/cryptotracker-pitchdeck/',
+          pitchDeckUrl: _cryptoTrackerPitchDeckUrl,
           appRepoUrl: 'https://github.com/jchillah/CryptoTracker',
           pitchRepoUrl:
               'https://github.com/jchillah/jchillah.github.io/tree/main/cryptotracker-pitchdeck',
@@ -144,6 +160,7 @@ class PortfolioSection extends StatelessWidget {
                   techStack: 'Flutter · Riverpod · Dio · Firebase',
                   status: 'Android veröffentlicht',
                   onTap: () => _openAsaServerEye(context),
+                  onPitchDeckTap: () => _openExternalUrl(_asaPitchDeckUrl),
                 ),
               ),
               const SizedBox(width: 16, height: 16),
@@ -156,6 +173,7 @@ class PortfolioSection extends StatelessWidget {
                       'Kotlin · Jetpack Compose · MVVM/MVI · Room · RAWG API',
                   status: 'Android-Abschlussprojekt',
                   onTap: () => _openGameRadar(context),
+                  onPitchDeckTap: () => _openExternalUrl(_gameRadarPitchDeckUrl),
                   iconAsset: 'assets/images/gameradar_app_icon.png',
                 ),
               ),
@@ -168,6 +186,8 @@ class PortfolioSection extends StatelessWidget {
                   techStack: 'Swift · SwiftUI · Firebase · SwiftData',
                   status: 'iOS-Abschlussprojekt',
                   onTap: () => _openCryptoTracker(context),
+                  onPitchDeckTap: () =>
+                      _openExternalUrl(_cryptoTrackerPitchDeckUrl),
                 ),
               ),
             ],
