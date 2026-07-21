@@ -17,6 +17,7 @@ class ProjectDetailPage extends StatelessWidget {
   final String? appRepoUrl;
   final String? pitchRepoUrl;
   final String? privacyPolicyUrl;
+  final String? supportEmail;
 
   const ProjectDetailPage({
     super.key,
@@ -32,12 +33,25 @@ class ProjectDetailPage extends StatelessWidget {
     this.appRepoUrl,
     this.pitchRepoUrl,
     this.privacyPolicyUrl,
+    this.supportEmail,
   });
 
   Future<void> _openUrl(String url) async {
     final uri = Uri.parse(url);
     if (!await launchUrl(uri, mode: LaunchMode.externalApplication)) {
       debugPrint('Konnte URL nicht öffnen: $url');
+    }
+  }
+
+  Future<void> _openSupportEmail() async {
+    if (supportEmail == null) return;
+    final uri = Uri(
+      scheme: 'mailto',
+      path: supportEmail,
+      queryParameters: {'subject': 'Supportanfrage – $title'},
+    );
+    if (!await launchUrl(uri, mode: LaunchMode.platformDefault)) {
+      debugPrint('Konnte Support-E-Mail nicht öffnen: $supportEmail');
     }
   }
 
@@ -49,7 +63,8 @@ class ProjectDetailPage extends StatelessWidget {
         pitchDeckUrl != null ||
         appRepoUrl != null ||
         pitchRepoUrl != null ||
-        privacyPolicyUrl != null;
+        privacyPolicyUrl != null ||
+        supportEmail != null;
 
     return Scaffold(
       appBar: AppBar(title: Text(title), centerTitle: false),
@@ -141,24 +156,30 @@ class ProjectDetailPage extends StatelessWidget {
                     if (hasLinks) ...[
                       const SizedBox(height: 24),
                       Section(
-                        title: 'Projektlinks',
+                        title: 'Projektlinks und Support',
                         subtitle:
-                            'Weiterführende Informationen, Quellcode und rechtliche Hinweise.',
+                            'Pitchdeck, Quellcode, Projektseiten und direkte Kontaktmöglichkeiten.',
                         child: Wrap(
                           spacing: 12,
                           runSpacing: 12,
                           children: [
+                            if (pitchDeckUrl != null)
+                              FilledButton.icon(
+                                onPressed: () => _openUrl(pitchDeckUrl!),
+                                icon: const Icon(Icons.slideshow),
+                                label: const Text('Pitchdeck ansehen'),
+                              ),
                             if (projectPageUrl != null)
                               FilledButton.icon(
                                 onPressed: () => _openUrl(projectPageUrl!),
                                 icon: const Icon(Icons.language),
                                 label: const Text('Projektwebsite öffnen'),
                               ),
-                            if (pitchDeckUrl != null)
+                            if (supportEmail != null)
                               FilledButton.icon(
-                                onPressed: () => _openUrl(pitchDeckUrl!),
-                                icon: const Icon(Icons.slideshow),
-                                label: const Text('Pitchdeck ansehen'),
+                                onPressed: _openSupportEmail,
+                                icon: const Icon(Icons.support_agent),
+                                label: Text('Support: $supportEmail'),
                               ),
                             if (appRepoUrl != null)
                               OutlinedButton.icon(
