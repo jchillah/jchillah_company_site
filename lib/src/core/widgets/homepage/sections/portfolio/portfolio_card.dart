@@ -7,7 +7,8 @@ class PortfolioCard extends StatelessWidget {
   final String techStack;
   final String status;
   final VoidCallback onTap;
-  final String? iconAsset; // NEU: optionales Icon
+  final VoidCallback? onPitchDeckTap;
+  final String? iconAsset;
 
   const PortfolioCard({
     super.key,
@@ -16,6 +17,7 @@ class PortfolioCard extends StatelessWidget {
     required this.techStack,
     required this.status,
     required this.onTap,
+    this.onPitchDeckTap,
     this.iconAsset,
   });
 
@@ -46,7 +48,6 @@ class PortfolioCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Titel + optionales Icon
             if (iconAsset != null)
               Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -110,21 +111,33 @@ class PortfolioCard extends StatelessWidget {
               children: [
                 const Icon(Icons.circle, size: 8, color: Color(0xFF00FF5F)),
                 const SizedBox(width: 6),
-                Text(
-                  status,
-                  style: theme.textTheme.bodySmall?.copyWith(
-                    color: Colors.white60,
+                Expanded(
+                  child: Text(
+                    status,
+                    style: theme.textTheme.bodySmall?.copyWith(
+                      color: Colors.white60,
+                    ),
                   ),
                 ),
               ],
             ),
-            const SizedBox(height: 4),
-            Text(
-              'Mehr erfahren (Eigenprojekt)',
-              style: theme.textTheme.bodySmall?.copyWith(
-                color: const Color(0xFF00FF5F),
-                fontStyle: FontStyle.italic,
-              ),
+            const SizedBox(height: 14),
+            Wrap(
+              spacing: 10,
+              runSpacing: 10,
+              children: [
+                OutlinedButton.icon(
+                  onPressed: onTap,
+                  icon: const Icon(Icons.info_outline),
+                  label: const Text('Projektdetails'),
+                ),
+                if (onPitchDeckTap != null)
+                  FilledButton.icon(
+                    onPressed: onPitchDeckTap,
+                    icon: const Icon(Icons.slideshow),
+                    label: const Text('Pitchdeck ansehen'),
+                  ),
+              ],
             ),
           ],
         ),
