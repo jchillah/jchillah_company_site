@@ -5,8 +5,7 @@ import 'package:url_launcher/url_launcher.dart';
 class ContactPage extends StatelessWidget {
   const ContactPage({super.key});
 
-  static const String _projectEmail =
-      'michael.winkler.developer@gmail.com';
+  static const String _projectEmail = 'jchillah@gmail.com';
   static const String _asaSupportEmail = 'asa.server.eye@gmail.com';
   static const String _address =
       'Michael Winkler\nJchillah’s Design & Coding Forge\nAm Schülerheim 17\n14195 Berlin\nDeutschland';
@@ -45,10 +44,8 @@ class ContactPage extends StatelessWidget {
     );
   }
 
-  Future<void> _openPhone() =>
-      _openUrl(Uri(scheme: 'tel', path: _phoneDial));
-  Future<void> _openSms() =>
-      _openUrl(Uri(scheme: 'sms', path: _phoneDial));
+  Future<void> _openPhone() => _openUrl(Uri(scheme: 'tel', path: _phoneDial));
+  Future<void> _openSms() => _openUrl(Uri(scheme: 'sms', path: _phoneDial));
   Future<void> _openWhatsApp() =>
       _openUrl(Uri.parse(_whatsAppUrl), external: true);
 

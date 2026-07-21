@@ -28,7 +28,7 @@ class ImpressumSection extends StatelessWidget {
             title: 'Kontakt',
             content:
                 'Telefon: +49 179 4089 187\n'
-                'E-Mail für Projektanfragen: michael.winkler.developer@gmail.com\n'
+                'E-Mail für Projektanfragen: jchillah@gmail.com\n'
                 'ASA Server Eye Support: asa.server.eye@gmail.com\n'
                 'Website: https://jchillah.github.io/\n'
                 'GitHub: https://github.com/jchillah',

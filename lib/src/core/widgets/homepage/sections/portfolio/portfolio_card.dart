@@ -131,12 +131,6 @@ class PortfolioCard extends StatelessWidget {
                   icon: const Icon(Icons.info_outline),
                   label: const Text('Projektdetails'),
                 ),
-                if (onPitchDeckTap != null)
-                  FilledButton.icon(
-                    onPressed: onPitchDeckTap,
-                    icon: const Icon(Icons.slideshow),
-                    label: const Text('Pitchdeck ansehen'),
-                  ),
               ],
             ),
           ],
