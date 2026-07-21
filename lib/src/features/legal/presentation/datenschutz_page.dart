@@ -12,13 +12,13 @@ class DatenschutzPage extends StatelessWidget {
         title: const Text('Datenschutzerklärung'),
         centerTitle: false,
       ),
-      body: const SafeArea(
+      body: SafeArea(
         child: Center(
           child: SingleChildScrollView(
-            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 24),
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 24),
             child: ConstrainedBox(
-              constraints: BoxConstraints(maxWidth: 1100),
-              child: Section(
+              constraints: const BoxConstraints(maxWidth: 1100),
+              child: const Section(
                 title: 'Datenschutzerklärung',
                 subtitle:
                     'Informationen gemäß Art. 13 und 14 Datenschutz-Grundverordnung (DSGVO).',
@@ -53,7 +53,8 @@ class DatenschutzPage extends StatelessWidget {
                     ),
                     SizedBox(height: 24),
                     _PrivacyBlock(
-                      title: '3. Cookies, lokale Speicherung und Reichweitenmessung',
+                      title:
+                          '3. Cookies, lokale Speicherung und Reichweitenmessung',
                       content:
                           'Diese Website setzt keine eigenen Tracking-, Analyse- oder Marketing-Cookies ein. '
                           'Es werden keine Dienste zur Reichweitenmessung, kein Werbetracking, kein Newsletter-System und kein eingebettetes Kontaktformular verwendet.\n\n'
