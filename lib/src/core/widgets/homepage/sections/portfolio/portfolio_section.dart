@@ -14,6 +14,12 @@ class PortfolioSection extends StatelessWidget {
       'https://jchillah.github.io/gameradar-pitchdeck/';
   static const _cryptoTrackerPitchDeckUrl =
       'https://jchillah.github.io/cryptotracker-pitchdeck/';
+  static const _asaShowcaseUrl =
+      'https://jchillah.github.io/assets/showcases/asa-server-eye-showcase.webp';
+  static const _gameRadarShowcaseUrl =
+      'https://jchillah.github.io/assets/showcases/gameradar-showcase.webp';
+  static const _cryptoTrackerShowcaseUrl =
+      'https://jchillah.github.io/assets/showcases/cryptotracker-showcase.webp';
 
   Future<void> _openExternalUrl(String url) async {
     final uri = Uri.parse(url);
@@ -48,6 +54,7 @@ class PortfolioSection extends StatelessWidget {
             'assets/images/asa_server_eye_3.png',
             'assets/images/asa_server_eye_4.png',
           ],
+          showcaseImageUrl: _asaShowcaseUrl,
           projectPageUrl: 'https://jchillah.github.io/asa-server-eye/',
           pitchDeckUrl: _asaPitchDeckUrl,
           appRepoUrl: 'https://github.com/jchillah/asa-server-eye',
@@ -89,6 +96,7 @@ class PortfolioSection extends StatelessWidget {
             'assets/images/gameradar_2.png',
             'assets/images/gameradar_3.png',
           ],
+          showcaseImageUrl: _gameRadarShowcaseUrl,
           pitchDeckUrl: _gameRadarPitchDeckUrl,
           appRepoUrl: 'https://github.com/jchillah/GameRadar',
           pitchRepoUrl: 'https://github.com/jchillah/gameradar-pitchdeck',
@@ -130,6 +138,7 @@ class PortfolioSection extends StatelessWidget {
             'assets/images/cryptotracker_6.png',
             'assets/images/cryptotracker_7.jpg',
           ],
+          showcaseImageUrl: _cryptoTrackerShowcaseUrl,
           pitchDeckUrl: _cryptoTrackerPitchDeckUrl,
           appRepoUrl: 'https://github.com/jchillah/CryptoTracker',
           pitchRepoUrl:
