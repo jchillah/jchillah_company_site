@@ -56,12 +56,6 @@ class AboutSection extends StatelessWidget {
                     icon: const Icon(Icons.code),
                     label: const Text('GitHub-Profil'),
                   ),
-                  OutlinedButton.icon(
-                    onPressed: () =>
-                        _openUrl('https://github.com/jchillah/asa-server-eye'),
-                    icon: const Icon(Icons.visibility_outlined),
-                    label: const Text('ASA Server Eye Repository'),
-                  ),
                 ],
               ),
             ],
