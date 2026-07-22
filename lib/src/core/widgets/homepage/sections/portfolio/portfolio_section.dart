@@ -15,11 +15,11 @@ class PortfolioSection extends StatelessWidget {
   static const _cryptoTrackerPitchDeckUrl =
       'https://jchillah.github.io/cryptotracker-pitchdeck/';
   static const _asaShowcaseUrl =
-      'https://jchillah.github.io/assets/showcases/asa-server-eye-showcase.webp';
+      'https://raw.githubusercontent.com/jchillah/asa-server-eye/main/assets/images/ASA_ServerEye.png';
   static const _gameRadarShowcaseUrl =
-      'https://jchillah.github.io/assets/showcases/gameradar-showcase.webp';
+      'https://raw.githubusercontent.com/jchillah/GameRadar/main/img/GameRadar.png';
   static const _cryptoTrackerShowcaseUrl =
-      'https://jchillah.github.io/assets/showcases/cryptotracker-showcase.webp';
+      'https://raw.githubusercontent.com/jchillah/CryptoTracker/main/img/CryptoTracker.png';
 
   Future<void> _openExternalUrl(String url) async {
     final uri = Uri.parse(url);
