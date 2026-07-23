@@ -18,6 +18,8 @@ class ProjectDetailPage extends StatelessWidget {
   final String? appRepoUrl;
   final String? pitchRepoUrl;
   final String? privacyPolicyUrl;
+  final String? notionUrl;
+  final String? figmaUrl;
   final String? supportEmail;
 
   const ProjectDetailPage({
@@ -35,6 +37,8 @@ class ProjectDetailPage extends StatelessWidget {
     this.appRepoUrl,
     this.pitchRepoUrl,
     this.privacyPolicyUrl,
+    this.notionUrl,
+    this.figmaUrl,
     this.supportEmail,
   });
 
@@ -66,6 +70,8 @@ class ProjectDetailPage extends StatelessWidget {
         appRepoUrl != null ||
         pitchRepoUrl != null ||
         privacyPolicyUrl != null ||
+        notionUrl != null ||
+        figmaUrl != null ||
         supportEmail != null;
 
     return Scaffold(
@@ -171,13 +177,25 @@ class ProjectDetailPage extends StatelessWidget {
                     if (hasLinks) ...[
                       const SizedBox(height: 24),
                       Section(
-                        title: 'Projektlinks und Support',
+                        title: 'Design, Dokumentation und Projektlinks',
                         subtitle:
-                            'Pitchdeck, Quellcode, Projektseiten und direkte Kontaktmöglichkeiten.',
+                            'Produktplanung, UI/UX-Entwürfe, Pitchdeck, Quellcode und direkte Kontaktmöglichkeiten.',
                         child: Wrap(
                           spacing: 12,
                           runSpacing: 12,
                           children: [
+                            if (notionUrl != null)
+                              FilledButton.icon(
+                                onPressed: () => _openUrl(notionUrl!),
+                                icon: const Icon(Icons.description_outlined),
+                                label: const Text('Notion-Dokumentation'),
+                              ),
+                            if (figmaUrl != null)
+                              FilledButton.icon(
+                                onPressed: () => _openUrl(figmaUrl!),
+                                icon: const Icon(Icons.design_services_outlined),
+                                label: const Text('Figma-Showcase'),
+                              ),
                             if (pitchDeckUrl != null)
                               FilledButton.icon(
                                 onPressed: () => _openUrl(pitchDeckUrl!),
