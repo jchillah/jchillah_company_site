@@ -10960,7 +10960,7 @@ case 4:s=l.a
 s===$&&A.a()
 s=A.be(s,200)
 r=A.be(A.ZH(l,B.nv,B.Gg),24)
-q=A.be(A.ZH(l,B.nv,B.GV),32)
+q=A.be(A.ZH(l,B.nv,B.GU),32)
 p=A.be(l.a,10)
 o=A.be(l.a,12)
 l.d===$&&A.a()
@@ -20922,7 +20922,7 @@ if(a.as!==q)return q?-1:1
 return 0},
 aDL(a,b){var s=A.Y(b).h("a7<1,d8>")
 s=A.Z(new A.a7(b,new A.a_y(),s),s.h("ar.E"))
-return A.aD5(!0,s,a,B.H4,!0,B.CQ,null)},
+return A.aD5(!0,s,a,B.H3,!0,B.CQ,null)},
 apr(a){var s
 try{a.df()}catch(s){a.Lu()}a.w=B.VH
 try{a.b5(A.aM6())}catch(s){}},
@@ -21440,7 +21440,7 @@ _.as=!0
 _.at=!1
 _.$ti=d},
 a2u(a,b){var s
-if(a.i(0,b))return new A.Gy(B.Hb)
+if(a.i(0,b))return new A.Gy(B.Ha)
 s=A.c([],t.fJ)
 A.bN()
 a.mc(new A.a2v(b,A.aF(t.u),s))
@@ -25919,7 +25919,7 @@ $S:2}
 A.anf.prototype={
 $1(a){var s=A.cR().b
 s=s==null?null:s.canvasKitBaseUrl
-return(s==null?"https://www.gstatic.com/flutter-canvaskit/69c8c61792f04cc809dfef0c910414fb9afc06cd/":s)+a},
+return(s==null?"https://www.gstatic.com/flutter-canvaskit/0cd610717bde95fd88343c64f81c11ba4e5c0010/":s)+a},
 $S:165}
 A.Ji.prototype={
 gu(a){var s=this.a
@@ -26747,7 +26747,7 @@ ue(){var s=this.Q
 s===$&&A.a()
 return s},
 uf(a,b,c,d){var s,r,q,p
-if(a<0||b<0)return B.Ha
+if(a<0||b<0)return B.H9
 s=this.a
 s===$&&A.a()
 s=s.a
@@ -27006,7 +27006,7 @@ i(a,b){if(b==null)return!1
 if(!(b instanceof A.x6))return!1
 return b.d===this.d&&b.b==this.b&&A.f0(b.c,this.c)},
 gu(a){var s=this,r=s.c
-return A.I(s.d,s.a,s.b,A.bj(r==null?B.H9:r),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
+return A.I(s.d,s.a,s.b,A.bj(r==null?B.H8:r),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 $ifJ:1}
 A.w3.prototype={
 QR(a,b){var s=this.L2(a),r=A.aP(new A.XK(this,b,s))
@@ -27264,7 +27264,7 @@ A.ni.prototype={
 H(){return"CanvasKitVariant."+this.b}}
 A.a0p.prototype={
 glw(){var s=this.b,r=s==null?null:s.canvasKitVariant
-return A.aDV(B.GP,r==null?"auto":r)},
+return A.aDV(B.GO,r==null?"auto":r)},
 gEn(){var s,r=this.b
 if(r==null)s=null
 else{r=r.canvasKitMaximumSurfaces
@@ -32080,7 +32080,7 @@ if(m.f!==B.n4){m.f=B.n4
 m.Nm()}}return m.d.a.Xe(a)},
 Nm(){var s,r
 for(s=this.w,r=0;r<s.length;++r)s[r].$1(this.f)},
-Xd(a){if(B.b.A(B.GZ,a))return this.f===B.fG
+Xd(a){if(B.b.A(B.GY,a))return this.f===B.fG
 return!1}}
 A.a05.prototype={
 $0(){return new A.hF(Date.now(),0,!1)},
@@ -38881,7 +38881,7 @@ if(o>0)return s
 return null}}
 A.afj.prototype={
 E(a,b){this.L_(b,0,b.length,!1)},
-bB(){this.L_(B.H3,0,0,!0)}}
+bB(){this.L_(B.H2,0,0,!0)}}
 A.amK.prototype={
 L_(a,b,c,d){var s=this.b.aij(a,b,c,d)
 if(s!=null)this.a.mO(s,0,s.length,d)}}
@@ -45922,7 +45922,7 @@ A.ua.prototype={
 H(){return"_CornerId."+this.b}}
 A.kG.prototype={}
 A.rv.prototype={
-kl(){var s,r,q,p=this,o=A.aKK(B.GT,new A.a5M(p,p.b.gaP().N(0,p.a.gaP()))),n=p.a
+kl(){var s,r,q,p=this,o=A.aKK(B.GS,new A.a5M(p,p.b.gaP().N(0,p.a.gaP()))),n=p.a
 n.toString
 s=o.a
 r=p.oi(n,s)
@@ -48275,7 +48275,7 @@ r.f=s.d},
 $S:0}
 A.Jg.prototype={
 I(a){var s=this.c.T(0,new A.h(0,40.95))
-return A.avi(A.H2(null,B.Cd,!0),B.a7,new A.ru(1,B.Hk,new A.cE(B.zW,B.q)),s,1.25,B.O9)}}
+return A.avi(A.H2(null,B.Cd,!0),B.a7,new A.ru(1,B.Hj,new A.cE(B.zW,B.q)),s,1.25,B.O9)}}
 A.oj.prototype={
 H(){return"MaterialType."+this.b}}
 A.yf.prototype={
@@ -48723,7 +48723,7 @@ $3(a,b,c){return new A.mV(b,this.a,!1,c,null)},
 $S:113}
 A.JU.prototype={
 a19(a){var s=t.Tr
-s=A.Z(new A.a7(B.GR,new A.a78(a),s),s.h("ar.E"))
+s=A.Z(new A.a7(B.GQ,new A.a78(a),s),s.h("ar.E"))
 return s},
 i(a,b){if(b==null)return!1
 if(this===b)return!0
@@ -53237,7 +53237,7 @@ return new A.ln(r.a.cP(s.ghy()),r.b,r.c)},
 cp(a){var s=this.b
 return s.a.c.cp(a.N(0,s.ghy()))},
 p8(){var s,r,q=this.b,p=q.ghy()
-if(!isFinite(p.a)||!isFinite(p.b))return B.He
+if(!isFinite(p.a)||!isFinite(p.b))return B.Hd
 s=q.f
 if(s==null){s=q.a.c.p8()
 q.f=s}if(p.i(0,B.e))r=s
@@ -62409,7 +62409,7 @@ break
 case 1:return A.L(q,r)}})
 return A.M($async$Cd,r)},
 a4b(a,b){var s,r,q,p
-if(a===b)return B.H8
+if(a===b)return B.H7
 s=A.c([],t.QP)
 if(a==null)s.push(b)
 else{r=B.b.kP(B.e6,a)
@@ -64442,7 +64442,7 @@ A.ka.prototype={}
 A.Kj.prototype={
 kR(a,b){var s,r,q,p,o,n=$.W.ab$.d.c
 if(n==null||n.e==null)return!1
-for(s=t.v,r=0;r<2;++r){q=B.H_[r]
+for(s=t.v,r=0;r<2;++r){q=B.GZ[r]
 p=n.e
 p.toString
 o=A.aoX(p,q,s)
@@ -64679,7 +64679,7 @@ r=n.ga8b()
 q=n.a
 q=q.ch
 q.toString
-l.a=A.aEd(!0,A.auP(B.r,r,s,q,A.ayU(),n.ga9y(),m,n.gaa4(),B.H5,!0,"nav",B.U0),"Navigator Scope",!0,m,m,m,m)}else n.a.toString
+l.a=A.aEd(!0,A.auP(B.r,r,s,q,A.ayU(),n.ga9y(),m,n.gaa4(),B.H4,!0,"nav",B.U0),"Navigator Scope",!0,m,m,m,m)}else n.a.toString
 l.b=null
 s=n.a
 s.toString
@@ -66818,7 +66818,7 @@ h.DT()
 r=h.ga4P()
 q=q.tj
 h.e!==$&&A.b2()
-h.e=new A.Lz(s,new A.bG(B.J7,l),new A.og(),p,B.bM,0,k,h.ga70(),h.ga72(),r,B.bM,0,j,h.ga6V(),h.ga6X(),r,i,B.Hc,f,g.CW,g.cx,g.cy,o,g,n,m,g.x,q,new A.Ha(),new A.Ha())
+h.e=new A.Lz(s,new A.bG(B.J7,l),new A.og(),p,B.bM,0,k,h.ga70(),h.ga72(),r,B.bM,0,j,h.ga6V(),h.ga6X(),r,i,B.Hb,f,g.CW,g.cx,g.cy,o,g,n,m,g.x,q,new A.Ha(),new A.Ha())
 return h},
 vs(a,b){var s,r,q,p=this,o=p.a.c,n=o.a.a.length
 if(n<a.b||n<a.a)return
@@ -69927,7 +69927,7 @@ i(a,b){var s=this
 if(b==null)return!1
 if(J.Q(b)!==A.o(s))return!1
 return b instanceof A.c2&&b.a===s.a&&b.b==s.b&&b.d===s.d&&A.cd(null,null)},
-gu(a){return A.I(this.a,this.b,null,this.d,A.bj(B.Hd),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
+gu(a){return A.I(this.a,this.b,null,this.d,A.bj(B.Hc),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 k(a){return"IconData(U+"+B.d.tR(B.i.m5(this.a,16).toUpperCase(),5,"0")+")"}}
 A.o3.prototype={
 bX(a){return!this.w.i(0,a.w)},
@@ -71284,7 +71284,7 @@ b=r?a1:a3.fr
 if(b==null)b=a2.b.c.z
 a3=r?a1:a3.fx
 if(a3==null)a3=a2.b.c.Q
-a=new A.yk(a4,s,q,p,m,o,n,a5,g===!0,a6,a7,i,h,l,k,j,f,new A.qS(a1),B.H6,e===!0,d,c,b,a3,A.aF6(a2))
+a=new A.yk(a4,s,q,p,m,o,n,a5,g===!0,a6,a7,i,h,l,k,j,f,new A.qS(a1),B.H5,e===!0,d,c,b,a3,A.aF6(a2))
 if(!a.i(0,a0.e))a0.av(new A.aiX(a0,a))},
 xw(){if(this.d==null)this.oM()},
 F6(){this.oM()},
@@ -77457,7 +77457,7 @@ r.wm()
 return s.aQ()},
 l(){var s,r,q,p,o=this
 for(s=o.b,r=s.length,q=o.gCf(),p=0;p<s.length;s.length===r||(0,A.u)(s),++p)s[p].J(q)
-o.b=B.H7
+o.b=B.H6
 o.y=!1
 o.e7()},
 dv(a,b){return a.lG(b)},
@@ -80553,10 +80553,10 @@ return A.dv(s,s,B.r,s,new A.cb(this.c,s,s,s,s,s,B.iD),8,s,s,8)}}
 A.It.prototype={
 I(a){var s,r,q=null,p=A.a0(a),o=B.v.b_(0.1),n=A.cg(999),m=A.f2(B.v.b_(0.34)),l=p.ok,k=l.as,j=A.dv(q,A.bt("Jchillah\u2019s Design & Coding Forge",q,k==null?q:k.S_(B.v,B.n2,0.4),q),B.r,q,new A.cb(o,q,m,n,q,q,B.a2),q,q,B.Dg,q)
 o=l.c
-s=A.a9E(q,q,q,B.c8,q,q,!0,q,A.dW(B.GY,q,q,q,q,q,q,q,q,o==null?q:o.ahu(B.c2,1.02,-1.2),q),B.aV,q,q,B.av,B.aW)
+s=A.a9E(q,q,q,B.c8,q,q,!0,q,A.dW(B.GX,q,q,q,q,q,q,q,q,o==null?q:o.ahu(B.c2,1.02,-1.2),q),B.aV,q,q,B.av,B.aW)
 o=l.y
 n=t.p
-r=A.cT(A.c([j,B.yu,s,B.yu,A.bt("Jchillah\u2019s Design & Coding Forge entwickelt mobile Apps, Web-Anwendungen und digitale Produktl\xf6sungen f\xfcr Selbstst\xe4ndige, kleine Unternehmen und Start-ups. Ich begleite Projekte von der Anforderungsanalyse und UX-Konzeption \xfcber Architektur und Implementierung bis zu Tests und Ver\xf6ffentlichung.",q,o==null?q:o.jy(B.l.b_(0.76),1.55),q),B.yv,A.Br(A.c([A.nJ(B.Eo,B.TS,this.d)],n),B.dt,10,16),B.yv,A.cT(B.H1,B.A,B.t,B.C)],n),B.A,B.t,B.C)
+r=A.cT(A.c([j,B.yu,s,B.yu,A.bt("Jchillah\u2019s Design & Coding Forge entwickelt mobile Apps, Web-Anwendungen und digitale Produktl\xf6sungen f\xfcr Selbstst\xe4ndige, kleine Unternehmen und Start-ups. Ich begleite Projekte von der Anforderungsanalyse und UX-Konzeption \xfcber Architektur und Implementierung bis zu Tests und Ver\xf6ffentlichung.",q,o==null?q:o.jy(B.l.b_(0.76),1.55),q),B.yv,A.Br(A.c([A.nJ(B.Eo,B.TS,this.d)],n),B.dt,10,16),B.yv,A.cT(B.H0,B.A,B.t,B.C)],n),B.A,B.t,B.C)
 if(this.c)return A.fm(A.c([A.iF(r,7),B.Oe,B.DC],n),B.ak,B.t,B.C,0)
 return A.cT(A.c([r,B.yw,B.n7],n),B.A,B.t,B.C)}}
 A.FT.prototype={
@@ -80711,7 +80711,7 @@ $1(a){return B.LA},
 $S:87}
 A.a81.prototype={
 $2(a,b){var s=null,r=b.b>800?B.aK:B.an,q=this.a
-return A.atJ(A.c([A.iF(A.aq9("Ver\xf6ffentlichte Flutter-App f\xfcr offizielle ARK: Survival Ascended Serverdaten, Suche, Details und Favoriten.",s,new A.a7W(q),new A.a7X(q,a),"Android ver\xf6ffentlicht","Flutter \xb7 Riverpod \xb7 Dio \xb7 Firebase","ASA Server Eye"),1),B.hI,A.iF(A.aq9("Android-App f\xfcr Spielesuche, Favoriten, Wunschlisten, Offline-Daten und pers\xf6nliche Auswertungen.","assets/images/gameradar_app_icon.png",new A.a7Y(q),new A.a7Z(q,a),"Android-Abschlussprojekt","Kotlin \xb7 Jetpack Compose \xb7 MVVM/MVI \xb7 Room \xb7 RAWG API","GameRadar"),1),B.hI,A.iF(A.aq9("Native iOS-App f\xfcr Kryptomarktdaten, Preisdiagramme, Authentifizierung und synchronisierte Favoriten.",s,new A.a8_(q),new A.a80(q,a),"iOS-Abschlussprojekt","Swift \xb7 SwiftUI \xb7 Firebase \xb7 SwiftData","CryptoTracker"),1)],t.p),B.A,r,s,B.t,B.C,0,s,s,B.bn)},
+return A.atJ(A.c([A.iF(A.aq9("Ver\xf6ffentlichte Flutter-App f\xfcr offizielle ARK: Survival Ascended Serverdaten, Suche, Details und Favoriten.",s,new A.a7W(q),new A.a7X(q,a),"Android ver\xf6ffentlicht","Flutter \xb7 Riverpod \xb7 Dio \xb7 Firebase","ASA Server Eye"),1),B.hI,A.iF(A.aq9("Android-App f\xfcr Spielesuche, Favoriten, Wunschlisten, Offline-Daten und pers\xf6nliche Auswertungen.","assets/images/gameradar_app_icon.png",new A.a7Y(q),new A.a7Z(q,a),"Android-Abschlussprojekt","Kotlin \xb7 Jetpack Compose \xb7 MVVM/MVI \xb7 Room \xb7 RAWG API","GameRadar"),1),B.hI,A.iF(A.aq9("Native iOS-App f\xfcr Kryptomarktdaten, Charts, News, Authentifizierung und synchronisierte Favoriten.",s,new A.a8_(q),new A.a80(q,a),"iOS Release Candidate","Swift \xb7 SwiftUI \xb7 MVVM \xb7 Firebase \xb7 SwiftData","CryptoTracker"),1)],t.p),B.A,r,s,B.t,B.C,0,s,s,B.bn)},
 $S:109}
 A.a7X.prototype={
 $0(){return this.a.aae(this.b)},
@@ -84615,7 +84615,7 @@ B.B4=new A.aec()
 B.ag=new A.aef()
 B.cg=new A.aeh()
 B.dr=new A.N0(0,0,0,0)
-B.H6=s([],A.ap("x<Zj>"))
+B.H5=s([],A.ap("x<Zj>"))
 B.Xf=new A.aen()
 B.b1={}
 B.tA=new A.bI(B.b1,[],t.li)
@@ -85202,10 +85202,10 @@ B.BQ=new A.E(1,0,0.20784313725490197,0.10980392156862745,B.h)
 B.GD=s([B.BU,B.BQ],t.t_)
 B.Fl=new A.jU(B.bV,B.ly,B.bN,B.GD,null,null)
 B.Fm=new A.y5(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.GU=s([1373.2198709594231,-1100.4251190754821,-7.278681089101213],t.n)
+B.GT=s([1373.2198709594231,-1100.4251190754821,-7.278681089101213],t.n)
 B.GA=s([-271.815969077903,559.6580465940733,-32.46047482791194],t.n)
 B.HF=s([1.9622899599665666,-57.173814538844006,308.7233197812385],t.n)
-B.Fp=s([B.GU,B.GA,B.HF],t.zg)
+B.Fp=s([B.GT,B.GA,B.HF],t.zg)
 B.nr=s(["text","multiline","number","phone","datetime","emailAddress","url","visiblePassword","name","address","none","webSearch","twitter"],t.s)
 B.FO=s([4,9,14,19],t.t)
 B.Hp=s([137,80,78,71,13,10,26,10],t.Z)
@@ -85214,8 +85214,8 @@ B.ER=new A.iJ(B.EJ,!1,0,"png")
 B.EH=new A.jQ(B.Hp,B.ER,0,"png")
 B.Hs=s([71,73,70,56,55,97],t.Z)
 B.EG=new A.jQ(B.Hs,B.fI,1,"gif87a")
-B.GQ=s([71,73,70,56,57,97],t.Z)
-B.EF=new A.jQ(B.GQ,B.fI,2,"gif89a")
+B.GP=s([71,73,70,56,57,97],t.Z)
+B.EF=new A.jQ(B.GP,B.fI,2,"gif89a")
 B.Fq=s([255,216,255],t.Z)
 B.EK=new A.lq(2,"jpeg")
 B.EV=new A.iJ(B.EK,!1,3,"jpeg")
@@ -85257,16 +85257,16 @@ B.hK=new A.kt(5,"end")
 B.Gb=s([B.bL,B.dn,B.cI,B.eD,B.aV,B.hK],A.ap("x<kt>"))
 B.Gm=s([2,1.13276676],t.n)
 B.Ft=s([2.18349805,1.20311921],t.n)
-B.Hh=s([2.33888662,1.28698796],t.n)
-B.Hj=s([2.48660575,1.36351941],t.n)
+B.Hg=s([2.33888662,1.28698796],t.n)
+B.Hi=s([2.48660575,1.36351941],t.n)
 B.Ge=s([2.62226596,1.44717976],t.n)
 B.Gj=s([2.7514899,1.53385819],t.n)
-B.GO=s([3.36298265,1.98288283],t.n)
+B.GN=s([3.36298265,1.98288283],t.n)
 B.Gq=s([4.08649929,2.23811846],t.n)
 B.GG=s([4.85481134,2.47563463],t.n)
 B.Gh=s([5.62945551,2.72948597],t.n)
 B.Gn=s([6.43023796,2.98020421],t.n)
-B.nt=s([B.Gm,B.Ft,B.Hh,B.Hj,B.Ge,B.Gj,B.GO,B.Gq,B.GG,B.Gh,B.Gn],t.zg)
+B.nt=s([B.Gm,B.Ft,B.Hg,B.Hi,B.Ge,B.Gj,B.GN,B.Gq,B.GG,B.Gh,B.Gn],t.zg)
 B.Gd=s([B.ix,B.iy],A.ap("x<vJ>"))
 B.Gg=s([18,15,10,12,15,18,15,12,12],t.n)
 B.E4=new A.c2(58538,"MaterialIcons",!1)
@@ -85307,9 +85307,9 @@ B.jS=s([B.aj,B.S],A.ap("x<AP>"))
 B.Bf=new A.ni(0,"auto")
 B.Bg=new A.ni(1,"full")
 B.Bh=new A.ni(2,"chromium")
-B.GP=s([B.Bf,B.Bg,B.Bh,B.c0],A.ap("x<ni>"))
+B.GO=s([B.Bf,B.Bg,B.Bh,B.c0],A.ap("x<ni>"))
 B.b5=new A.ex(1,"fuchsia")
-B.GR=s([B.a5,B.b5,B.F,B.aT,B.au,B.aU],A.ap("x<ex>"))
+B.GQ=s([B.a5,B.b5,B.F,B.aT,B.au,B.aU],A.ap("x<ex>"))
 B.zi=new A.ua(0,"topLeft")
 B.zl=new A.ua(3,"bottomRight")
 B.VD=new A.kG(B.zi,B.zl)
@@ -85318,49 +85318,49 @@ B.zj=new A.ua(1,"topRight")
 B.zk=new A.ua(2,"bottomLeft")
 B.VE=new A.kG(B.zj,B.zk)
 B.VF=new A.kG(B.zk,B.zj)
-B.GT=s([B.VD,B.VG,B.VE,B.VF],A.ap("x<kG>"))
-B.GV=s([35,30,20,25,30,35,30,25,25],t.n)
+B.GS=s([B.VD,B.VG,B.VE,B.VF],A.ap("x<kG>"))
+B.GU=s([35,30,20,25,30,35,30,25,25],t.n)
 B.Pk=new A.dn("Individuelle Apps\n",null,null,B.ah,null,null,null,null,null,null,null)
 B.Pl=new A.dn("und digitale Produkte ",null,null,B.ah,null,null,null,null,null,null,null)
 B.Qs=new A.m(!0,B.v,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Pm=new A.dn("professionell umgesetzt.",null,null,B.ah,null,null,null,null,null,null,B.Qs)
-B.GY=s([B.Pk,B.Pl,B.Pm],t.VO)
-B.GZ=s(["click","scroll"],t.s)
+B.GX=s([B.Pk,B.Pl,B.Pm],t.VO)
+B.GY=s(["click","scroll"],t.s)
 B.Ai=new A.qd()
 B.hl=new A.Lr(1,"page")
 B.hm=new A.e3(B.aY,B.hl)
-B.H_=s([B.Ai,B.hm],A.ap("x<aN>"))
+B.GZ=s([B.Ai,B.hm],A.ap("x<aN>"))
 B.DS=new A.r8("Cross-Platform-Entwicklung mit Flutter f\xfcr Android, iOS und Web",null)
 B.DR=new A.r8("Native App-Entwicklung mit Kotlin, Jetpack Compose und SwiftUI",null)
 B.DT=new A.r8("Produktkonzeption, UI/UX, Qualit\xe4tssicherung und Release-Vorbereitung",null)
-B.H1=s([B.DS,B.DR,B.DT],t.p)
-B.H8=s([],t.QP)
+B.H0=s([B.DS,B.DR,B.DT],t.p)
+B.H7=s([],t.QP)
 B.nA=s([],A.ap("x<aNj>"))
-B.H4=s([],t.D)
-B.Hb=s([],t.fJ)
-B.He=s([],t.ER)
+B.H3=s([],t.D)
+B.Ha=s([],t.fJ)
+B.Hd=s([],t.ER)
 B.nB=s([],t.tc)
 B.fQ=s([],t.jl)
 B.nz=s([],t.wi)
-B.H5=s([],A.ap("x<iT<@>>"))
+B.H4=s([],A.ap("x<iT<@>>"))
 B.jU=s([],t.AO)
-B.H7=s([],t.D1)
+B.H6=s([],t.D1)
 B.jT=s([],t.QF)
-B.Ha=s([],t.Lx)
-B.Hc=s([],t.AS)
+B.H9=s([],t.Lx)
+B.Hb=s([],t.AS)
 B.Xo=s([],t.p)
-B.H9=s([],t.n)
-B.H3=s([],t.t)
+B.H8=s([],t.n)
+B.H2=s([],t.t)
 B.ny=s([],t.ee)
-B.Hd=s([],t.XS)
+B.Hc=s([],t.XS)
 B.JX=new A.h(0,2)
 B.Ac=new A.cG(0.75,B.bg,B.m6,B.JX,1.5)
-B.Hk=s([B.Ac],t.sq)
+B.Hj=s([B.Ac],t.sq)
 B.e6=s([B.ca,B.by,B.eO,B.eP,B.iw],t.QP)
 B.G4=s([0.001200833568784504,0.002389694492170889,0.0002795742885861124],t.n)
-B.H0=s([0.0005891086651375999,0.0029785502573438758,0.0003270666104008398],t.n)
+B.H_=s([0.0005891086651375999,0.0029785502573438758,0.0003270666104008398],t.n)
 B.Gf=s([0.00010146692491640572,0.0005364214359186694,0.0032979401770712076],t.n)
-B.Hv=s([B.G4,B.H0,B.Gf],t.zg)
+B.Hv=s([B.G4,B.H_,B.Gf],t.zg)
 B.BW=new A.E(0.3333333333333333,0,0,0,B.h)
 B.tR=new A.h(0,12)
 B.Ab=new A.cG(0,B.bg,B.BW,B.tR,26)
@@ -85936,28 +85936,28 @@ B.FU=s([54,null,null,8589935158],t.Z)
 B.FV=s([55,null,null,8589935159],t.Z)
 B.FW=s([56,null,null,8589935160],t.Z)
 B.FY=s([57,null,null,8589935161],t.Z)
-B.GJ=s([8589934852,8589934852,8589934853,null],t.Z)
+B.GI=s([8589934852,8589934852,8589934853,null],t.Z)
 B.Fw=s([4294967555,null,4294967555,null],t.Z)
 B.Fx=s([4294968065,null,null,8589935154],t.Z)
 B.Fy=s([4294968066,null,null,8589935156],t.Z)
 B.Fz=s([4294968067,null,null,8589935158],t.Z)
 B.FA=s([4294968068,null,null,8589935160],t.Z)
 B.FF=s([4294968321,null,null,8589935157],t.Z)
-B.GK=s([8589934848,8589934848,8589934849,null],t.Z)
+B.GJ=s([8589934848,8589934848,8589934849,null],t.Z)
 B.Fv=s([4294967423,null,null,8589935150],t.Z)
 B.FB=s([4294968069,null,null,8589935153],t.Z)
 B.Fu=s([4294967309,null,null,8589935117],t.Z)
 B.FC=s([4294968070,null,null,8589935159],t.Z)
 B.FG=s([4294968327,null,null,8589935152],t.Z)
-B.GL=s([8589934854,8589934854,8589934855,null],t.Z)
+B.GK=s([8589934854,8589934854,8589934855,null],t.Z)
 B.FD=s([4294968071,null,null,8589935155],t.Z)
 B.FE=s([4294968072,null,null,8589935161],t.Z)
-B.GM=s([8589934850,8589934850,8589934851,null],t.Z)
-B.tE=new A.dl(["*",B.FH,"+",B.FI,"-",B.FJ,".",B.FK,"/",B.FL,"0",B.FM,"1",B.FN,"2",B.FP,"3",B.FR,"4",B.FS,"5",B.FT,"6",B.FU,"7",B.FV,"8",B.FW,"9",B.FY,"Alt",B.GJ,"AltGraph",B.Fw,"ArrowDown",B.Fx,"ArrowLeft",B.Fy,"ArrowRight",B.Fz,"ArrowUp",B.FA,"Clear",B.FF,"Control",B.GK,"Delete",B.Fv,"End",B.FB,"Enter",B.Fu,"Home",B.FC,"Insert",B.FG,"Meta",B.GL,"PageDown",B.FD,"PageUp",B.FE,"Shift",B.GM],A.ap("dl<F,V<t?>>"))
+B.GL=s([8589934850,8589934850,8589934851,null],t.Z)
+B.tE=new A.dl(["*",B.FH,"+",B.FI,"-",B.FJ,".",B.FK,"/",B.FL,"0",B.FM,"1",B.FN,"2",B.FP,"3",B.FR,"4",B.FS,"5",B.FT,"6",B.FU,"7",B.FV,"8",B.FW,"9",B.FY,"Alt",B.GI,"AltGraph",B.Fw,"ArrowDown",B.Fx,"ArrowLeft",B.Fy,"ArrowRight",B.Fz,"ArrowUp",B.FA,"Clear",B.FF,"Control",B.GJ,"Delete",B.Fv,"End",B.FB,"Enter",B.Fu,"Home",B.FC,"Insert",B.FG,"Meta",B.GK,"PageDown",B.FD,"PageUp",B.FE,"Shift",B.GL],A.ap("dl<F,V<t?>>"))
 B.FX=s([B.nK,null,null,B.tq],t.L)
-B.Hf=s([B.tc,null,null,B.tr],t.L)
+B.He=s([B.tc,null,null,B.tr],t.L)
 B.Gk=s([B.td,null,null,B.ts],t.L)
-B.GN=s([B.te,null,null,B.ct],t.L)
+B.GM=s([B.te,null,null,B.ct],t.L)
 B.Fn=s([B.tf,null,null,B.tt],t.L)
 B.Ht=s([B.tg,null,null,B.k4],t.L)
 B.Ho=s([B.th,null,null,B.eg],t.L)
@@ -85967,8 +85967,8 @@ B.Hn=s([B.tk,null,null,B.cv],t.L)
 B.G1=s([B.tl,null,null,B.k5],t.L)
 B.Fr=s([B.tm,null,null,B.cw],t.L)
 B.Gc=s([B.tn,null,null,B.ei],t.L)
-B.Hg=s([B.to,null,null,B.cx],t.L)
-B.Hi=s([B.tp,null,null,B.ej],t.L)
+B.Hf=s([B.to,null,null,B.cx],t.L)
+B.Hh=s([B.tp,null,null,B.ej],t.L)
 B.G5=s([B.ee,B.ee,B.fX,null],t.L)
 B.Hu=s([B.fT,null,B.fT,null],t.L)
 B.Gs=s([B.br,null,null,B.cu],t.L)
@@ -85977,16 +85977,16 @@ B.Gu=s([B.bj,null,null,B.cw],t.L)
 B.Hz=s([B.bs,null,null,B.cx],t.L)
 B.Hl=s([B.jZ,null,null,B.k5],t.L)
 B.G6=s([B.ed,B.ed,B.fW,null],t.L)
-B.GW=s([B.aG,null,null,B.ct],t.L)
+B.GV=s([B.aG,null,null,B.ct],t.L)
 B.Gv=s([B.cq,null,null,B.eg],t.L)
 B.G0=s([B.fS,null,null,B.k3],t.L)
 B.Gw=s([B.cr,null,null,B.ei],t.L)
 B.Hm=s([B.ec,null,null,B.k4],t.L)
 B.G7=s([B.ef,B.ef,B.fY,null],t.L)
 B.Gx=s([B.ea,null,null,B.eh],t.L)
-B.H2=s([B.eb,null,null,B.ej],t.L)
+B.H1=s([B.eb,null,null,B.ej],t.L)
 B.G8=s([B.c3,B.c3,B.cs,null],t.L)
-B.Jm=new A.dl(["*",B.FX,"+",B.Hf,"-",B.Gk,".",B.GN,"/",B.Fn,"0",B.Ht,"1",B.Ho,"2",B.G3,"3",B.HA,"4",B.Hn,"5",B.G1,"6",B.Fr,"7",B.Gc,"8",B.Hg,"9",B.Hi,"Alt",B.G5,"AltGraph",B.Hu,"ArrowDown",B.Gs,"ArrowLeft",B.Gt,"ArrowRight",B.Gu,"ArrowUp",B.Hz,"Clear",B.Hl,"Control",B.G6,"Delete",B.GW,"End",B.Gv,"Enter",B.G0,"Home",B.Gw,"Insert",B.Hm,"Meta",B.G7,"PageDown",B.Gx,"PageUp",B.H2,"Shift",B.G8],A.ap("dl<F,V<e?>>"))
+B.Jm=new A.dl(["*",B.FX,"+",B.He,"-",B.Gk,".",B.GM,"/",B.Fn,"0",B.Ht,"1",B.Ho,"2",B.G3,"3",B.HA,"4",B.Hn,"5",B.G1,"6",B.Fr,"7",B.Gc,"8",B.Hf,"9",B.Hh,"Alt",B.G5,"AltGraph",B.Hu,"ArrowDown",B.Gs,"ArrowLeft",B.Gt,"ArrowRight",B.Gu,"ArrowUp",B.Hz,"Clear",B.Hl,"Control",B.G6,"Delete",B.GV,"End",B.Gv,"Enter",B.G0,"Home",B.Gw,"Insert",B.Hm,"Meta",B.G7,"PageDown",B.Gx,"PageUp",B.H1,"Shift",B.G8],A.ap("dl<F,V<e?>>"))
 B.JQ={KeyA:0,KeyB:1,KeyC:2,KeyD:3,KeyE:4,KeyF:5,KeyG:6,KeyH:7,KeyI:8,KeyJ:9,KeyK:10,KeyL:11,KeyM:12,KeyN:13,KeyO:14,KeyP:15,KeyQ:16,KeyR:17,KeyS:18,KeyT:19,KeyU:20,KeyV:21,KeyW:22,KeyX:23,KeyY:24,KeyZ:25,Digit1:26,Digit2:27,Digit3:28,Digit4:29,Digit5:30,Digit6:31,Digit7:32,Digit8:33,Digit9:34,Digit0:35,Minus:36,Equal:37,BracketLeft:38,BracketRight:39,Backslash:40,Semicolon:41,Quote:42,Backquote:43,Comma:44,Period:45,Slash:46}
 B.tF=new A.bI(B.JQ,["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","1","2","3","4","5","6","7","8","9","0","-","=","[","]","\\",";","'","`",",",".","/"],t.li)
 B.JM={Abort:0,Again:1,AltLeft:2,AltRight:3,ArrowDown:4,ArrowLeft:5,ArrowRight:6,ArrowUp:7,AudioVolumeDown:8,AudioVolumeMute:9,AudioVolumeUp:10,Backquote:11,Backslash:12,Backspace:13,BracketLeft:14,BracketRight:15,BrightnessDown:16,BrightnessUp:17,BrowserBack:18,BrowserFavorites:19,BrowserForward:20,BrowserHome:21,BrowserRefresh:22,BrowserSearch:23,BrowserStop:24,CapsLock:25,Comma:26,ContextMenu:27,ControlLeft:28,ControlRight:29,Convert:30,Copy:31,Cut:32,Delete:33,Digit0:34,Digit1:35,Digit2:36,Digit3:37,Digit4:38,Digit5:39,Digit6:40,Digit7:41,Digit8:42,Digit9:43,DisplayToggleIntExt:44,Eject:45,End:46,Enter:47,Equal:48,Escape:49,Esc:50,F1:51,F10:52,F11:53,F12:54,F13:55,F14:56,F15:57,F16:58,F17:59,F18:60,F19:61,F2:62,F20:63,F21:64,F22:65,F23:66,F24:67,F3:68,F4:69,F5:70,F6:71,F7:72,F8:73,F9:74,Find:75,Fn:76,FnLock:77,GameButton1:78,GameButton10:79,GameButton11:80,GameButton12:81,GameButton13:82,GameButton14:83,GameButton15:84,GameButton16:85,GameButton2:86,GameButton3:87,GameButton4:88,GameButton5:89,GameButton6:90,GameButton7:91,GameButton8:92,GameButton9:93,GameButtonA:94,GameButtonB:95,GameButtonC:96,GameButtonLeft1:97,GameButtonLeft2:98,GameButtonMode:99,GameButtonRight1:100,GameButtonRight2:101,GameButtonSelect:102,GameButtonStart:103,GameButtonThumbLeft:104,GameButtonThumbRight:105,GameButtonX:106,GameButtonY:107,GameButtonZ:108,Help:109,Home:110,Hyper:111,Insert:112,IntlBackslash:113,IntlRo:114,IntlYen:115,KanaMode:116,KeyA:117,KeyB:118,KeyC:119,KeyD:120,KeyE:121,KeyF:122,KeyG:123,KeyH:124,KeyI:125,KeyJ:126,KeyK:127,KeyL:128,KeyM:129,KeyN:130,KeyO:131,KeyP:132,KeyQ:133,KeyR:134,KeyS:135,KeyT:136,KeyU:137,KeyV:138,KeyW:139,KeyX:140,KeyY:141,KeyZ:142,KeyboardLayoutSelect:143,Lang1:144,Lang2:145,Lang3:146,Lang4:147,Lang5:148,LaunchApp1:149,LaunchApp2:150,LaunchAssistant:151,LaunchControlPanel:152,LaunchMail:153,LaunchScreenSaver:154,MailForward:155,MailReply:156,MailSend:157,MediaFastForward:158,MediaPause:159,MediaPlay:160,MediaPlayPause:161,MediaRecord:162,MediaRewind:163,MediaSelect:164,MediaStop:165,MediaTrackNext:166,MediaTrackPrevious:167,MetaLeft:168,MetaRight:169,MicrophoneMuteToggle:170,Minus:171,NonConvert:172,NumLock:173,Numpad0:174,Numpad1:175,Numpad2:176,Numpad3:177,Numpad4:178,Numpad5:179,Numpad6:180,Numpad7:181,Numpad8:182,Numpad9:183,NumpadAdd:184,NumpadBackspace:185,NumpadClear:186,NumpadClearEntry:187,NumpadComma:188,NumpadDecimal:189,NumpadDivide:190,NumpadEnter:191,NumpadEqual:192,NumpadMemoryAdd:193,NumpadMemoryClear:194,NumpadMemoryRecall:195,NumpadMemoryStore:196,NumpadMemorySubtract:197,NumpadMultiply:198,NumpadParenLeft:199,NumpadParenRight:200,NumpadSubtract:201,Open:202,PageDown:203,PageUp:204,Paste:205,Pause:206,Period:207,Power:208,PrintScreen:209,PrivacyScreenToggle:210,Props:211,Quote:212,Resume:213,ScrollLock:214,Select:215,SelectTask:216,Semicolon:217,ShiftLeft:218,ShiftRight:219,ShowAllWindows:220,Slash:221,Sleep:222,Space:223,Super:224,Suspend:225,Tab:226,Turbo:227,Undo:228,WakeUp:229,ZoomToggle:230}
@@ -86399,9 +86399,9 @@ B.Ly=new A.z2(null,null,null,null,null,null,null,null,null,null,null,null,null,n
 B.Gy=s(["Suche und Filterung offizieller Server","Detailansichten mit relevanten Serverinformationen","Favoriten f\xfcr h\xe4ufig genutzte Server","Lokalisierte Benutzeroberfl\xe4che","Firebase-gest\xfctzte App-Funktionen","Release-, Support- und Datenschutz-Infrastruktur","Dokumentierter Produkt- und Architekturprozess"],t.s)
 B.Gp=s(["assets/images/asa_server_eye_1.png","assets/images/asa_server_eye_2.png","assets/images/asa_server_eye_3.png","assets/images/asa_server_eye_4.png"],t.s)
 B.Lz=new A.kb("ASA Server Eye","Ver\xf6ffentlichte Flutter-App zur Suche und Beobachtung offizieller ARK: Survival Ascended Server.","Android ver\xf6ffentlicht \xb7 Aktive Weiterentwicklung","Flutter \xb7 Dart \xb7 Riverpod \xb7 Dio \xb7 Firebase","ASA Server Eye unterst\xfctzt Spieler dabei, offizielle ARK: Survival Ascended Server zu durchsuchen, relevante Serverinformationen aufzurufen und h\xe4ufig genutzte Server als Favoriten zu verwalten.\n\nDas Projekt wurde als releasef\xe4hige Flutter-Anwendung mit Feature-First-Struktur, lokalisierter Benutzeroberfl\xe4che, Firebase-Anbindung und separaten Support- und Datenschutzseiten umgesetzt. Die Weiterentwicklung konzentriert sich auf Benachrichtigungen, Watchlists und aussagekr\xe4ftigere Serverdaten.",B.Gy,B.Gp,"https://raw.githubusercontent.com/jchillah/asa-server-eye/main/assets/images/ASA_ServerEye.png","https://jchillah.github.io/asa-server-eye/",u.i,"https://github.com/jchillah/asa-server-eye","https://github.com/jchillah/jchillah.github.io/tree/main/asa-server-eye-pitchdeck","https://jchillah.github.io/asa-server-eye-privacy-policy/","https://believed-cobbler-41f.notion.site/ebd//324b529b25e7805094e4c5172976aec4","asa.server.eye@gmail.com",null)
-B.GI=s(["Aktuelle Preise und Marktdaten \xfcber eine REST API","Historische Preisverl\xe4ufe in interaktiven Diagrammen","Benutzeranmeldung mit Firebase Authentication","Synchronisierte Favoriten mit Firestore","Lokale Persistenz und Offline-Fallback mit SwiftData","Sichere Verwaltung von API-Zugangsdaten mit Keychain","MVVM-Struktur mit getrennten Views, ViewModels und Services"],t.s)
+B.Hk=s(["Aktuelle Preise und Marktdaten \xfcber CoinGecko","USD-, EUR- und GBP-Darstellung","Historische Preisverl\xe4ufe mit Swift Charts","Benutzeranmeldung mit Firebase Authentication","Synchronisierte Favoriten mit owner-only Firestore-Regeln","Lokale Persistenz und Offline-Fallback mit SwiftData","Krypto-News \xfcber einen schl\xfcsselfreien RSS-Feed","Account-L\xf6schung und sichere Release-Dokumentation","MVVM-Struktur mit getrennten Views, ViewModels und Services"],t.s)
 B.Gr=s(["assets/images/cryptotracker_1.png","assets/images/cryptotracker_2.png","assets/images/cryptotracker_3.png","assets/images/cryptotracker_4.png","assets/images/cryptotracker_5.png","assets/images/cryptotracker_6.png","assets/images/cryptotracker_7.jpg"],t.s)
-B.LA=new A.kb("CryptoTracker","Native SwiftUI-App zur Beobachtung von Kryptow\xe4hrungen, Preisverl\xe4ufen und pers\xf6nlichen Favoriten.","iOS-Abschlussprojekt","Swift \xb7 SwiftUI \xb7 MVVM \xb7 Firebase Auth \xb7 Firestore \xb7 SwiftData \xb7 Keychain","CryptoTracker stellt aktuelle Kryptow\xe4hrungsdaten und historische Preisverl\xe4ufe in einer nativen iOS-Oberfl\xe4che bereit. Nutzer k\xf6nnen Coins beobachten, Favoriten speichern und Preisentwicklungen in Diagrammen auswerten.\n\nDie App basiert auf MVVM und verbindet Firebase Authentication mit Firestore f\xfcr nutzerbezogene Favoriten. SwiftData dient als lokale Persistenz und als Fallback bei eingeschr\xe4nkter API-Verf\xfcgbarkeit. API-Zugangsdaten werden \xfcber die iOS Keychain verwaltet.",B.GI,B.Gr,"https://raw.githubusercontent.com/jchillah/CryptoTracker/main/img/CryptoTracker.png",null,u.u,"https://github.com/jchillah/CryptoTracker","https://github.com/jchillah/jchillah.github.io/tree/main/cryptotracker-pitchdeck",null,null,null,null)
+B.LA=new A.kb("CryptoTracker","Native SwiftUI-App f\xfcr Kryptomarktdaten, Preisverl\xe4ufe, News und pers\xf6nliche Favoriten.","iOS Release Candidate \xb7 Portfolio-Projekt","Swift \xb7 SwiftUI \xb7 MVVM \xb7 Firebase Auth \xb7 Firestore \xb7 SwiftData \xb7 GitHub Actions","CryptoTracker stellt aktuelle Kryptow\xe4hrungsdaten, historische Preisverl\xe4ufe und Krypto-News in einer nativen iOS-Oberfl\xe4che bereit. Nutzer k\xf6nnen Favoriten speichern, mehrere W\xe4hrungen ausw\xe4hlen und ihre Account-Einstellungen verwalten.\n\nDie App basiert auf MVVM mit explizitem View-State. Firebase Authentication und owner-only Firestore-Regeln sch\xfctzen nutzerbezogene Favoriten und Einstellungen. SwiftData stellt getrennte Offline-Caches f\xfcr Markt- und Chartdaten bereit. Ein CI-Workflow, Account-L\xf6schung, Datenschutz- und Release-Dokumentation unterst\xfctzen den Weg zur App-Store-Ver\xf6ffentlichung.",B.Hk,B.Gr,"https://raw.githubusercontent.com/jchillah/CryptoTracker/main/img/CryptoTracker.png",null,u.u,"https://github.com/jchillah/CryptoTracker","https://github.com/jchillah/jchillah.github.io/tree/main/cryptotracker-pitchdeck",null,null,null,null)
 B.Hq=s(["Spielesuche mit Plattform-, Genre-, Bewertungs- und Datumsfiltern","Favoriten und Wunschlisten mit lokaler Speicherung","Detailansichten mit Beschreibungen, Medien und Bewertungen","Offline-Cache mit Room","JSON-Export und -Import pers\xf6nlicher Listen","Statistiken und Auswertungen","Deutsch- und englischsprachige Benutzeroberfl\xe4che","MVVM/MVI-Hybridarchitektur mit Repository-Pattern"],t.s)
 B.GF=s(["assets/images/gameradar_1.png","assets/images/gameradar_2.png","assets/images/gameradar_3.png"],t.s)
 B.LB=new A.kb("GameRadar","Android-App zur Suche, Organisation und Analyse von Videospielen auf Basis der RAWG API.","Android-Abschlussprojekt \xb7 Open Source","Kotlin \xb7 Jetpack Compose \xb7 MVVM/MVI \xb7 Room \xb7 Retrofit \xb7 Koin","GameRadar b\xfcndelt Spielesuche, Favoriten, Wunschlisten und pers\xf6nliche Statistiken in einer modernen Android-Anwendung. Die RAWG API liefert Spieledaten, w\xe4hrend Room wichtige Inhalte und pers\xf6nliche Listen lokal verf\xfcgbar h\xe4lt.\n\nDie Anwendung verwendet eine MVVM/MVI-Hybridarchitektur mit getrennten Data-, Domain- und Presentation-Bereichen. Zu den technischen Schwerpunkten z\xe4hlen Paging, Filter und Sortierung, JSON-Export und -Import, Dark- und Light-Mode sowie robuste Lade- und Fehlerzust\xe4nde.",B.Hq,B.GF,"https://raw.githubusercontent.com/jchillah/GameRadar/main/img/GameRadar.png",null,u.X,"https://github.com/jchillah/GameRadar","https://github.com/jchillah/gameradar-pitchdeck","https://jchillah.github.io/GameRadar-Privacy-Policy/",null,null,null)
@@ -86507,8 +86507,8 @@ B.dm=new A.bJ(null,12,null,null)
 B.Lu=new A.oR("02","Konzept, UX & Architektur","Die Anforderungen werden in User Flows, Wireframes und ein konsistentes Oberfl\xe4chenkonzept \xfcbersetzt. Parallel entstehen die technische Architektur, das Datenmodell und die Planung erforderlicher Schnittstellen.",null)
 B.Lv=new A.oR("03","Implementierung & Qualit\xe4tssicherung","Die Umsetzung erfolgt strukturiert und nachvollziehbar mit Versionsverwaltung, klar getrennten Verantwortlichkeiten und regelm\xe4\xdfigen Zwischenst\xe4nden. Zentrale Funktionen werden durch geeignete Tests, Fehlerbehandlung und manuelle Pr\xfcfungen abgesichert.",null)
 B.Lw=new A.oR("04","Ver\xf6ffentlichung & Weiterentwicklung","Nach der finalen Abnahme wird die Anwendung f\xfcr den vorgesehenen Vertriebskanal vorbereitet und ver\xf6ffentlicht. Dokumentation, Fehlerkorrekturen, Optimierungen und weitere Ausbaustufen k\xf6nnen anschlie\xdfend gezielt fortgef\xfchrt werden.",null)
-B.GS=s([B.Lx,B.dm,B.Lu,B.dm,B.Lv,B.dm,B.Lw],t.p)
-B.Ck=new A.l6(B.an,B.t,B.C,B.A,null,B.bn,null,0,B.GS,null)
+B.GR=s([B.Lx,B.dm,B.Lu,B.dm,B.Lv,B.dm,B.Lw],t.p)
+B.Ck=new A.l6(B.an,B.t,B.C,B.A,null,B.bn,null,0,B.GR,null)
 B.Mo=new A.fn("Projektablauf","Ein transparenter Prozess von der Anforderungsanalyse bis zur Ver\xf6ffentlichung.",B.Ck,null)
 B.Mp=new A.A2(null,null)
 B.at=new A.hn(0,"tap")
@@ -86611,9 +86611,9 @@ B.y3=new A.dP([B.a8,B.aI,B.bw,B.aC,B.b3],t.Lu)
 B.C5=new A.E(0.23529411764705882,0,0,0,B.h)
 B.K_=new A.h(0,4)
 B.Ae=new A.cG(0.5,B.bg,B.C5,B.K_,10)
-B.GX=s([B.Ae],t.sq)
+B.GW=s([B.Ae],t.sq)
 B.Mb=new A.j1(B.lC,B.q)
-B.Na=new A.i3(null,null,null,B.GX,B.Mb)
+B.Na=new A.i3(null,null,null,B.GW,B.Mb)
 B.Nb=new A.a2(B.ec,!1,!0,!1,!1,B.m)
 B.y4=new A.a2(B.jX,!1,!1,!1,!0,B.m)
 B.Nc=new A.a2(B.nF,!0,!1,!1,!1,B.m)
