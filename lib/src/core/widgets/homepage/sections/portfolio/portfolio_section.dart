@@ -12,8 +12,6 @@ class PortfolioSection extends StatelessWidget {
       'https://jchillah.github.io/asa-server-eye-pitchdeck/';
   static const _asaNotionUrl =
       'https://believed-cobbler-41f.notion.site/ebd//324b529b25e7805094e4c5172976aec4';
-  static const _asaFigmaUrl =
-      'https://www.figma.com/design/DI5uVNOcAvqCXs1kkPaCUj';
   static const _gameRadarPitchDeckUrl =
       'https://jchillah.github.io/gameradar-pitchdeck/';
   static const _cryptoTrackerPitchDeckUrl =
@@ -51,7 +49,7 @@ class PortfolioSection extends StatelessWidget {
             'Lokalisierte Benutzeroberfläche',
             'Firebase-gestützte App-Funktionen',
             'Release-, Support- und Datenschutz-Infrastruktur',
-            'Dokumentierter Produkt-, Architektur- und Designprozess',
+            'Dokumentierter Produkt- und Architekturprozess',
           ],
           screenshotAssets: [
             'assets/images/asa_server_eye_1.png',
@@ -63,7 +61,6 @@ class PortfolioSection extends StatelessWidget {
           projectPageUrl: 'https://jchillah.github.io/asa-server-eye/',
           pitchDeckUrl: _asaPitchDeckUrl,
           notionUrl: _asaNotionUrl,
-          figmaUrl: _asaFigmaUrl,
           appRepoUrl: 'https://github.com/jchillah/asa-server-eye',
           pitchRepoUrl:
               'https://github.com/jchillah/jchillah.github.io/tree/main/asa-server-eye-pitchdeck',
@@ -160,7 +157,7 @@ class PortfolioSection extends StatelessWidget {
     return Section(
       title: 'Referenzprojekte',
       subtitle:
-          'Ausgewählte Anwendungen mit dokumentierter Architektur, nachvollziehbarem Designprozess, realen Datenquellen und technischer Umsetzung.',
+          'Ausgewählte Anwendungen mit dokumentierter Architektur, realen Datenquellen und nachvollziehbarer technischer Umsetzung.',
       child: LayoutBuilder(
         builder: (context, constraints) {
           final isWide = constraints.maxWidth > 800;
