@@ -18,6 +18,7 @@ class ProjectDetailPage extends StatelessWidget {
   final String? appRepoUrl;
   final String? pitchRepoUrl;
   final String? privacyPolicyUrl;
+  final String? notionUrl;
   final String? supportEmail;
 
   const ProjectDetailPage({
@@ -35,6 +36,7 @@ class ProjectDetailPage extends StatelessWidget {
     this.appRepoUrl,
     this.pitchRepoUrl,
     this.privacyPolicyUrl,
+    this.notionUrl,
     this.supportEmail,
   });
 
@@ -66,6 +68,7 @@ class ProjectDetailPage extends StatelessWidget {
         appRepoUrl != null ||
         pitchRepoUrl != null ||
         privacyPolicyUrl != null ||
+        notionUrl != null ||
         supportEmail != null;
 
     return Scaffold(
@@ -171,13 +174,19 @@ class ProjectDetailPage extends StatelessWidget {
                     if (hasLinks) ...[
                       const SizedBox(height: 24),
                       Section(
-                        title: 'Projektlinks und Support',
+                        title: 'Dokumentation und Projektlinks',
                         subtitle:
-                            'Pitchdeck, Quellcode, Projektseiten und direkte Kontaktmöglichkeiten.',
+                            'Produktplanung, Pitchdeck, Quellcode, Projektseiten und direkte Kontaktmöglichkeiten.',
                         child: Wrap(
                           spacing: 12,
                           runSpacing: 12,
                           children: [
+                            if (notionUrl != null)
+                              FilledButton.icon(
+                                onPressed: () => _openUrl(notionUrl!),
+                                icon: const Icon(Icons.description_outlined),
+                                label: const Text('Notion-Dokumentation'),
+                              ),
                             if (pitchDeckUrl != null)
                               FilledButton.icon(
                                 onPressed: () => _openUrl(pitchDeckUrl!),

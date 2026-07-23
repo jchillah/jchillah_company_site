@@ -10,6 +10,8 @@ class PortfolioSection extends StatelessWidget {
 
   static const _asaPitchDeckUrl =
       'https://jchillah.github.io/asa-server-eye-pitchdeck/';
+  static const _asaNotionUrl =
+      'https://believed-cobbler-41f.notion.site/ebd//324b529b25e7805094e4c5172976aec4';
   static const _gameRadarPitchDeckUrl =
       'https://jchillah.github.io/gameradar-pitchdeck/';
   static const _cryptoTrackerPitchDeckUrl =
@@ -47,6 +49,7 @@ class PortfolioSection extends StatelessWidget {
             'Lokalisierte Benutzeroberfläche',
             'Firebase-gestützte App-Funktionen',
             'Release-, Support- und Datenschutz-Infrastruktur',
+            'Dokumentierter Produkt- und Architekturprozess',
           ],
           screenshotAssets: [
             'assets/images/asa_server_eye_1.png',
@@ -57,6 +60,7 @@ class PortfolioSection extends StatelessWidget {
           showcaseImageUrl: _asaShowcaseUrl,
           projectPageUrl: 'https://jchillah.github.io/asa-server-eye/',
           pitchDeckUrl: _asaPitchDeckUrl,
+          notionUrl: _asaNotionUrl,
           appRepoUrl: 'https://github.com/jchillah/asa-server-eye',
           pitchRepoUrl:
               'https://github.com/jchillah/jchillah.github.io/tree/main/asa-server-eye-pitchdeck',
