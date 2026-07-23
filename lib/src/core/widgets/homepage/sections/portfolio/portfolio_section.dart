@@ -11,7 +11,7 @@ class PortfolioSection extends StatelessWidget {
   static const _asaPitchDeckUrl =
       'https://jchillah.github.io/asa-server-eye-pitchdeck/';
   static const _asaNotionUrl =
-      'https://app.notion.com/p/3a6b529b25e781de9cc6d792f83f6755?pvs=1';
+      'https://believed-cobbler-41f.notion.site/ebd//324b529b25e7805094e4c5172976aec4';
   static const _asaFigmaUrl =
       'https://www.figma.com/design/DI5uVNOcAvqCXs1kkPaCUj';
   static const _gameRadarPitchDeckUrl =
