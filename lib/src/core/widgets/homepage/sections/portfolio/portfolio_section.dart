@@ -117,20 +117,22 @@ class PortfolioSection extends StatelessWidget {
         builder: (_) => const ProjectDetailPage(
           title: 'CryptoTracker',
           subtitle:
-              'Native SwiftUI-App zur Beobachtung von Kryptowährungen, Preisverläufen und persönlichen Favoriten.',
-          status: 'iOS-Abschlussprojekt',
+              'Native SwiftUI-App für Kryptomarktdaten, Preisverläufe, News und persönliche Favoriten.',
+          status: 'iOS Release Candidate · Portfolio-Projekt',
           techStack:
-              'Swift · SwiftUI · MVVM · Firebase Auth · Firestore · SwiftData · Keychain',
+              'Swift · SwiftUI · MVVM · Firebase Auth · Firestore · SwiftData · GitHub Actions',
           longDescription:
-              'CryptoTracker stellt aktuelle Kryptowährungsdaten und historische Preisverläufe in einer nativen iOS-Oberfläche bereit. Nutzer können Coins beobachten, Favoriten speichern und Preisentwicklungen in Diagrammen auswerten.\n\n'
-              'Die App basiert auf MVVM und verbindet Firebase Authentication mit Firestore für nutzerbezogene Favoriten. SwiftData dient als lokale Persistenz und als Fallback bei eingeschränkter API-Verfügbarkeit. API-Zugangsdaten werden über die iOS Keychain verwaltet.',
+              'CryptoTracker stellt aktuelle Kryptowährungsdaten, historische Preisverläufe und Krypto-News in einer nativen iOS-Oberfläche bereit. Nutzer können Favoriten speichern, mehrere Währungen auswählen und ihre Account-Einstellungen verwalten.\n\n'
+              'Die App basiert auf MVVM mit explizitem View-State. Firebase Authentication und owner-only Firestore-Regeln schützen nutzerbezogene Favoriten und Einstellungen. SwiftData stellt getrennte Offline-Caches für Markt- und Chartdaten bereit. Ein CI-Workflow, Account-Löschung, Datenschutz- und Release-Dokumentation unterstützen den Weg zur App-Store-Veröffentlichung.',
           features: [
-            'Aktuelle Preise und Marktdaten über eine REST API',
-            'Historische Preisverläufe in interaktiven Diagrammen',
+            'Aktuelle Preise und Marktdaten über CoinGecko',
+            'USD-, EUR- und GBP-Darstellung',
+            'Historische Preisverläufe mit Swift Charts',
             'Benutzeranmeldung mit Firebase Authentication',
-            'Synchronisierte Favoriten mit Firestore',
+            'Synchronisierte Favoriten mit owner-only Firestore-Regeln',
             'Lokale Persistenz und Offline-Fallback mit SwiftData',
-            'Sichere Verwaltung von API-Zugangsdaten mit Keychain',
+            'Krypto-News über einen schlüsselfreien RSS-Feed',
+            'Account-Löschung und sichere Release-Dokumentation',
             'MVVM-Struktur mit getrennten Views, ViewModels und Services',
           ],
           screenshotAssets: [
@@ -195,9 +197,10 @@ class PortfolioSection extends StatelessWidget {
                 child: PortfolioCard(
                   title: 'CryptoTracker',
                   description:
-                      'Native iOS-App für Kryptomarktdaten, Preisdiagramme, Authentifizierung und synchronisierte Favoriten.',
-                  techStack: 'Swift · SwiftUI · Firebase · SwiftData',
-                  status: 'iOS-Abschlussprojekt',
+                      'Native iOS-App für Kryptomarktdaten, Charts, News, Authentifizierung und synchronisierte Favoriten.',
+                  techStack:
+                      'Swift · SwiftUI · MVVM · Firebase · SwiftData',
+                  status: 'iOS Release Candidate',
                   onTap: () => _openCryptoTracker(context),
                   onPitchDeckTap: () =>
                       _openExternalUrl(_cryptoTrackerPitchDeckUrl),
