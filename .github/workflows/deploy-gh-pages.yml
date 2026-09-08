@@ -32,10 +32,22 @@ jobs:
 
       - name: Build Flutter web
         run: flutter build web --release --base-href /jchillah_company_site/ --pwa-strategy=none
-        
+
+      - name: Verify GitHub Pages build
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          test -f build/web/index.html
+          test -f build/web/flutter_bootstrap.js
+          test -f build/web/main.dart.js
+
+          grep -Fq '<base href="/jchillah_company_site/">' build/web/index.html
+
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: ./build/web
+          force_orphan: true
