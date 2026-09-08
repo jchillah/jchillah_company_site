@@ -41,8 +41,32 @@ jobs:
           test -f build/web/index.html
           test -f build/web/flutter_bootstrap.js
           test -f build/web/main.dart.js
-
           grep -Fq '<base href="/jchillah_company_site/">' build/web/index.html
+
+          seo_files=(
+            "seo.css"
+            "robots.txt"
+            "sitemap.xml"
+            "app-entwickler/index.html"
+            "flutter-entwickler/index.html"
+            "android-entwickler/index.html"
+            "ios-entwickler/index.html"
+            "app-entwickler-berlin/index.html"
+            "flutter-entwickler-berlin/index.html"
+            "android-entwickler-berlin/index.html"
+            "ios-entwickler-berlin/index.html"
+            "app-programmieren-lassen/index.html"
+            "mvp-app-entwicklung/index.html"
+            "startup-app-entwicklung/index.html"
+            "portfolio/index.html"
+          )
+
+          for file in "${seo_files[@]}"; do
+            test -f "build/web/$file"
+          done
+
+          grep -Fq "https://jchillah.github.io/jchillah_company_site/sitemap.xml" build/web/robots.txt
+          grep -Fq "<urlset" build/web/sitemap.xml
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
