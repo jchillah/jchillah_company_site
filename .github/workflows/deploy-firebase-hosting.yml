@@ -33,6 +33,36 @@ jobs:
       - name: Build Flutter web
         run: flutter build web --release --pwa-strategy=none
 
+      - name: Verify SEO landing pages
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          seo_files=(
+            "seo.css"
+            "robots.txt"
+            "sitemap.xml"
+            "app-entwickler/index.html"
+            "flutter-entwickler/index.html"
+            "android-entwickler/index.html"
+            "ios-entwickler/index.html"
+            "app-entwickler-berlin/index.html"
+            "flutter-entwickler-berlin/index.html"
+            "android-entwickler-berlin/index.html"
+            "ios-entwickler-berlin/index.html"
+            "app-programmieren-lassen/index.html"
+            "mvp-app-entwicklung/index.html"
+            "startup-app-entwicklung/index.html"
+            "portfolio/index.html"
+          )
+
+          for file in "${seo_files[@]}"; do
+            test -f "build/web/$file"
+          done
+
+          grep -Fq "https://jchillah.github.io/jchillah_company_site/sitemap.xml" build/web/robots.txt
+          grep -Fq "<urlset" build/web/sitemap.xml
+
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:

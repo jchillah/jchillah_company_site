@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jchillah.github.io/jchillah_company_site/sitemap.xml
